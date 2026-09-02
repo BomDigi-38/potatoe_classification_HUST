@@ -1,0 +1,18 @@
+{
+  "data_dir": "./dataset/data_multiclass",
+  "output_dir": "./Model",
+  "arch": "resnet18",
+  "img_size": 224,
+  "epochs": 10,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "val_split": 0.2,
+  "force_split": false,
+  "freeze_backbone": true,
+  "patience": 7,
+  "seed": 42,
+  "quick": false,
+  "reduce_dataset_to": 20.0,
+  "run_name": "data_multiclass_epoch10_frac20_20260814_021401",
+  "device": "cpu"
+}

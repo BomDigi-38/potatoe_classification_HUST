@@ -1,0 +1,2 @@
+image,tuber_id,bbox.width,bbox.height,perim,convex.perim,area,chull.area,roundness,compactness,max.length,skinning,redness,lightness
+10.jpg,1,53,55,217,198.762967064941,2253,2642.5,0.84053135278687,0.601245152671563,73.6613874428116,0,11.6,55.1

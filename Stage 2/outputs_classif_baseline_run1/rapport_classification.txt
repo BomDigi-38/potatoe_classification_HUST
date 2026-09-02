@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+      malade      0.952     0.959     0.955       390
+       saine      0.843     0.819     0.831       105
+
+    accuracy                          0.929       495
+   macro avg      0.897     0.889     0.893       495
+weighted avg      0.929     0.929     0.929       495

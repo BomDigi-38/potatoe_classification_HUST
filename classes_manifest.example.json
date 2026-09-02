@@ -1,0 +1,10 @@
+{
+  "saine": [
+    "C:/chemin/vers/dossier_sain_1",
+    "C:/chemin/vers/dossier_sain_2"
+  ],
+  "malade_exemple": [
+    "C:/chemin/vers/dossier_malade",
+    "C:/chemin/vers/une_image_isolee.jpg"
+  ]
+}

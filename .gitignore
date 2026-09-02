@@ -1,0 +1,23 @@
+# Environnement virtuel — à recréer sur chaque machine (build PyTorch CUDA sur le PC GPU)
+stage-hanoi/
+
+# Données d'entraînement — déjà présentes sur le PC GPU
+dataset/
+__Old_dataset/
+
+# Sorties de tests segment_tubers.py (pas des données d'entraînement du classifieur)
+Stage 1/
+multiple_out/
+
+# Checkpoint de test MobileSAM, sans rapport avec l'entraînement du classifieur
+mobile_sam.pt
+
+# Cache Python régénérable
+__pycache__/
+*.pyc
+
+# Fichiers internes de session Claude
+.claude/
+
+# Littérature de référence (PDF), pas nécessaire pour l'entraînement
+Littérature scientifique/

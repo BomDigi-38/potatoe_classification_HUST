@@ -1,0 +1,37 @@
+chemin,vrai_label,label_predit,confiance
+dataset\data\val\saine\Healthy Potato\Healthy Potato (67).jpg,saine,malade,0.9996
+dataset\data\val\saine\H-potato-Output\20241105_180847.jpg,saine,malade,0.9994
+dataset\data\val\saine\Healthy Potato\Healthy Potato (83).jpg,saine,malade,0.9923
+dataset\data\val\saine\Healthy Potato\Healthy Potato (32).jpg,saine,malade,0.9871
+dataset\data\val\saine\Healthy Potato\Healthy Potato (49).jpg,saine,malade,0.9632
+dataset\data\val\saine\Healthy_Potato_Images\IMG_20231105_134204.jpg,saine,malade,0.9598
+dataset\data\val\saine\Healthy Potato\Healthy Potato (16).jpg,saine,malade,0.9552
+dataset\data\val\saine\H-potato-Output\20241106_223713.jpg,saine,malade,0.9493
+dataset\data\val\saine\Healthy Potato\Healthy Potato (19).jpg,saine,malade,0.9440
+dataset\data\val\saine\Healthy Potato\Healthy Potato (77).jpg,saine,malade,0.9430
+dataset\data\val\saine\Healthy_Potato_Images\IMG_20231105_134211.jpg,saine,malade,0.9370
+dataset\data\val\saine\H-potato-Output\20241106_223714.jpg,saine,malade,0.9252
+dataset\data\val\saine\H-potato-Output\20241105_180851.jpg,saine,malade,0.9031
+dataset\data\val\saine\H-potato-Output\IMG_20241105_222702_767.jpg,saine,malade,0.8912
+dataset\data\val\saine\H-potato-Output\20241105_182811.jpg,saine,malade,0.8692
+dataset\data\val\saine\H-potato-Output\20241105_180058.jpg,saine,malade,0.8603
+dataset\data\val\saine\Healthy Potato\Healthy Potato (17).jpg,saine,malade,0.8594
+dataset\data\val\saine\Healthy Potato\Healthy Potato (66).jpg,saine,malade,0.7813
+dataset\data\val\saine\Healthy Potato\Healthy Potato (9).jpg,saine,malade,0.7438
+dataset\data\val\saine\Healthy_Potato_Images\IMG_20231105_134321.jpg,saine,malade,0.7090
+dataset\data\val\saine\Healthy Potato\Healthy Potato (55).jpg,saine,malade,0.6933
+dataset\data\val\saine\Healthy_Potato_Images\IMG_20231105_134652.jpg,saine,malade,0.6536
+dataset\data\val\saine\H-potato-Output\20241105_182827.jpg,saine,malade,0.6326
+dataset\data\val\saine\Healthy Potato\Healthy Potato (30).jpg,saine,malade,0.6324
+dataset\data\val\saine\Healthy Potato\Healthy Potato (78).jpg,saine,malade,0.6309
+dataset\data\val\saine\H-potato-Output\20241105_183256.jpg,saine,malade,0.6246
+dataset\data\val\saine\Healthy Potato\Healthy Potato (27).jpg,saine,malade,0.6219
+dataset\data\val\saine\Healthy Potato\Healthy Potato (8).jpg,saine,malade,0.6186
+dataset\data\val\saine\Healthy Potato\Healthy Potato (58).jpg,saine,malade,0.6168
+dataset\data\val\saine\H-potato-Output\20241105_183301.jpg,saine,malade,0.6006
+dataset\data\val\saine\Healthy Potato\Healthy Potato (36).jpg,saine,malade,0.5949
+dataset\data\val\saine\Healthy Potato\Healthy Potato (63).jpg,saine,malade,0.5802
+dataset\data\val\saine\Healthy Potato\Healthy Potato (71).jpg,saine,malade,0.5686
+dataset\data\val\saine\H-potato-Output\20241106_223045.jpg,saine,malade,0.5583
+dataset\data\val\saine\H-potato-Output\20241106_224532.jpg,saine,malade,0.5502
+dataset\data\val\saine\H-potato-Output\20241105_183258.jpg,saine,malade,0.5269

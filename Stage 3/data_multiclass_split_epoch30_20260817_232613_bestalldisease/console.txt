@@ -1,0 +1,65 @@
+(stage-hanoi) PS C:\Users\LBS\STAGE HANOI - HUST> python train_classif_pdt.py --data_dir .\dataset\DISEASED_CLASSES\data_multiclass_split\ --epochs 30                       
+[info] Device: cpu
+[info] Appuie sur P à tout moment pour mettre l'entraînement en pause (ré-appuie sur P pour reprendre). La fenêtre de ce terminal doit avoir le focus pour que la touche soit détectée.
+[info] Dossier de ce run : Model\data_multiclass_split_epoch30_20260817_232613
+[info] Mode A détecté : dataset\DISEASED_CLASSES\data_multiclass_split\train et dataset\DISEASED_CLASSES\data_multiclass_split\val existent déjà.
+[info] Classes détectées : ['malade_blackspot_bruising', 'malade_dry_rot', 'malade_indeterminee', 'malade_pstvd', 'malade_pvy', 'malade_soft_rot']
+[info] Répartition du train set par classe :
+  - malade_blackspot_bruising (malade): 634 images
+  - malade_dry_rot (malade): 1275 images
+  - malade_indeterminee (malade): 12739 images
+  - malade_pstvd (malade): 778 images
+  - malade_pvy (malade): 778 images
+  - malade_soft_rot (malade): 868 images
+[info] Répartition par groupe :
+  - malade: 17072 images
+[info] Train: 17072 images | Val: 4264 images
+[info] Estimation : ~47m17s/époque, ~23h38m pour 30 époques (early stopping peut arrêter avant la fin).
+[epoch 001/30] train_loss=0.1561 train_acc=0.9498 val_loss=0.1000 val_acc=0.9690 val_f1_macro=0.9338 (777.9s)
+[epoch 002/30] train_loss=0.0493 train_acc=0.9861 val_loss=0.0406 val_acc=0.9918 val_f1_macro=0.9846 (850.8s)
+[epoch 003/30] train_loss=0.0386 train_acc=0.9896 val_loss=0.0511 val_acc=0.9876 val_f1_macro=0.9777 (931.7s)
+[epoch 004/30] train_loss=0.0301 train_acc=0.9922 val_loss=0.0527 val_acc=0.9887 val_f1_macro=0.9760 (1032.5s)
+[epoch 005/30] train_loss=0.0279 train_acc=0.9926 val_loss=0.0559 val_acc=0.9873 val_f1_macro=0.9761 (1127.9s)
+[epoch 006/30] train_loss=0.0233 train_acc=0.9936 val_loss=0.0408 val_acc=0.9916 val_f1_macro=0.9846 (1200.4s)
+[epoch 007/30] train_loss=0.0109 train_acc=0.9972 val_loss=0.0269 val_acc=0.9962 val_f1_macro=0.9929 (1276.6s)
+[epoch 008/30] train_loss=0.0134 train_acc=0.9975 val_loss=0.0250 val_acc=0.9955 val_f1_macro=0.9912 (1290.3s)
+[epoch 009/30] train_loss=0.0091 train_acc=0.9982 val_loss=0.0285 val_acc=0.9946 val_f1_macro=0.9898 (1307.9s)
+[epoch 010/30] train_loss=0.0099 train_acc=0.9974 val_loss=0.0307 val_acc=0.9951 val_f1_macro=0.9907 (1308.9s)
+[epoch 011/30] train_loss=0.0123 train_acc=0.9968 val_loss=0.0275 val_acc=0.9953 val_f1_macro=0.9908 (1301.4s)
+[epoch 012/30] train_loss=0.0069 train_acc=0.9987 val_loss=0.0256 val_acc=0.9946 val_f1_macro=0.9898 (1319.4s)
+[epoch 013/30] train_loss=0.0070 train_acc=0.9989 val_loss=0.0202 val_acc=0.9965 val_f1_macro=0.9933 (1326.1s)
+[epoch 014/30] train_loss=0.0053 train_acc=0.9989 val_loss=0.0251 val_acc=0.9960 val_f1_macro=0.9924 (1305.3s)
+[epoch 015/30] train_loss=0.0054 train_acc=0.9990 val_loss=0.0291 val_acc=0.9953 val_f1_macro=0.9911 (1298.5s)
+[epoch 016/30] train_loss=0.0067 train_acc=0.9987 val_loss=0.0333 val_acc=0.9932 val_f1_macro=0.9872 (1312.9s)
+[epoch 017/30] train_loss=0.0078 train_acc=0.9987 val_loss=0.0224 val_acc=0.9953 val_f1_macro=0.9911 (1334.4s)
+[epoch 018/30] train_loss=0.0046 train_acc=0.9994 val_loss=0.0213 val_acc=0.9965 val_f1_macro=0.9933 (1368.4s)
+[epoch 019/30] train_loss=0.0065 train_acc=0.9989 val_loss=0.0174 val_acc=0.9967 val_f1_macro=0.9938 (1386.9s)
+[epoch 020/30] train_loss=0.0058 train_acc=0.9992 val_loss=0.0227 val_acc=0.9962 val_f1_macro=0.9929 (1432.5s)
+[epoch 021/30] train_loss=0.0076 train_acc=0.9986 val_loss=0.0244 val_acc=0.9955 val_f1_macro=0.9915 (1438.6s)
+[epoch 022/30] train_loss=0.0058 train_acc=0.9991 val_loss=0.0229 val_acc=0.9962 val_f1_macro=0.9929 (1457.6s)
+[epoch 023/30] train_loss=0.0032 train_acc=0.9996 val_loss=0.0251 val_acc=0.9962 val_f1_macro=0.9929 (1442.0s)
+[epoch 024/30] train_loss=0.0042 train_acc=0.9991 val_loss=0.0243 val_acc=0.9965 val_f1_macro=0.9933 (1444.1s)
+[epoch 025/30] train_loss=0.0069 train_acc=0.9988 val_loss=0.0212 val_acc=0.9970 val_f1_macro=0.9942 (1457.1s)
+[epoch 026/30] train_loss=0.0063 train_acc=0.9989 val_loss=0.0199 val_acc=0.9970 val_f1_macro=0.9942 (3736.9s)
+[epoch 027/30] train_loss=0.0048 train_acc=0.9993 val_loss=0.0212 val_acc=0.9970 val_f1_macro=0.9942 (1633.4s)
+[epoch 028/30] train_loss=0.0043 train_acc=0.9992 val_loss=0.0219 val_acc=0.9970 val_f1_macro=0.9942 (2360.9s)
+[epoch 029/30] train_loss=0.0024 train_acc=0.9996 val_loss=0.0231 val_acc=0.9970 val_f1_macro=0.9942 (1755.4s)
+[epoch 030/30] train_loss=0.0043 train_acc=0.9994 val_loss=0.0201 val_acc=0.9970 val_f1_macro=0.9942 (1538.4s)
+[info] Meilleur val_f1_macro: 0.9942 — modèle sauvegardé dans Model\data_multiclass_split_epoch30_20260817_232613\best_model.pt
+[info] F1 macro final : 0.9942 | F1 pondéré final : 0.9970
+
+[rapport de classification]
+                           precision    recall  f1-score   support
+
+malade_blackspot_bruising      1.000     1.000     1.000       158
+           malade_dry_rot      1.000     1.000     1.000       318
+      malade_indeterminee      1.000     0.996     0.998      3184
+             malade_pstvd      0.995     1.000     0.997       194
+               malade_pvy      0.942     1.000     0.970       194
+          malade_soft_rot      1.000     1.000     1.000       216
+
+                 accuracy                          0.997      4264
+                macro avg      0.989     0.999     0.994      4264
+             weighted avg      0.997     0.997     0.997      4264
+
+[info] Terminé. val_acc finale (meilleur modèle) = 0.9970

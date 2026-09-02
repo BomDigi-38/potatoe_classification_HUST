@@ -1,0 +1,66 @@
+{
+  "loss": 0.03138377500622341,
+  "accuracy": 0.9945124525116082,
+  "n_samples": 2369,
+  "per_class_counts": {
+    "malade_blackspot_bruising": 88,
+    "malade_dry_rot": 176,
+    "malade_indeterminee": 1769,
+    "malade_pstvd": 108,
+    "malade_pvy": 108,
+    "malade_soft_rot": 120
+  },
+  "positive_class": null,
+  "auc": null,
+  "classification_report": {
+    "malade_blackspot_bruising": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 88.0
+    },
+    "malade_dry_rot": {
+      "precision": 1.0,
+      "recall": 0.9943181818181818,
+      "f1-score": 0.9971509971509972,
+      "support": 176.0
+    },
+    "malade_indeterminee": {
+      "precision": 0.9994311717861206,
+      "recall": 0.9932165065008479,
+      "f1-score": 0.9963141480011342,
+      "support": 1769.0
+    },
+    "malade_pstvd": {
+      "precision": 0.9642857142857143,
+      "recall": 1.0,
+      "f1-score": 0.9818181818181818,
+      "support": 108.0
+    },
+    "malade_pvy": {
+      "precision": 0.9310344827586207,
+      "recall": 1.0,
+      "f1-score": 0.9642857142857143,
+      "support": 108.0
+    },
+    "malade_soft_rot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 120.0
+    },
+    "accuracy": 0.9945124525116082,
+    "macro avg": {
+      "precision": 0.9824585614717427,
+      "recall": 0.9979224480531715,
+      "f1-score": 0.9899281735426713,
+      "support": 2369.0
+    },
+    "weighted avg": {
+      "precision": 0.9948030072479679,
+      "recall": 0.9945124525116082,
+      "f1-score": 0.994578946429634,
+      "support": 2369.0
+    }
+  }
+}

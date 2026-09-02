@@ -1,0 +1,38 @@
+{
+  "loss": 0.032058215751192755,
+  "accuracy": 0.9892825245608812,
+  "n_samples": 3359,
+  "per_class_counts": {
+    "malade": 1598,
+    "saine": 1761
+  },
+  "positive_class": "saine",
+  "auc": 0.9999243091342884,
+  "classification_report": {
+    "malade": {
+      "precision": 0.97796817625459,
+      "recall": 1.0,
+      "f1-score": 0.9888613861386139,
+      "support": 1598.0
+    },
+    "saine": {
+      "precision": 1.0,
+      "recall": 0.979557069846678,
+      "f1-score": 0.9896729776247849,
+      "support": 1761.0
+    },
+    "accuracy": 0.9892825245608812,
+    "macro avg": {
+      "precision": 0.988984088127295,
+      "recall": 0.989778534923339,
+      "f1-score": 0.9892671818816994,
+      "support": 3359.0
+    },
+    "weighted avg": {
+      "precision": 0.9895186500907517,
+      "recall": 0.9892825245608812,
+      "f1-score": 0.989286873666791,
+      "support": 3359.0
+    }
+  }
+}

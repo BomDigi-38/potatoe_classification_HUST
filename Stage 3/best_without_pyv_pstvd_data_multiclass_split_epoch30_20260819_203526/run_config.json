@@ -1,0 +1,22 @@
+{
+  "data_dir": ".\\dataset\\DISEASED_CLASSES\\data_multiclass_split\\",
+  "output_dir": "./Model",
+  "arch": "resnet18",
+  "img_size": 224,
+  "epochs": 30,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "dropout": 0.3,
+  "selection_metric": "val_f1_macro",
+  "val_split": 0.2,
+  "force_split": false,
+  "freeze_backbone": false,
+  "patience": 7,
+  "seed": 42,
+  "quick": false,
+  "reduce_dataset_to": null,
+  "exclude_classes": "malade_pstvd,malade_pvy",
+  "run_name": "data_multiclass_split_epoch30_20260819_203526",
+  "device": "cpu"
+}

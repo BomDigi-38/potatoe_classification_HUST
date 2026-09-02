@@ -1,0 +1,12 @@
+                           precision    recall  f1-score   support
+
+malade_blackspot_bruising      1.000     1.000     1.000       158
+           malade_dry_rot      1.000     1.000     1.000       318
+      malade_indeterminee      1.000     0.996     0.998      3184
+             malade_pstvd      0.995     1.000     0.997       194
+               malade_pvy      0.942     1.000     0.970       194
+          malade_soft_rot      1.000     1.000     1.000       216
+
+                 accuracy                          0.997      4264
+                macro avg      0.989     0.999     0.994      4264
+             weighted avg      0.997     0.997     0.997      4264

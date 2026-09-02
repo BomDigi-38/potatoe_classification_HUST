@@ -1,0 +1,6 @@
+run_name,date_heure,dataset,epochs_demandes,epochs_effectifs,reduce_dataset_to,arch,val_acc_finale,n_train,n_val,n_classes
+data_multiclass_epoch10_frac20_20260814_021401,2026-08-14 02:43:51,data_multiclass,10,10,20.0,resnet18,0.856,6500,1625,7
+data_multiclass_epoch30_frac20_20260814_025038,2026-08-14 04:11:22,data_multiclass,30,30,20.0,resnet18,0.9071,6500,1625,7
+data_multiclass_split_epoch30_20260817_232613,2026-08-18 11:20:32,data_multiclass_split,30,30,,resnet18,val_f1_macro,0.3,0.0001,0.997,0.9942,17072,4264,6
+data_multiclass_epoch30_20260818_193801,2026-08-18 19:39:39,data_multiclass,30,2,,resnet18,val_f1_macro,0.3,0.0001,0.6,0.5367,40,20,5
+data_multiclass_split_epoch30_20260819_203526,2026-08-20 06:27:32,data_multiclass_split,30,22,,resnet18,val_f1_macro,0.3,0.0001,1.0,1.0,15516,3876,4
