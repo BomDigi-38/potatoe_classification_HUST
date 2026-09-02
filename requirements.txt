@@ -1,0 +1,26 @@
+# Dépendances du pipeline (segment_tubers.py + train/evaluate/predict_cascade).
+#
+# IMPORTANT sur une machine avec GPU NVIDIA :
+# installez d'abord torch/torchvision avec la build CUDA adaptée à votre
+# driver AVANT de lancer `pip install -r requirements.txt`, ex. :
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# (adaptez cu121 à la version CUDA indiquée par `nvidia-smi`). Le numéro de
+# version (2.13.0) est le même pour la build CPU et CUDA, donc lancer
+# `pip install -r requirements.txt` après n'écrase pas la build CUDA déjà
+# installée (version déjà satisfaite) — respectez cet ordre.
+
+torch==2.13.0
+torchvision==0.28.0
+opencv-python-headless==4.13.0.92
+huggingface_hub==1.28.0
+numpy==2.5.1
+scikit-learn==1.9.0
+matplotlib==3.11.0
+pillow==12.3.0
+
+# SAM2 (segment_tubers.py --backend sam2, par défaut)
+SAM-2 @ git+https://github.com/facebookresearch/sam2.git
+
+# --- Optionnel : segment_tubers.py --backend sam1 (MobileSAM) ---
+mobile_sam @ git+https://github.com/ChaoningZhang/MobileSAM.git
+timm==1.0.29
