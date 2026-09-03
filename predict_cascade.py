@@ -264,6 +264,7 @@ def main():
                     args.uncertain_label, args.confidence_threshold))
 
                 writer.writerow(row)
+                fh.flush()  # force l'écriture sur disque immédiatement (survit à un arrêt brutal)
                 verdict = row["verdict_final"]
                 verdict_counts[verdict] = verdict_counts.get(verdict, 0) + 1
 

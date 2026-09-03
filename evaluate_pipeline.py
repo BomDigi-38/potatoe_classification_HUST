@@ -69,6 +69,10 @@ def list_class_images(data_dir: Path):
     return items
 
 
+DETAIL_FIELDS = ["image", "vraie_classe", "total_crops_bruts", "n_valide", "stage1_ok",
+                 "stage2_pred", "stage2_ok", "stage3_pred", "stage3_ok"]
+
+
 def write_report(output_dir, name, true_labels, pred_labels, classes):
     """true_labels/pred_labels : indices dans classes. Écrit rapport +
     matrice de confusion si scikit-learn/matplotlib disponibles."""
@@ -82,6 +86,43 @@ def write_report(output_dir, name, true_labels, pred_labels, classes):
     plot_confusion_matrix(true_labels, pred_labels, classes, output_dir / f"matrice_confusion_{name}.png")
     return classification_report(true_labels, pred_labels, labels=report_labels,
                                   target_names=classes, digits=3, zero_division=0, output_dict=True)
+
+
+def build_and_write_summary(output_dir, details, stage2_true, stage2_pred, stage3_true, stage3_pred,
+                             stage2_classes_report, stage3_classes_report):
+    """Recalcule le résumé à partir de ce qui a été traité jusqu'ici et
+    l'écrit dans evaluation_pipeline.json — appelée périodiquement pendant la
+    boucle (pas seulement à la fin) pour qu'un arrêt en cours de route laisse
+    un résumé exploitable, pas juste le CSV détail brut."""
+    n_stage1_ok = sum(d["stage1_ok"] for d in details)
+    n_stage2_evalues = sum(1 for d in details if d["stage2_ok"] is not None)
+    n_stage2_ok = sum(1 for d in details if d["stage2_ok"])
+    n_stage3_evalues = sum(1 for d in details if d["stage3_ok"] is not None)
+    n_stage3_ok = sum(1 for d in details if d["stage3_ok"])
+
+    summary = {
+        "n_images_traitees": len(details),
+        "stage1": {
+            "n_images": len(details),
+            "n_exactement_1_valide": n_stage1_ok,
+            "taux": round(n_stage1_ok / len(details), 4) if details else None,
+        },
+        "stage2": {
+            "n_images_evaluees": n_stage2_evalues,
+            "n_corrects": n_stage2_ok,
+            "taux": round(n_stage2_ok / n_stage2_evalues, 4) if n_stage2_evalues else None,
+            "rapport": write_report(output_dir, "stage2", stage2_true, stage2_pred, stage2_classes_report),
+        },
+        "stage3": {
+            "n_images_evaluees": n_stage3_evalues,
+            "n_corrects": n_stage3_ok,
+            "taux": round(n_stage3_ok / n_stage3_evalues, 4) if n_stage3_evalues else None,
+            "rapport": write_report(output_dir, "stage3", stage3_true, stage3_pred, stage3_classes_report),
+        },
+    }
+    with open(output_dir / "evaluation_pipeline.json", "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    return summary
 
 
 def main():
@@ -164,92 +205,73 @@ def main():
     details = []
     stage2_true, stage2_pred = [], []
     stage3_true, stage3_pred = [], []
-
-    for k, (path, true_class) in enumerate(items, 1):
-        rel_key = f"{true_class}__{path.stem}"  # unique même si 2 classes partagent un nom de fichier
-        print(f"[{k}/{len(items)}] {true_class}/{path.name}", end=" ")
-        recorder = RowRecorder()
-        segment_tubers.process_image(path, rel_key, gen, ctx, seg_args, recorder, seg_out_root)
-
-        n_valide_rows = []
-        for crop_row in recorder.rows:
-            crop_path = seg_out_root / crop_row["crop_path"]
-            s1_row = classify_crop(crop_path, tf, device, stage1_model, stage1_classes,
-                                    stage2_model, stage2_classes, stage3_model, stage3_classes,
-                                    args.uncertain_label, args.confidence_threshold)
-            if s1_row["stage1_pred"] == "valide":
-                n_valide_rows.append(s1_row)
-
-        stage1_ok = len(n_valide_rows) == 1
-        detail = {"image": f"{true_class}/{path.name}", "vraie_classe": true_class,
-                  "total_crops_bruts": len(recorder.rows), "n_valide": len(n_valide_rows),
-                  "stage1_ok": stage1_ok, "stage2_pred": "", "stage2_ok": None,
-                  "stage3_pred": "", "stage3_ok": None}
-
-        if stage1_ok:
-            row = n_valide_rows[0]
-            true_group = infer_group(true_class)
-            pred_group = infer_group(row["stage2_pred"])
-            detail["stage2_pred"] = row["stage2_pred"]
-            detail["stage2_ok"] = (pred_group == true_group)
-            stage2_true.append(stage2_classes_report.index(true_group))
-            stage2_pred.append(stage2_classes_report.index(pred_group))
-
-            if true_group == "malade" and pred_group == "malade":
-                detail["stage3_pred"] = row["verdict_final"]
-                detail["stage3_ok"] = (row["verdict_final"] == true_class)
-                # true_class et verdict_final sont toujours dans stage3_classes_report par
-                # construction (union stage3_classes / classes malade du dossier / uncertain_label).
-                if true_class in stage3_classes_report and row["verdict_final"] in stage3_classes_report:
-                    stage3_true.append(stage3_classes_report.index(true_class))
-                    stage3_pred.append(stage3_classes_report.index(row["verdict_final"]))
-
-        details.append(detail)
-        print("OK" if stage1_ok else f"echec stage1 (n_valide={len(n_valide_rows)})")
-
-    n_stage1_ok = sum(d["stage1_ok"] for d in details)
-    n_stage2_evalues = sum(1 for d in details if d["stage2_ok"] is not None)
-    n_stage2_ok = sum(1 for d in details if d["stage2_ok"])
-    n_stage3_evalues = sum(1 for d in details if d["stage3_ok"] is not None)
-    n_stage3_ok = sum(1 for d in details if d["stage3_ok"])
-
-    summary = {
-        "stage1": {
-            "n_images": len(details),
-            "n_exactement_1_valide": n_stage1_ok,
-            "taux": round(n_stage1_ok / len(details), 4),
-        },
-        "stage2": {
-            "n_images_evaluees": n_stage2_evalues,
-            "n_corrects": n_stage2_ok,
-            "taux": round(n_stage2_ok / n_stage2_evalues, 4) if n_stage2_evalues else None,
-            "rapport": write_report(output_dir, "stage2", stage2_true, stage2_pred, stage2_classes_report),
-        },
-        "stage3": {
-            "n_images_evaluees": n_stage3_evalues,
-            "n_corrects": n_stage3_ok,
-            "taux": round(n_stage3_ok / n_stage3_evalues, 4) if n_stage3_evalues else None,
-            "rapport": write_report(output_dir, "stage3", stage3_true, stage3_pred, stage3_classes_report),
-        },
-        "details": details,
-    }
-
     summary_path = output_dir / "evaluation_pipeline.json"
-    with open(summary_path, "w", encoding="utf-8") as f:
-        json.dump(summary, f, indent=2, ensure_ascii=False)
-
     csv_path = output_dir / "detail_par_image.csv"
-    with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(details[0].keys()))
-        writer.writeheader()
-        writer.writerows(details)
+    SUMMARY_REFRESH_EVERY = 50  # rafraîchit evaluation_pipeline.json toutes les N images, pas seulement à la fin
 
-    print(f"\n[info] Étage 1 : {n_stage1_ok}/{len(details)} images avec exactement 1 crop valide "
-          f"({summary['stage1']['taux'] * 100:.1f}%).")
-    if n_stage2_evalues:
-        print(f"[info] Étage 2 : {n_stage2_ok}/{n_stage2_evalues} corrects ({summary['stage2']['taux'] * 100:.1f}%).")
-    if n_stage3_evalues:
-        print(f"[info] Étage 3 : {n_stage3_ok}/{n_stage3_evalues} corrects ({summary['stage3']['taux'] * 100:.1f}%).")
+    with open(csv_path, "w", newline="", encoding="utf-8") as csv_fh:
+        csv_writer = csv.DictWriter(csv_fh, fieldnames=DETAIL_FIELDS)
+        csv_writer.writeheader()
+
+        for k, (path, true_class) in enumerate(items, 1):
+            rel_key = f"{true_class}__{path.stem}"  # unique même si 2 classes partagent un nom de fichier
+            print(f"[{k}/{len(items)}] {true_class}/{path.name}", end=" ")
+            recorder = RowRecorder()
+            segment_tubers.process_image(path, rel_key, gen, ctx, seg_args, recorder, seg_out_root)
+
+            n_valide_rows = []
+            for crop_row in recorder.rows:
+                crop_path = seg_out_root / crop_row["crop_path"]
+                s1_row = classify_crop(crop_path, tf, device, stage1_model, stage1_classes,
+                                        stage2_model, stage2_classes, stage3_model, stage3_classes,
+                                        args.uncertain_label, args.confidence_threshold)
+                if s1_row["stage1_pred"] == "valide":
+                    n_valide_rows.append(s1_row)
+
+            stage1_ok = len(n_valide_rows) == 1
+            detail = {"image": f"{true_class}/{path.name}", "vraie_classe": true_class,
+                      "total_crops_bruts": len(recorder.rows), "n_valide": len(n_valide_rows),
+                      "stage1_ok": stage1_ok, "stage2_pred": "", "stage2_ok": None,
+                      "stage3_pred": "", "stage3_ok": None}
+
+            if stage1_ok:
+                row = n_valide_rows[0]
+                true_group = infer_group(true_class)
+                pred_group = infer_group(row["stage2_pred"])
+                detail["stage2_pred"] = row["stage2_pred"]
+                detail["stage2_ok"] = (pred_group == true_group)
+                stage2_true.append(stage2_classes_report.index(true_group))
+                stage2_pred.append(stage2_classes_report.index(pred_group))
+
+                if true_group == "malade" and pred_group == "malade":
+                    detail["stage3_pred"] = row["verdict_final"]
+                    detail["stage3_ok"] = (row["verdict_final"] == true_class)
+                    # true_class et verdict_final sont toujours dans stage3_classes_report par
+                    # construction (union stage3_classes / classes malade du dossier / uncertain_label).
+                    if true_class in stage3_classes_report and row["verdict_final"] in stage3_classes_report:
+                        stage3_true.append(stage3_classes_report.index(true_class))
+                        stage3_pred.append(stage3_classes_report.index(row["verdict_final"]))
+
+            details.append(detail)
+            csv_writer.writerow(detail)
+            csv_fh.flush()  # force l'écriture sur disque immédiatement (survit à un arrêt brutal)
+            print("OK" if stage1_ok else f"echec stage1 (n_valide={len(n_valide_rows)})")
+
+            if k % SUMMARY_REFRESH_EVERY == 0:
+                build_and_write_summary(output_dir, details, stage2_true, stage2_pred,
+                                         stage3_true, stage3_pred, stage2_classes_report, stage3_classes_report)
+
+    summary = build_and_write_summary(output_dir, details, stage2_true, stage2_pred,
+                                       stage3_true, stage3_pred, stage2_classes_report, stage3_classes_report)
+
+    print(f"\n[info] Étage 1 : {summary['stage1']['n_exactement_1_valide']}/{len(details)} images "
+          f"avec exactement 1 crop valide ({summary['stage1']['taux'] * 100:.1f}%).")
+    if summary["stage2"]["n_images_evaluees"]:
+        print(f"[info] Étage 2 : {summary['stage2']['n_corrects']}/{summary['stage2']['n_images_evaluees']} "
+              f"corrects ({summary['stage2']['taux'] * 100:.1f}%).")
+    if summary["stage3"]["n_images_evaluees"]:
+        print(f"[info] Étage 3 : {summary['stage3']['n_corrects']}/{summary['stage3']['n_images_evaluees']} "
+              f"corrects ({summary['stage3']['taux'] * 100:.1f}%).")
     print(f"[info] Résumé complet -> {summary_path}")
     print(f"[info] Détail par image -> {csv_path}")
 
