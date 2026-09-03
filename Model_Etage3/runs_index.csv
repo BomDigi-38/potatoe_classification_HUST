@@ -1,0 +1,2 @@
+run_name,date_heure,dataset,epochs_demandes,epochs_effectifs,reduce_dataset_to,arch,selection_metric,dropout,weight_decay,val_acc_finale,val_f1_macro_finale,n_train,n_val,n_classes
+etage3_multiclass_split_epoch30_20260903_223633,2026-09-03 23:36:47,etage3_multiclass_split,30,25,,resnet18,val_f1_macro,0.3,0.0001,0.9973,0.9979,4509,1125,4

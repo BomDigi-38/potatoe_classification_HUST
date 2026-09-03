@@ -1,0 +1,4112 @@
+=== train (3264 images) ===
+
+--- invalide (1488 images) ---
+000000_000166_Img-1467_t000.png
+000001_000387_Blackspot Bruising Disease Aug (468)_t001.png
+000002_000987_Dry Rot Disease  Aug (346)_t000.png
+000003_000983_Dry Rot Disease  Aug (340)_t000.png
+000004_000662_Dry Rot Disease  Aug (275)_t001.png
+000005_000319_Blackspot Bruising Disease Aug (33)_t000.png
+000006_001410_Healthy Potato Aug (132)_t001.png
+000007_001219_Dry Rot Disease  Aug (793)_t000.png
+000008_001817_Soft Rot Disease Aug (124)_t001.png
+000009_001839_Soft Rot Disease Aug (291)_t000.png
+000010_000742_Dry Rot Disease  Aug (1087)_t001.png
+000011_000885_Dry Rot Disease  Aug (148)_t000.png
+000012_001088_Dry Rot Disease  Aug (546)_t000.png
+000013_001274_Dry Rot Disease  Aug (869)_t000.png
+000014_001802_Soft Rot Disease Aug (65)_t000.png
+000015_000364_Blackspot Bruising Disease Aug (413)_t001.png
+000016_000251_Blackspot Bruising Disease Aug (131)_t001.png
+000017_001286_Dry Rot Disease  Aug (878)_t000.png
+000018_001380_Dry Rot Disease  Aug (543)_t001.png
+000019_001836_Soft Rot Disease Aug (232)_t001.png
+000020_000734_Dry Rot Disease  Aug (1079)_t000.png
+000021_001017_Dry Rot Disease  Aug (404)_t001.png
+000022_000533_Blackspot Bruising Disease Aug (1)_t002.png
+000023_000800_Dry Rot Disease  Aug (118)_t001.png
+000024_001031_Dry Rot Disease  Aug (435)_t000.png
+000025_000837_Dry Rot Disease  Aug (1240)_t001.png
+000026_001477_Healthy Potato Aug (364)_t000.png
+000027_000266_Blackspot Bruising Disease Aug (183)_t001.png
+000028_000805_Dry Rot Disease  Aug (1187)_t000.png
+000029_001058_Dry Rot Disease  Aug (488)_t000.png
+000030_000829_Dry Rot Disease  Aug (1227)_t001.png
+000031_001816_Soft Rot Disease Aug (119)_t001.png
+000032_000113_Soft Rot Disease (25)_t000.png
+000033_001623_Soft Rot Disease Aug (156)_t000.png
+000034_001016_Dry Rot Disease  Aug (404)_t000.png
+000035_001616_Soft Rot Disease Aug (132)_t002.png
+000036_001501_Healthy Potato Aug (449)_t000.png
+000037_001693_Soft Rot Disease Aug (333)_t000.png
+000038_001032_Dry Rot Disease  Aug (437)_t000.png
+000039_001239_Dry Rot Disease  Aug (822)_t001.png
+000040_001383_Dry Rot Disease  Aug (607)_t002.png
+000041_000243_Blackspot Bruising Disease Aug (110)_t002.png
+000042_000032_Brown Rot Disease (4)_t000_skin_error.png
+000043_000381_Blackspot Bruising Disease Aug (458)_t000.png
+000044_001061_Dry Rot Disease  Aug (495)_t000.png
+000045_000269_Blackspot Bruising Disease Aug (188)_t001.png
+000046_000215_Img-862_t000.png
+000047_001030_Dry Rot Disease  Aug (434)_t000.png
+000048_000463_Blackspot Bruising Disease Aug (647)_t000.png
+000049_000839_Dry Rot Disease  Aug (1241)_t000.png
+000050_001176_Dry Rot Disease  Aug (728)_t003.png
+000051_001439_Healthy Potato Aug (234)_t001.png
+000052_001210_Dry Rot Disease  Aug (787)_t001.png
+000053_001193_Dry Rot Disease  Aug (759)_t004.png
+000054_001248_Dry Rot Disease  Aug (832)_t000.png
+000055_000943_Dry Rot Disease  Aug (254)_t000.png
+000056_001605_Soft Rot Disease Aug (109)_t000.png
+000057_000544_Blackspot Bruising Disease Aug (199)_t001.png
+000058_000737_Dry Rot Disease  Aug (1080)_t003.png
+000059_001394_Dry Rot Disease  Aug (926)_t001.png
+000060_000067_Dry Rot Disease (50)_t000.png
+000061_001821_Soft Rot Disease Aug (138)_t001.png
+000062_001155_Dry Rot Disease  Aug (690)_t001.png
+000063_001549_Healthy Potato Aug (593)_t000.png
+000064_000089_Dry Rot Disease (103)_t001.png
+000065_001120_Dry Rot Disease  Aug (614)_t001.png
+000066_000128_Img-1002_t000.png
+000067_000276_Blackspot Bruising Disease Aug (214)_t000.png
+000068_001685_Soft Rot Disease Aug (300)_t000.png
+000069_000074_Dry Rot Disease (72)_t001.png
+000070_000925_Dry Rot Disease  Aug (228)_t001.png
+000071_001173_Dry Rot Disease  Aug (727)_t000.png
+000072_000787_Dry Rot Disease  Aug (1161)_t000.png
+000073_001736_Soft Rot Disease Aug (424)_t002.png
+000074_001405_Healthy Potato Aug (120)_t001.png
+000075_001445_Healthy Potato Aug (251)_t001.png
+000076_000396_Blackspot Bruising Disease Aug (484)_t000.png
+000077_000876_Dry Rot Disease  Aug (131)_t001.png
+000078_000525_Blackspot Bruising Disease Aug (762)_t000.png
+000079_001497_Healthy Potato Aug (429)_t001.png
+000080_001406_Healthy Potato Aug (122)_t000.png
+000081_000933_Dry Rot Disease  Aug (241)_t001.png
+000082_000639_Dry Rot Disease  Aug (1099)_t001.png
+000083_001710_Soft Rot Disease Aug (368)_t002.png
+000084_001007_Dry Rot Disease  Aug (385)_t000.png
+000085_001425_Healthy Potato Aug (197)_t001.png
+000086_001074_Dry Rot Disease  Aug (515)_t000.png
+000087_001483_Healthy Potato Aug (381)_t000.png
+000088_001758_Soft Rot Disease Aug (473)_t002.png
+000089_001028_Dry Rot Disease  Aug (427)_t000.png
+000090_000856_Dry Rot Disease  Aug (1267)_t000.png
+000091_001054_Dry Rot Disease  Aug (483)_t000.png
+000092_001602_Soft Rot Disease Aug (101)_t000.png
+000093_000762_Dry Rot Disease  Aug (1116)_t003.png
+000094_000402_Blackspot Bruising Disease Aug (492)_t001.png
+000095_001142_Dry Rot Disease  Aug (657)_t000.png
+000096_000010_Blackspot Bruising Disease (46)_t001_skin_error.png
+000097_001072_Dry Rot Disease  Aug (512)_t000.png
+000098_001694_Soft Rot Disease Aug (333)_t001.png
+000099_000937_Dry Rot Disease  Aug (247)_t002.png
+000100_000108_Soft Rot Disease (10)_t000.png
+000101_000684_Dry Rot Disease  Aug (99)_t002.png
+000102_000523_Blackspot Bruising Disease Aug (761)_t001.png
+000103_000652_Dry Rot Disease  Aug (1294)_t002.png
+000104_000657_Dry Rot Disease  Aug (215)_t001.png
+000105_001284_Dry Rot Disease  Aug (873)_t003.png
+000106_000062_Dry Rot Disease (32)_t000.png
+000107_000097_Dry Rot Disease (138)_t002.png
+000108_001089_Dry Rot Disease  Aug (550)_t000.png
+000109_001629_Soft Rot Disease Aug (182)_t000.png
+000110_000031_Brown Rot Disease (6)_t000_error.png
+000111_000993_Dry Rot Disease  Aug (356)_t000.png
+000112_000842_Dry Rot Disease  Aug (1243)_t002.png
+000113_000902_Dry Rot Disease  Aug (182)_t000.png
+000114_001057_Dry Rot Disease  Aug (487)_t000.png
+000115_000981_Dry Rot Disease  Aug (323)_t000.png
+000116_000351_Blackspot Bruising Disease Aug (388)_t000.png
+000117_001810_Soft Rot Disease Aug (94)_t001.png
+000118_000819_Dry Rot Disease  Aug (1213)_t000.png
+000119_001261_Dry Rot Disease  Aug (851)_t000.png
+000120_000748_Dry Rot Disease  Aug (1098)_t001.png
+000121_000486_Blackspot Bruising Disease Aug (688)_t000.png
+000122_001152_Dry Rot Disease  Aug (679)_t000.png
+000123_000227_Img-998_t000.png
+000124_000111_Soft Rot Disease (16)_t000.png
+000125_001228_Dry Rot Disease  Aug (807)_t000.png
+000126_001201_Dry Rot Disease  Aug (771)_t000.png
+000127_001423_Healthy Potato Aug (185)_t000.png
+000128_001785_Soft Rot Disease Aug (536)_t000.png
+000129_001576_Healthy Potato Aug (697)_t000.png
+000130_001333_Dry Rot Disease  Aug (967)_t000.png
+000131_000772_Dry Rot Disease  Aug (1132)_t001.png
+000132_000315_Blackspot Bruising Disease Aug (312)_t001.png
+000133_000634_Brown Rot Disease  Aug (50)_t000.png
+000134_001797_Soft Rot Disease Aug (560)_t000.png
+000135_000595_Brown Rot Disease  Aug (25)_t000.png
+000136_001078_Dry Rot Disease  Aug (522)_t001.png
+000137_000916_Dry Rot Disease  Aug (206)_t000.png
+000138_001027_Dry Rot Disease  Aug (423)_t000.png
+000139_000674_Dry Rot Disease  Aug (548)_t000.png
+000140_001763_Soft Rot Disease Aug (489)_t001.png
+000141_000379_Blackspot Bruising Disease Aug (451)_t000.png
+000142_001668_Soft Rot Disease Aug (264)_t002.png
+000143_000397_Blackspot Bruising Disease Aug (484)_t001.png
+000144_001581_Healthy Potato Aug (714)_t000.png
+000145_000655_Dry Rot Disease  Aug (182)_t002.png
+000146_001533_Healthy Potato Aug (564)_t000.png
+000147_000790_Dry Rot Disease  Aug (1164)_t000.png
+000148_001472_Healthy Potato Aug (335)_t000.png
+000149_000855_Dry Rot Disease  Aug (1265)_t001.png
+000150_000038_Dry Rot Disease (104)_t000.png
+000151_000986_Dry Rot Disease  Aug (343)_t002.png
+000152_001295_Dry Rot Disease  Aug (892)_t001.png
+000153_001505_Healthy Potato Aug (463)_t001.png
+000154_001507_Healthy Potato Aug (47)_t000.png
+000155_000926_Dry Rot Disease  Aug (229)_t000.png
+000156_000475_Blackspot Bruising Disease Aug (666)_t002.png
+000157_001580_Healthy Potato Aug (712)_t000.png
+000158_000226_Img-995_t000.png
+000159_001714_Soft Rot Disease Aug (372)_t002.png
+000160_001644_Soft Rot Disease Aug (212)_t000.png
+000161_000482_Blackspot Bruising Disease Aug (682)_t002.png
+000162_000699_Dry Rot Disease  Aug (1019)_t002.png
+000163_001552_Healthy Potato Aug (613)_t000.png
+000164_001569_Healthy Potato Aug (658)_t001.png
+000165_000596_Brown Rot Disease  Aug (27)_t000.png
+000166_001453_Healthy Potato Aug (263)_t001.png
+000167_000377_Blackspot Bruising Disease Aug (450)_t000.png
+000168_000795_Dry Rot Disease  Aug (117)_t001.png
+000169_000126_Soft Rot Disease (8)_t001.png
+000170_000886_Dry Rot Disease  Aug (151)_t000.png
+000171_001215_Dry Rot Disease  Aug (79)_t000.png
+000172_000404_Blackspot Bruising Disease Aug (497)_t000.png
+000173_001591_Healthy Potato Aug (76)_t000.png
+000174_000561_Blackspot Bruising Disease Aug (429)_t000.png
+000175_001100_Dry Rot Disease  Aug (578)_t001.png
+000176_000935_Dry Rot Disease  Aug (244)_t000.png
+000177_000144_Img-1212_t000.png
+000178_000077_Dry Rot Disease (80)_t000.png
+000179_000857_Dry Rot Disease  Aug (1267)_t001.png
+000180_001092_Dry Rot Disease  Aug (558)_t002.png
+000181_000854_Dry Rot Disease  Aug (1263)_t000.png
+000182_000568_Blackspot Bruising Disease Aug (545)_t001.png
+000183_001633_Soft Rot Disease Aug (198)_t000.png
+000184_000263_Blackspot Bruising Disease Aug (180)_t001.png
+000185_000168_Img-157_t000.png
+000186_001786_Soft Rot Disease Aug (538)_t001.png
+000187_000513_Blackspot Bruising Disease Aug (738)_t002.png
+000188_001585_Healthy Potato Aug (719)_t000.png
+000189_000374_Blackspot Bruising Disease Aug (437)_t000.png
+000190_000850_Dry Rot Disease  Aug (1259)_t000.png
+000191_001729_Soft Rot Disease Aug (41)_t000.png
+000192_000205_Img-753_t000.png
+000193_000628_Brown Rot Disease  Aug (9)_t000.png
+000194_000739_Dry Rot Disease  Aug (1084)_t000.png
+000195_001750_Soft Rot Disease Aug (452)_t000.png
+000196_000591_Brown Rot Disease  Aug (12)_t000.png
+000197_000651_Dry Rot Disease  Aug (1284)_t001.png
+000198_000769_Dry Rot Disease  Aug (1124)_t001.png
+000199_000373_Blackspot Bruising Disease Aug (432)_t000.png
+000200_000034_Dry Rot Disease (14)_t003.png
+000201_001564_Healthy Potato Aug (641)_t000.png
+000202_001359_Dry Rot Disease  Aug (1276)_t002.png
+000203_000845_Dry Rot Disease  Aug (1251)_t001.png
+000204_000099_Dry Rot Disease (144)_t000.png
+000205_001124_Dry Rot Disease  Aug (620)_t001.png
+000206_000685_Dry Rot Disease  Aug (991)_t001.png
+000207_000194_Img-543_t000.png
+000208_001697_Soft Rot Disease Aug (341)_t000.png
+000209_001077_Dry Rot Disease  Aug (520)_t000.png
+000210_000235_Blackspot Bruising Disease Aug (100)_t000.png
+000211_000293_Blackspot Bruising Disease Aug (259)_t001.png
+000212_001350_Dry Rot Disease  Aug (995)_t001.png
+000213_001800_Soft Rot Disease Aug (63)_t000.png
+000214_001458_Healthy Potato Aug (272)_t000.png
+000215_000008_Blackspot Bruising Disease (44)_t000_error.png
+000216_000281_Blackspot Bruising Disease Aug (224)_t000.png
+000217_000405_Blackspot Bruising Disease Aug (5)_t000.png
+000218_000022_Blackspot Bruising Disease (75)_t002_skin_error.png
+000219_001777_Soft Rot Disease Aug (514)_t000.png
+000220_001234_Dry Rot Disease  Aug (815)_t002.png
+000221_000588_Brown Rot Disease  Aug (103)_t000.png
+000222_001137_Dry Rot Disease  Aug (65)_t000.png
+000223_000701_Dry Rot Disease  Aug (1021)_t000.png
+000224_001544_Healthy Potato Aug (586)_t001.png
+000225_000242_Blackspot Bruising Disease Aug (110)_t001.png
+000226_000109_Soft Rot Disease (14)_t000.png
+000227_001021_Dry Rot Disease  Aug (414)_t000.png
+000228_001784_Soft Rot Disease Aug (532)_t001.png
+000229_000203_Img-733_t000.png
+000230_001592_Healthy Potato Aug (81)_t000.png
+000231_001645_Soft Rot Disease Aug (213)_t000.png
+000232_000840_Dry Rot Disease  Aug (1243)_t000.png
+000233_001056_Dry Rot Disease  Aug (484)_t000.png
+000234_000953_Dry Rot Disease  Aug (277)_t000.png
+000235_000718_Dry Rot Disease  Aug (1053)_t000.png
+000236_000803_Dry Rot Disease  Aug (1186)_t001.png
+000237_001748_Soft Rot Disease Aug (448)_t001.png
+000238_000955_Dry Rot Disease  Aug (281)_t000.png
+000239_001631_Soft Rot Disease Aug (194)_t000.png
+000240_000559_Blackspot Bruising Disease Aug (420)_t001.png
+000241_000979_Dry Rot Disease  Aug (321)_t000.png
+000242_001774_Soft Rot Disease Aug (512)_t000.png
+000243_000009_Blackspot Bruising Disease (45)_t000_skin_error.png
+000244_001443_Healthy Potato Aug (249)_t000.png
+000245_000470_Blackspot Bruising Disease Aug (659)_t002.png
+000246_001282_Dry Rot Disease  Aug (872)_t001.png
+000247_000749_Dry Rot Disease  Aug (1099)_t000.png
+000248_000896_Dry Rot Disease  Aug (167)_t001.png
+000249_001757_Soft Rot Disease Aug (473)_t000.png
+000250_000597_Brown Rot Disease  Aug (28)_t000.png
+000251_001542_Healthy Potato Aug (585)_t000.png
+000252_000246_Blackspot Bruising Disease Aug (117)_t001.png
+000253_001049_Dry Rot Disease  Aug (476)_t000.png
+000254_000920_Dry Rot Disease  Aug (217)_t000.png
+000255_000080_Dry Rot Disease (87)_t000.png
+000256_000825_Dry Rot Disease  Aug (1221)_t000.png
+000257_000174_Img-195_t000.png
+000258_000184_Img-3_t000.png
+000259_000579_Blackspot Bruising Disease Aug (72)_t001.png
+000260_000804_Dry Rot Disease  Aug (1186)_t002.png
+000261_001318_Dry Rot Disease  Aug (951)_t000.png
+000262_000250_Blackspot Bruising Disease Aug (131)_t000.png
+000263_001243_Dry Rot Disease  Aug (826)_t001.png
+000264_000441_Blackspot Bruising Disease Aug (596)_t000.png
+000265_000383_Blackspot Bruising Disease Aug (460)_t000.png
+000266_001353_Dry Rot Disease  Aug (1081)_t001.png
+000267_000300_Blackspot Bruising Disease Aug (277)_t002.png
+000268_000057_Dry Rot Disease (20)_t001.png
+000269_001357_Dry Rot Disease  Aug (1232)_t001.png
+000270_000047_Dry Rot Disease (14)_t001.png
+000271_000763_Dry Rot Disease  Aug (1117)_t001.png
+000272_000306_Blackspot Bruising Disease Aug (296)_t000.png
+000273_000170_Img-162_t000.png
+000274_000454_Blackspot Bruising Disease Aug (629)_t001.png
+000275_000681_Dry Rot Disease  Aug (952)_t000.png
+000276_000648_Dry Rot Disease  Aug (120)_t001.png
+000277_000100_Dry Rot Disease (15)_t000.png
+000278_000444_Blackspot Bruising Disease Aug (61)_t000.png
+000279_000092_Dry Rot Disease (115)_t001.png
+000280_001628_Soft Rot Disease Aug (176)_t000.png
+000281_001167_Dry Rot Disease  Aug (710)_t000.png
+000282_001732_Soft Rot Disease Aug (418)_t001.png
+000283_000240_Blackspot Bruising Disease Aug (11)_t000.png
+000284_000070_Dry Rot Disease (67)_t001.png
+000285_000632_Brown Rot Disease  Aug (93)_t001.png
+000286_000036_Dry Rot Disease (10)_t000.png
+000287_001026_Dry Rot Disease  Aug (422)_t000.png
+000288_001065_Dry Rot Disease  Aug (502)_t000.png
+000289_000641_Dry Rot Disease  Aug (112)_t001.png
+000290_000324_Blackspot Bruising Disease Aug (339)_t000.png
+000291_001788_Soft Rot Disease Aug (540)_t000.png
+000292_000989_Dry Rot Disease  Aug (351)_t001.png
+000293_000336_Blackspot Bruising Disease Aug (369)_t000.png
+000294_000847_Dry Rot Disease  Aug (1254)_t002.png
+000295_001600_Soft Rot Disease Aug (100)_t000.png
+000296_001249_Dry Rot Disease  Aug (833)_t001.png
+000297_001712_Soft Rot Disease Aug (370)_t002.png
+000298_000346_Blackspot Bruising Disease Aug (382)_t000.png
+000299_001830_Soft Rot Disease Aug (175)_t000.png
+000300_000970_Dry Rot Disease  Aug (310)_t000.png
+000301_001216_Dry Rot Disease  Aug (79)_t001.png
+000302_001200_Dry Rot Disease  Aug (767)_t001.png
+000303_001744_Soft Rot Disease Aug (439)_t000.png
+000304_000419_Blackspot Bruising Disease Aug (538)_t001.png
+000305_000147_Img-122_t000.png
+000306_000015_Blackspot Bruising Disease (59)_skin_error.png
+000307_001805_Soft Rot Disease Aug (79)_t000.png
+000308_001711_Soft Rot Disease Aug (370)_t001.png
+000309_001680_Soft Rot Disease Aug (290)_t001.png
+000310_000450_Blackspot Bruising Disease Aug (622)_t000.png
+000311_001164_Dry Rot Disease  Aug (703)_t001.png
+000312_000339_Blackspot Bruising Disease Aug (376)_t000.png
+000313_000604_Brown Rot Disease  Aug (40)_t001.png
+000314_001024_Dry Rot Disease  Aug (418)_t000.png
+000315_000980_Dry Rot Disease  Aug (321)_t002.png
+000316_001158_Dry Rot Disease  Aug (694)_t001.png
+000317_000802_Dry Rot Disease  Aug (1185)_t002.png
+000318_000950_Dry Rot Disease  Aug (269)_t003.png
+000319_000822_Dry Rot Disease  Aug (1218)_t000.png
+000320_000679_Dry Rot Disease  Aug (904)_t002.png
+000321_001526_Healthy Potato Aug (527)_t002.png
+000322_000390_Blackspot Bruising Disease Aug (474)_t001.png
+000323_001419_Healthy Potato Aug (165)_t001.png
+000324_001211_Dry Rot Disease  Aug (787)_t002.png
+000325_000044_Dry Rot Disease (129)_t000.png
+000326_000420_Blackspot Bruising Disease Aug (545)_t002.png
+000327_001082_Dry Rot Disease  Aug (527)_t001.png
+000328_001368_Dry Rot Disease  Aug (246)_t002.png
+000329_001199_Dry Rot Disease  Aug (767)_t000.png
+000330_000244_Blackspot Bruising Disease Aug (113)_t000.png
+000331_001733_Soft Rot Disease Aug (422)_t001.png
+000332_000329_Blackspot Bruising Disease Aug (350)_t001.png
+000333_001550_Healthy Potato Aug (599)_t000.png
+000334_000386_Blackspot Bruising Disease Aug (468)_t000.png
+000335_001709_Soft Rot Disease Aug (368)_t001.png
+000336_000754_Dry Rot Disease  Aug (1103)_t000.png
+000337_001521_Healthy Potato Aug (508)_t001.png
+000338_000353_Blackspot Bruising Disease Aug (390)_t001.png
+000339_001008_Dry Rot Disease  Aug (390)_t001.png
+000340_000551_Blackspot Bruising Disease Aug (284)_t001.png
+000341_001853_Soft Rot Disease Aug (516)_t000.png
+000342_001214_Dry Rot Disease  Aug (789)_t001.png
+000343_001245_Dry Rot Disease  Aug (828)_t000.png
+000344_000675_Dry Rot Disease  Aug (66)_t001.png
+000345_000593_Brown Rot Disease  Aug (15)_t001.png
+000346_001184_Dry Rot Disease  Aug (750)_t001.png
+000347_001381_Dry Rot Disease  Aug (572)_t001.png
+000348_000974_Dry Rot Disease  Aug (314)_t000.png
+000349_001263_Dry Rot Disease  Aug (853)_t000.png
+000350_000771_Dry Rot Disease  Aug (1132)_t000.png
+000351_000519_Blackspot Bruising Disease Aug (756)_t002.png
+000352_000967_Dry Rot Disease  Aug (306)_t001.png
+000353_000424_Blackspot Bruising Disease Aug (552)_t000.png
+000354_000282_Blackspot Bruising Disease Aug (225)_t000.png
+000355_000071_Dry Rot Disease (68)_t001.png
+000356_001664_Soft Rot Disease Aug (257)_t000.png
+000357_000520_Blackspot Bruising Disease Aug (757)_t000.png
+000358_001420_Healthy Potato Aug (175)_t000.png
+000359_000195_Img-545_t000.png
+000360_001281_Dry Rot Disease  Aug (872)_t000.png
+000361_001447_Healthy Potato Aug (254)_t000.png
+000362_001009_Dry Rot Disease  Aug (391)_t000.png
+000363_000467_Blackspot Bruising Disease Aug (656)_t000.png
+000364_000249_Blackspot Bruising Disease Aug (127)_t000.png
+000365_000483_Blackspot Bruising Disease Aug (685)_t000.png
+000366_001859_726_t000.png
+000367_000425_Blackspot Bruising Disease Aug (555)_t000.png
+000368_000279_Blackspot Bruising Disease Aug (218)_t000.png
+000369_000722_Dry Rot Disease  Aug (1062)_t000.png
+000370_001391_Dry Rot Disease  Aug (827)_t001.png
+000371_000898_Dry Rot Disease  Aug (176)_t000.png
+000372_000733_Dry Rot Disease  Aug (1078)_t001.png
+000373_001063_Dry Rot Disease  Aug (498)_t000.png
+000374_000157_Img-1328_t000.png
+000375_000874_Dry Rot Disease  Aug (1294)_t000.png
+000376_001515_Healthy Potato Aug (496)_t000.png
+000377_001023_Dry Rot Disease  Aug (416)_t002.png
+000378_000960_Dry Rot Disease  Aug (289)_t001.png
+000379_001386_Dry Rot Disease  Aug (674)_t000.png
+000380_000095_Dry Rot Disease (124)_t000.png
+000381_000417_Blackspot Bruising Disease Aug (535)_t000.png
+000382_001530_Healthy Potato Aug (543)_t000.png
+000383_000991_Dry Rot Disease  Aug (353)_t000.png
+000384_000564_Blackspot Bruising Disease Aug (497)_t002.png
+000385_001609_Soft Rot Disease Aug (122)_t000.png
+000386_000162_Img-1426_t000.png
+000387_001255_Dry Rot Disease  Aug (843)_t001.png
+000388_000909_Dry Rot Disease  Aug (197)_t000.png
+000389_000623_Brown Rot Disease  Aug (72)_t000.png
+000390_000645_Dry Rot Disease  Aug (119)_t000.png
+000391_000029_Healthy Potato (98)_t000_error.png
+000392_001553_Healthy Potato Aug (616)_t000.png
+000393_000496_Blackspot Bruising Disease Aug (705)_t000.png
+000394_000715_Dry Rot Disease  Aug (1048)_t000.png
+000395_001746_Soft Rot Disease Aug (447)_t001.png
+000396_000294_Blackspot Bruising Disease Aug (260)_t000.png
+000397_000134_Img-1116_t000.png
+000398_001202_Dry Rot Disease  Aug (771)_t002.png
+000399_001315_Dry Rot Disease  Aug (940)_t001.png
+000400_001097_Dry Rot Disease  Aug (572)_t002.png
+000401_000965_Dry Rot Disease  Aug (304)_t000.png
+000402_001848_Soft Rot Disease Aug (393)_t001.png
+000403_001296_Dry Rot Disease  Aug (893)_t000.png
+000404_001224_Dry Rot Disease  Aug (80)_t000.png
+000405_001475_Healthy Potato Aug (356)_t000.png
+000406_001194_Dry Rot Disease  Aug (76)_t001.png
+000407_000370_Blackspot Bruising Disease Aug (424)_t001.png
+000408_001208_Dry Rot Disease  Aug (782)_t000.png
+000409_000192_Img-516_t000.png
+000410_001856_Soft Rot Disease Aug (61)_t002.png
+000411_001240_Dry Rot Disease  Aug (822)_t002.png
+000412_001190_Dry Rot Disease  Aug (759)_t000.png
+000413_000555_Blackspot Bruising Disease Aug (35)_t001.png
+000414_000673_Dry Rot Disease  Aug (494)_t000.png
+000415_001643_Soft Rot Disease Aug (210)_t002.png
+000416_000526_Blackspot Bruising Disease Aug (763)_t000.png
+000417_000413_Blackspot Bruising Disease Aug (526)_t000.png
+000418_001634_Soft Rot Disease Aug (199)_t000.png
+000419_000331_Blackspot Bruising Disease Aug (352)_t001.png
+000420_000964_Dry Rot Disease  Aug (302)_t000.png
+000421_001485_Healthy Potato Aug (389)_t000.png
+000422_001303_Dry Rot Disease  Aug (907)_t000.png
+000423_000465_Blackspot Bruising Disease Aug (649)_t000.png
+000424_000037_Dry Rot Disease (103)_t000.png
+000425_001855_Soft Rot Disease Aug (556)_t001.png
+000426_001084_Dry Rot Disease  Aug (533)_t001.png
+000427_001154_Dry Rot Disease  Aug (690)_t000.png
+000428_001324_Dry Rot Disease  Aug (958)_t001.png
+000429_001085_Dry Rot Disease  Aug (535)_t000.png
+000430_001597_Healthy Potato Aug (96)_t001.png
+000431_000710_Dry Rot Disease  Aug (1040)_t000.png
+000432_000421_Blackspot Bruising Disease Aug (546)_t001.png
+000433_001514_Healthy Potato Aug (494)_t000.png
+000434_001482_Healthy Potato Aug (380)_t000.png
+000435_000107_Dry Rot Disease (61)_t000.png
+000436_001254_Dry Rot Disease  Aug (843)_t000.png
+000437_000328_Blackspot Bruising Disease Aug (350)_t000.png
+000438_000341_Blackspot Bruising Disease Aug (377)_t001.png
+000439_000903_Dry Rot Disease  Aug (183)_t000.png
+000440_001278_Dry Rot Disease  Aug (870)_t000.png
+000441_001695_Soft Rot Disease Aug (337)_t000.png
+000442_000838_Dry Rot Disease  Aug (1240)_t002.png
+000443_001820_Soft Rot Disease Aug (134)_t001.png
+000444_000650_Dry Rot Disease  Aug (1237)_t001.png
+000445_001113_Dry Rot Disease  Aug (595)_t000.png
+000446_000599_Brown Rot Disease  Aug (30)_t000.png
+000447_000185_Img-418_t000.png
+000448_000284_Blackspot Bruising Disease Aug (227)_t000.png
+000449_000452_Blackspot Bruising Disease Aug (624)_t000.png
+000450_000667_Dry Rot Disease  Aug (357)_t000.png
+000451_000531_Blackspot Bruising Disease Aug (9)_t000.png
+000452_000899_Dry Rot Disease  Aug (176)_t001.png
+000453_000179_Img-26_t000.png
+000454_000774_Dry Rot Disease  Aug (1135)_t002.png
+000455_001041_Dry Rot Disease  Aug (458)_t000.png
+000456_001119_Dry Rot Disease  Aug (612)_t000.png
+000457_001181_Dry Rot Disease  Aug (741)_t000.png
+000458_001417_Healthy Potato Aug (160)_t000.png
+000459_001062_Dry Rot Disease  Aug (497)_t001.png
+000460_001465_Healthy Potato Aug (292)_t000.png
+000461_000021_Blackspot Bruising Disease (75)_t000_error.png
+000462_001669_Soft Rot Disease Aug (27)_t000.png
+000463_000589_Brown Rot Disease  Aug (103)_t002.png
+000464_000690_Dry Rot Disease  Aug (1002)_t001.png
+000465_001108_Dry Rot Disease  Aug (590)_t000.png
+000466_001781_Soft Rot Disease Aug (522)_t002.png
+000467_000026_Blackspot Bruising Disease (84)_t001_skin_error.png
+000468_000256_Blackspot Bruising Disease Aug (145)_t001.png
+000469_000618_Brown Rot Disease  Aug (60)_t000.png
+000470_001389_Dry Rot Disease  Aug (702)_t000.png
+000471_000752_Dry Rot Disease  Aug (1100)_t000.png
+000472_000442_Blackspot Bruising Disease Aug (599)_t001.png
+000473_001175_Dry Rot Disease  Aug (728)_t002.png
+000474_000612_Brown Rot Disease  Aug (56)_t000.png
+000475_001123_Dry Rot Disease  Aug (62)_t001.png
+000476_001230_Dry Rot Disease  Aug (810)_t000.png
+000477_001715_Soft Rot Disease Aug (380)_t000.png
+000478_001747_Soft Rot Disease Aug (448)_t000.png
+000479_000512_Blackspot Bruising Disease Aug (738)_t000.png
+000480_000278_Blackspot Bruising Disease Aug (217)_t000.png
+000481_000412_Blackspot Bruising Disease Aug (516)_t001.png
+000482_001126_Dry Rot Disease  Aug (623)_t001.png
+000483_001749_Soft Rot Disease Aug (449)_t001.png
+000484_000901_Dry Rot Disease  Aug (181)_t000.png
+000485_000479_Blackspot Bruising Disease Aug (679)_t000.png
+000486_001179_Dry Rot Disease  Aug (74)_t000.png
+000487_001163_Dry Rot Disease  Aug (70)_t000.png
+000488_000895_Dry Rot Disease  Aug (166)_t000.png
+000489_001066_Dry Rot Disease  Aug (503)_t000.png
+000490_001503_Healthy Potato Aug (452)_t000.png
+000491_000766_Dry Rot Disease  Aug (1120)_t001.png
+000492_000609_Brown Rot Disease  Aug (51)_t000.png
+000493_000314_Blackspot Bruising Disease Aug (312)_t000.png
+000494_000811_Dry Rot Disease  Aug (1198)_t000.png
+000495_000169_Img-15_t000.png
+000496_001844_Soft Rot Disease Aug (320)_t002.png
+000497_001551_Healthy Potato Aug (607)_t000.png
+000498_001578_Healthy Potato Aug (706)_t000.png
+000499_000846_Dry Rot Disease  Aug (1254)_t000.png
+000500_000272_Blackspot Bruising Disease Aug (20)_t000.png
+000501_000949_Dry Rot Disease  Aug (269)_t001.png
+000502_001641_Soft Rot Disease Aug (21)_t000.png
+000503_000230_Img-330_t000.png
+000504_001411_Healthy Potato Aug (133)_t000.png
+000505_001545_Healthy Potato Aug (589)_t000.png
+000506_001724_Soft Rot Disease Aug (394)_t003.png
+000507_000202_Img-730_t000.png
+000508_000823_Dry Rot Disease  Aug (122)_t000.png
+000509_001487_Healthy Potato Aug (391)_t000.png
+000510_001042_Dry Rot Disease  Aug (459)_t000.png
+000511_000915_Dry Rot Disease  Aug (205)_t001.png
+000512_001454_Healthy Potato Aug (267)_t001.png
+000513_001150_Dry Rot Disease  Aug (675)_t003.png
+000514_001212_Dry Rot Disease  Aug (788)_t001.png
+000515_000239_Blackspot Bruising Disease Aug (103)_t001.png
+000516_000703_Dry Rot Disease  Aug (1026)_t000.png
+000517_000072_Dry Rot Disease (69)_t001.png
+000518_000464_Blackspot Bruising Disease Aug (647)_t002.png
+000519_000927_Dry Rot Disease  Aug (229)_t001.png
+000520_001329_Dry Rot Disease  Aug (962)_t000.png
+000521_001004_Dry Rot Disease  Aug (376)_t000.png
+000522_000723_Dry Rot Disease  Aug (1062)_t002.png
+000523_000295_Blackspot Bruising Disease Aug (266)_t001.png
+000524_000237_Blackspot Bruising Disease Aug (102)_t001.png
+000525_000033_Brown Rot Disease (6)_t001_skin_error.png
+000526_000298_Blackspot Bruising Disease Aug (277)_t000.png
+000527_001506_Healthy Potato Aug (466)_t001.png
+000528_000608_Brown Rot Disease  Aug (48)_t001.png
+000529_000705_Dry Rot Disease  Aug (103)_t000.png
+000530_001504_Healthy Potato Aug (461)_t000.png
+000531_001459_Healthy Potato Aug (273)_t000.png
+000532_000002_Blackspot Bruising Disease (25)_t000_skin_error.png
+000533_000910_Dry Rot Disease  Aug (199)_t000.png
+000534_000076_Dry Rot Disease (76)_t000.png
+000535_001051_Dry Rot Disease  Aug (478)_t001.png
+000536_001076_Dry Rot Disease  Aug (518)_t001.png
+000537_001474_Healthy Potato Aug (355)_t000.png
+000538_000160_Img-1391_t000.png
+000539_000083_Dry Rot Disease (94)_t000.png
+000540_001294_Dry Rot Disease  Aug (890)_t000.png
+000541_001570_Healthy Potato Aug (659)_t000.png
+000542_001424_Healthy Potato Aug (192)_t000.png
+000543_000640_Dry Rot Disease  Aug (1112)_t001.png
+000544_001418_Healthy Potato Aug (162)_t001.png
+000545_001687_Soft Rot Disease Aug (305)_t001.png
+000546_000101_Dry Rot Disease (184)_t001.png
+000547_000757_Dry Rot Disease  Aug (1110)_t001.png
+000548_000624_Brown Rot Disease  Aug (80)_t000.png
+000549_001841_Soft Rot Disease Aug (312)_t001.png
+000550_001251_Dry Rot Disease  Aug (836)_t000.png
+000551_000582_Blackspot Bruising Disease Aug (761)_t000.png
+000552_001663_Soft Rot Disease Aug (254)_t003.png
+000553_000439_Blackspot Bruising Disease Aug (591)_t000.png
+000554_001289_Dry Rot Disease  Aug (883)_t000.png
+000555_001468_Healthy Potato Aug (318)_t001.png
+000556_000304_Blackspot Bruising Disease Aug (293)_t000.png
+000557_001037_Dry Rot Disease  Aug (450)_t000.png
+000558_000930_Dry Rot Disease  Aug (234)_t000.png
+000559_000461_Blackspot Bruising Disease Aug (645)_t000.png
+000560_001305_Dry Rot Disease  Aug (909)_t000.png
+000561_000535_Blackspot Bruising Disease Aug (104)_t001.png
+000562_000794_Dry Rot Disease  Aug (1169)_t000.png
+000563_000231_Img-341_t000.png
+000564_001288_Dry Rot Disease  Aug (882)_t000.png
+000565_000809_Dry Rot Disease  Aug (1195)_t002.png
+000566_000610_Brown Rot Disease  Aug (52)_t000.png
+000567_000620_Brown Rot Disease  Aug (60)_t002.png
+000568_000426_Blackspot Bruising Disease Aug (565)_t000.png
+000569_000782_Dry Rot Disease  Aug (1151)_t001.png
+000570_001738_Soft Rot Disease Aug (43)_t000.png
+000571_000121_Soft Rot Disease (58)_t000.png
+000572_000254_Blackspot Bruising Disease Aug (142)_t001.png
+000573_000087_Dry Rot Disease (98)_t000.png
+000574_000311_Blackspot Bruising Disease Aug (301)_t000.png
+000575_000576_Blackspot Bruising Disease Aug (70)_t002.png
+000576_000830_Dry Rot Disease  Aug (1230)_t000.png
+000577_000152_Img-127_t000.png
+000578_001676_Soft Rot Disease Aug (282)_t000.png
+000579_001835_Soft Rot Disease Aug (210)_t003.png
+000580_001407_Healthy Potato Aug (123)_t000.png
+000581_001725_Soft Rot Disease Aug (398)_t000.png
+000582_000590_Brown Rot Disease  Aug (104)_t000.png
+000583_000075_Dry Rot Disease (74)_t000.png
+000584_000503_Blackspot Bruising Disease Aug (723)_t001.png
+000585_000410_Blackspot Bruising Disease Aug (513)_t000.png
+000586_000066_Dry Rot Disease (48)_t000.png
+000587_001555_Healthy Potato Aug (621)_t000.png
+000588_001484_Healthy Potato Aug (387)_t000.png
+000589_001203_Dry Rot Disease  Aug (773)_t000.png
+000590_001558_Healthy Potato Aug (632)_t000.png
+000591_001792_Soft Rot Disease Aug (551)_t000.png
+000592_001829_Soft Rot Disease Aug (170)_t000.png
+000593_001128_Dry Rot Disease  Aug (628)_t000.png
+000594_000188_Img-453_t000.png
+000595_000348_Blackspot Bruising Disease Aug (384)_t000.png
+000596_001293_Dry Rot Disease  Aug (89)_t000.png
+000597_001635_Soft Rot Disease Aug (20)_t000.png
+000598_001198_Dry Rot Disease  Aug (766)_t001.png
+000599_000291_Blackspot Bruising Disease Aug (25)_t000.png
+000600_001270_Dry Rot Disease  Aug (863)_t000.png
+000601_001172_Dry Rot Disease  Aug (722)_t000.png
+000602_001302_Dry Rot Disease  Aug (904)_t000.png
+000603_000105_Dry Rot Disease (51)_t001.png
+000604_001069_Dry Rot Disease  Aug (507)_t001.png
+000605_000770_Dry Rot Disease  Aug (1127)_t001.png
+000606_001314_Dry Rot Disease  Aug (939)_t000.png
+000607_000653_Dry Rot Disease  Aug (170)_t001.png
+000608_000988_Dry Rot Disease  Aug (349)_t000.png
+000609_000966_Dry Rot Disease  Aug (305)_t001.png
+000610_001435_Healthy Potato Aug (222)_t000.png
+000611_000299_Blackspot Bruising Disease Aug (277)_t001.png
+000612_001677_Soft Rot Disease Aug (283)_t000.png
+000613_001713_Soft Rot Disease Aug (372)_t000.png
+000614_000046_Dry Rot Disease (14)_t000.png
+000615_000280_Blackspot Bruising Disease Aug (219)_t001.png
+000616_000129_Img-101_t000.png
+000617_001559_Healthy Potato Aug (633)_t000.png
+000618_001626_Soft Rot Disease Aug (16)_t002.png
+000619_001587_Healthy Potato Aug (73)_t001.png
+000620_000309_Blackspot Bruising Disease Aug (299)_t001.png
+000621_000183_Img-33_t000.png
+000622_000369_Blackspot Bruising Disease Aug (422)_t001.png
+000623_000232_Img-368_t000.png
+000624_001452_Healthy Potato Aug (260)_t000.png
+000625_001660_Soft Rot Disease Aug (250)_t000.png
+000626_000852_Dry Rot Disease  Aug (1261)_t000.png
+000627_001143_Dry Rot Disease  Aug (662)_t000.png
+000628_000289_Blackspot Bruising Disease Aug (244)_t001.png
+000629_001170_Dry Rot Disease  Aug (72)_t000.png
+000630_000537_Blackspot Bruising Disease Aug (160)_t001.png
+000631_001772_Soft Rot Disease Aug (509)_t000.png
+000632_001045_Dry Rot Disease  Aug (469)_t000.png
+000633_000603_Brown Rot Disease  Aug (39)_t000.png
+000634_001081_Dry Rot Disease  Aug (527)_t000.png
+000635_001377_Dry Rot Disease  Aug (475)_t003.png
+000636_000495_Blackspot Bruising Disease Aug (701)_t002.png
+000637_001378_Dry Rot Disease  Aug (480)_t001.png
+000638_001105_Dry Rot Disease  Aug (585)_t000.png
+000639_000196_Img-580_t001.png
+000640_001759_Soft Rot Disease Aug (478)_t000.png
+000641_000706_Dry Rot Disease  Aug (103)_t001.png
+000642_000780_Dry Rot Disease  Aug (1150)_t000.png
+000643_001244_Dry Rot Disease  Aug (827)_t000.png
+000644_001730_Soft Rot Disease Aug (412)_t000.png
+000645_000760_Dry Rot Disease  Aug (1116)_t000.png
+000646_000122_Soft Rot Disease (6)_t001.png
+000647_001430_Healthy Potato Aug (210)_t000.png
+000648_000197_Img-593_t000.png
+000649_000738_Dry Rot Disease  Aug (1081)_t000.png
+000650_000123_Soft Rot Disease (63)_t001.png
+000651_000472_Blackspot Bruising Disease Aug (662)_t000.png
+000652_001401_Healthy Potato Aug (100)_t000.png
+000653_001837_Soft Rot Disease Aug (235)_t000.png
+000654_000554_Blackspot Bruising Disease Aug (334)_t001.png
+000655_001666_Soft Rot Disease Aug (26)_t000.png
+000656_001171_Dry Rot Disease  Aug (721)_t000.png
+000657_001183_Dry Rot Disease  Aug (746)_t000.png
+000658_000871_Dry Rot Disease  Aug (1290)_t001.png
+000659_001803_Soft Rot Disease Aug (69)_t001.png
+000660_001115_Dry Rot Disease  Aug (605)_t000.png
+000661_001610_Soft Rot Disease Aug (125)_t000.png
+000662_000627_Brown Rot Disease  Aug (87)_t000.png
+000663_000498_Blackspot Bruising Disease Aug (712)_t001.png
+000664_001156_Dry Rot Disease  Aug (693)_t000.png
+000665_000453_Blackspot Bruising Disease Aug (629)_t000.png
+000666_000602_Brown Rot Disease  Aug (38)_t000.png
+000667_000190_Img-488_t000.png
+000668_000035_Dry Rot Disease (17)_t000.png
+000669_000917_Dry Rot Disease  Aug (21)_t000.png
+000670_001005_Dry Rot Disease  Aug (377)_t000.png
+000671_000975_Dry Rot Disease  Aug (319)_t000.png
+000672_000492_Blackspot Bruising Disease Aug (70)_t000.png
+000673_001742_Soft Rot Disease Aug (436)_t000.png
+000674_001361_Dry Rot Disease  Aug (174)_t001.png
+000675_000494_Blackspot Bruising Disease Aug (701)_t001.png
+000676_001630_Soft Rot Disease Aug (19)_t000.png
+000677_000391_Blackspot Bruising Disease Aug (476)_t001.png
+000678_000020_Blackspot Bruising Disease (73)_t001_skinerror.png
+000679_000565_Blackspot Bruising Disease Aug (52)_t001.png
+000680_000572_Blackspot Bruising Disease Aug (677)_t000.png
+000681_000697_Dry Rot Disease  Aug (1013)_t002.png
+000682_000529_Blackspot Bruising Disease Aug (83)_t000.png
+000683_000726_Dry Rot Disease  Aug (1065)_t001.png
+000684_000434_Blackspot Bruising Disease Aug (578)_t001.png
+000685_000998_Dry Rot Disease  Aug (370)_t001.png
+000686_001479_Healthy Potato Aug (37)_t000.png
+000687_000665_Dry Rot Disease  Aug (342)_t001.png
+000688_001237_Dry Rot Disease  Aug (82)_t001.png
+000689_000058_Dry Rot Disease (21)_t000.png
+000690_001463_Healthy Potato Aug (288)_t000.png
+000691_001283_Dry Rot Disease  Aug (873)_t000.png
+000692_001686_Soft Rot Disease Aug (300)_t001.png
+000693_001235_Dry Rot Disease  Aug (816)_t001.png
+000694_000923_Dry Rot Disease  Aug (223)_t000.png
+000695_001603_Soft Rot Disease Aug (104)_t001.png
+000696_000177_Img-213_t000.png
+000697_000502_Blackspot Bruising Disease Aug (721)_t000.png
+000698_000660_Dry Rot Disease  Aug (238)_t000.png
+000699_000549_Blackspot Bruising Disease Aug (243)_t002.png
+000700_001632_Soft Rot Disease Aug (196)_t002.png
+000701_001428_Healthy Potato Aug (206)_t001.png
+000702_000990_Dry Rot Disease  Aug (352)_t001.png
+000703_000553_Blackspot Bruising Disease Aug (31)_t000.png
+000704_001068_Dry Rot Disease  Aug (505)_t000.png
+000705_001229_Dry Rot Disease  Aug (81)_t000.png
+000706_000891_Dry Rot Disease  Aug (160)_t000.png
+000707_001819_Soft Rot Disease Aug (132)_t001.png
+000708_000941_Dry Rot Disease  Aug (253)_t000.png
+000709_001705_Soft Rot Disease Aug (359)_t000.png
+000710_000887_Dry Rot Disease  Aug (156)_t001.png
+000711_000216_Img-866_t000.png
+000712_001003_Dry Rot Disease  Aug (374)_t001.png
+000713_001177_Dry Rot Disease  Aug (734)_t001.png
+000714_000025_Blackspot Bruising Disease (80)_t000_error.png
+000715_000698_Dry Rot Disease  Aug (1019)_t000.png
+000716_001438_Healthy Potato Aug (233)_t000.png
+000717_001627_Soft Rot Disease Aug (168)_t001.png
+000718_001765_Soft Rot Disease Aug (490)_t000.png
+000719_001147_Dry Rot Disease  Aug (674)_t001.png
+000720_001091_Dry Rot Disease  Aug (558)_t000.png
+000721_000711_Dry Rot Disease  Aug (1041)_t000.png
+000722_000084_Dry Rot Disease (94)_t001.png
+000723_001598_Healthy Potato Aug (98)_t000.png
+000724_000617_Brown Rot Disease  Aug (59)_t001.png
+000725_000208_Img-792_t000.png
+000726_001565_Healthy Potato Aug (645)_t001.png
+000727_000155_Img-1317_t000.png
+000728_000406_Blackspot Bruising Disease Aug (504)_t000.png
+000729_000812_Dry Rot Disease  Aug (1199)_t000.png
+000730_000768_Dry Rot Disease  Aug (1123)_t000.png
+000731_001606_Soft Rot Disease Aug (11)_t000.png
+000732_000052_Dry Rot Disease (149)_t000.png
+000733_001347_Dry Rot Disease  Aug (992)_t003.png
+000734_000637_Dry Rot Disease  Aug (1062)_t001.png
+000735_000335_Blackspot Bruising Disease Aug (366)_t000.png
+000736_001114_Dry Rot Disease  Aug (60)_t000.png
+000737_000343_Blackspot Bruising Disease Aug (379)_t001.png
+000738_000755_Dry Rot Disease  Aug (1103)_t002.png
+000739_000524_Blackspot Bruising Disease Aug (761)_t003.png
+000740_001264_Dry Rot Disease  Aug (853)_t001.png
+000741_000446_Blackspot Bruising Disease Aug (611)_t001.png
+000742_001678_Soft Rot Disease Aug (283)_t001.png
+000743_001259_Dry Rot Disease  Aug (85)_t000.png
+000744_000258_Blackspot Bruising Disease Aug (16)_t000.png
+000745_001456_Healthy Potato Aug (268)_t002.png
+000746_001188_Dry Rot Disease  Aug (757)_t000.png
+000747_000041_Dry Rot Disease (111)_t000.png
+000748_001723_Soft Rot Disease Aug (394)_t001.png
+000749_001207_Dry Rot Disease  Aug (78)_t000.png
+000750_000063_Dry Rot Disease (38)_t000.png
+000751_000082_Dry Rot Disease (91)_t000.png
+000752_001434_Healthy Potato Aug (219)_t000.png
+000753_000459_Blackspot Bruising Disease Aug (642)_t000.png
+000754_001340_Dry Rot Disease  Aug (983)_t000.png
+000755_000106_Dry Rot Disease (60)_t000.png
+000756_001571_Healthy Potato Aug (66)_t000.png
+000757_001639_Soft Rot Disease Aug (208)_t000.png
+000758_001344_Dry Rot Disease  Aug (990)_t000.png
+000759_001467_Healthy Potato Aug (305)_t000.png
+000760_000516_Blackspot Bruising Disease Aug (750)_t000.png
+000761_000863_Dry Rot Disease  Aug (1280)_t000.png
+000762_001771_Soft Rot Disease Aug (508)_t000.png
+000763_001225_Dry Rot Disease  Aug (801)_t000.png
+000764_000691_Dry Rot Disease  Aug (1003)_t000.png
+000765_000669_Dry Rot Disease  Aug (381)_t000.png
+000766_001509_Healthy Potato Aug (474)_t000.png
+000767_001613_Soft Rot Disease Aug (130)_t000.png
+000768_000670_Dry Rot Disease  Aug (426)_t002.png
+000769_001279_Dry Rot Disease  Aug (871)_t000.png
+000770_000532_Blackspot Bruising Disease Aug (90)_t000.png
+000771_001642_Soft Rot Disease Aug (210)_t000.png
+000772_000372_Blackspot Bruising Disease Aug (431)_t001.png
+000773_000945_Dry Rot Disease  Aug (263)_t000.png
+000774_000277_Blackspot Bruising Disease Aug (214)_t001.png
+000775_001768_Soft Rot Disease Aug (50)_t001.png
+000776_000171_Img-166_t000.png
+000777_001151_Dry Rot Disease  Aug (678)_t001.png
+000778_000806_Dry Rot Disease  Aug (1190)_t000.png
+000779_000055_Dry Rot Disease (181)_t001.png
+000780_001753_Soft Rot Disease Aug (456)_t000.png
+000781_001373_Dry Rot Disease  Aug (426)_t000.png
+000782_000957_Dry Rot Disease  Aug (286)_t000.png
+000783_001618_Soft Rot Disease Aug (142)_t000.png
+000784_000828_Dry Rot Disease  Aug (1227)_t000.png
+000785_000688_Dry Rot Disease  Aug (1001)_t000.png
+000786_000796_Dry Rot Disease  Aug (1173)_t000.png
+000787_000059_Dry Rot Disease (27)_t000.png
+000788_001519_Healthy Potato Aug (500)_t001.png
+000789_000892_Dry Rot Disease  Aug (160)_t001.png
+000790_000558_Blackspot Bruising Disease Aug (361)_t002.png
+000791_001704_Soft Rot Disease Aug (357)_t000.png
+000792_000999_Dry Rot Disease  Aug (372)_t000.png
+000793_001588_Healthy Potato Aug (732)_t001.png
+000794_001118_Dry Rot Disease  Aug (61)_t002.png
+000795_001398_Dry Rot Disease  Aug (988)_t001.png
+000796_001832_Soft Rot Disease Aug (191)_t001.png
+000797_000798_Dry Rot Disease  Aug (1179)_t000.png
+000798_001655_Soft Rot Disease Aug (24)_t001.png
+000799_000720_Dry Rot Disease  Aug (1056)_t000.png
+000800_000012_Blackspot Bruising Disease (53)_t000_skin_error.png
+000801_001488_Healthy Potato Aug (392)_t001.png
+000802_000779_Dry Rot Disease  Aug (1148)_t000.png
+000803_000040_Dry Rot Disease (11)_t000.png
+000804_000797_Dry Rot Disease  Aug (1176)_t000.png
+000805_000860_Dry Rot Disease  Aug (1276)_t001.png
+000806_000423_Blackspot Bruising Disease Aug (55)_t001.png
+000807_000127_Soft Rot Disease (16)_t002.png
+000808_000851_Dry Rot Disease  Aug (1259)_t002.png
+000809_000954_Dry Rot Disease  Aug (278)_t000.png
+000810_001111_Dry Rot Disease  Aug (593)_t000.png
+000811_000677_Dry Rot Disease  Aug (801)_t001.png
+000812_000834_Dry Rot Disease  Aug (1237)_t000.png
+000813_000849_Dry Rot Disease  Aug (1256)_t000.png
+000814_001595_Healthy Potato Aug (91)_t000.png
+000815_001572_Healthy Potato Aug (681)_t000.png
+000816_000312_Blackspot Bruising Disease Aug (305)_t000.png
+000817_000784_Dry Rot Disease  Aug (1154)_t000.png
+000818_000473_Blackspot Bruising Disease Aug (665)_t001.png
+000819_000308_Blackspot Bruising Disease Aug (297)_t001.png
+000820_001703_Soft Rot Disease Aug (353)_t001.png
+000821_000165_Img-1466_t000.png
+000822_001106_Dry Rot Disease  Aug (587)_t000.png
+000823_000654_Dry Rot Disease  Aug (181)_t001.png
+000824_000687_Dry Rot Disease  Aug (1000)_t000.png
+000825_000556_Blackspot Bruising Disease Aug (355)_t001.png
+000826_000480_Blackspot Bruising Disease Aug (681)_t001.png
+000827_000585_Brown Rot Disease  Aug (1)_t000.png
+000828_000158_Img-1350_t000.png
+000829_000900_Dry Rot Disease  Aug (180)_t001.png
+000830_000562_Blackspot Bruising Disease Aug (47)_t002.png
+000831_000489_Blackspot Bruising Disease Aug (698)_t000.png
+000832_000992_Dry Rot Disease  Aug (354)_t000.png
+000833_001067_Dry Rot Disease  Aug (504)_t001.png
+000834_000567_Blackspot Bruising Disease Aug (530)_t002.png
+000835_000506_Blackspot Bruising Disease Aug (729)_t000.png
+000836_000530_Blackspot Bruising Disease Aug (86)_t000.png
+000837_000921_Dry Rot Disease  Aug (22)_t000.png
+000838_000972_Dry Rot Disease  Aug (313)_t000.png
+000839_000325_Blackspot Bruising Disease Aug (342)_t000.png
+000840_000913_Dry Rot Disease  Aug (20)_t000.png
+000841_001273_Dry Rot Disease  Aug (868)_t000.png
+000842_000873_Dry Rot Disease  Aug (1292)_t001.png
+000843_001033_Dry Rot Disease  Aug (437)_t001.png
+000844_000906_Dry Rot Disease  Aug (187)_t000.png
+000845_000649_Dry Rot Disease  Aug (1232)_t002.png
+000846_001144_Dry Rot Disease  Aug (663)_t000.png
+000847_001486_Healthy Potato Aug (39)_t000.png
+000848_001227_Dry Rot Disease  Aug (804)_t000.png
+000849_000273_Blackspot Bruising Disease Aug (202)_t000.png
+000850_000934_Dry Rot Disease  Aug (242)_t001.png
+000851_000248_Blackspot Bruising Disease Aug (126)_t000.png
+000852_000510_Blackspot Bruising Disease Aug (736)_t000.png
+000853_001141_Dry Rot Disease  Aug (654)_t002.png
+000854_001490_Healthy Potato Aug (401)_t000.png
+000855_000951_Dry Rot Disease  Aug (273)_t000.png
+000856_001060_Dry Rot Disease  Aug (493)_t001.png
+000857_000360_Blackspot Bruising Disease Aug (399)_t000.png
+000858_000448_Blackspot Bruising Disease Aug (617)_t000.png
+000859_000870_Dry Rot Disease  Aug (1288)_t000.png
+000860_000218_Img-890_t000.png
+000861_000011_Blackspot Bruising Disease (47)_t000_skin_error.png
+000862_000302_Blackspot Bruising Disease Aug (284)_t000.png
+000863_000499_Blackspot Bruising Disease Aug (716)_t000.png
+000864_001326_Dry Rot Disease  Aug (96)_t000.png
+000865_001012_Dry Rot Disease  Aug (40)_t000.png
+000866_000786_Dry Rot Disease  Aug (1160)_t001.png
+000867_000398_Blackspot Bruising Disease Aug (486)_t000.png
+000868_001178_Dry Rot Disease  Aug (739)_t000.png
+000869_000848_Dry Rot Disease  Aug (1255)_t000.png
+000870_000932_Dry Rot Disease  Aug (240)_t000.png
+000871_000149_Img-1242_t000.png
+000872_001620_Soft Rot Disease Aug (149)_t000.png
+000873_001775_Soft Rot Disease Aug (512)_t002.png
+000874_000094_Dry Rot Disease (117)_t003.png
+000875_001822_Soft Rot Disease Aug (144)_t001.png
+000876_000301_Blackspot Bruising Disease Aug (281)_t001.png
+000877_001651_Soft Rot Disease Aug (229)_t001.png
+000878_001596_Healthy Potato Aug (95)_t000.png
+000879_000635_Brown Rot Disease  Aug (8)_t000.png
+000880_001679_Soft Rot Disease Aug (284)_t001.png
+000881_001523_Healthy Potato Aug (518)_t000.png
+000882_000686_Dry Rot Disease  Aug (1)_t001.png
+000883_001055_Dry Rot Disease  Aug (483)_t001.png
+000884_000581_Blackspot Bruising Disease Aug (743)_t001.png
+000885_000173_Img-190_t000.png
+000886_000347_Blackspot Bruising Disease Aug (383)_t001.png
+000887_000969_Dry Rot Disease  Aug (309)_t000.png
+000888_001046_Dry Rot Disease  Aug (47)_t000.png
+000889_001517_Healthy Potato Aug (5)_t000.png
+000890_000905_Dry Rot Disease  Aug (185)_t002.png
+000891_001388_Dry Rot Disease  Aug (691)_t000.png
+000892_000952_Dry Rot Disease  Aug (273)_t002.png
+000893_000659_Dry Rot Disease  Aug (234)_t004.png
+000894_001615_Soft Rot Disease Aug (132)_t000.png
+000895_001187_Dry Rot Disease  Aug (756)_t001.png
+000896_001374_Dry Rot Disease  Aug (429)_t001.png
+000897_001422_Healthy Potato Aug (177)_t000.png
+000898_000587_Brown Rot Disease  Aug (101)_t000.png
+000899_000622_Brown Rot Disease  Aug (68)_t000.png
+000900_000000_IMG_20231105_140602_t000_error.png
+000901_001122_Dry Rot Disease  Aug (617)_t000.png
+000902_000831_Dry Rot Disease  Aug (1231)_t001.png
+000903_000616_Brown Rot Disease  Aug (59)_t000.png
+000904_001165_Dry Rot Disease  Aug (704)_t000.png
+000905_001260_Dry Rot Disease  Aug (85)_t001.png
+000906_000356_Blackspot Bruising Disease Aug (392)_t000.png
+000907_001513_Healthy Potato Aug (493)_t000.png
+000908_000861_Dry Rot Disease  Aug (1277)_t000.png
+000909_001541_Healthy Potato Aug (584)_t000.png
+000910_000260_Blackspot Bruising Disease Aug (166)_t000.png
+000911_001421_Healthy Potato Aug (176)_t001.png
+000912_000605_Brown Rot Disease  Aug (40)_t002.png
+000913_001611_Soft Rot Disease Aug (126)_t000.png
+000914_000668_Dry Rot Disease  Aug (357)_t001.png
+000915_000836_Dry Rot Disease  Aug (1238)_t001.png
+000916_000633_Brown Rot Disease  Aug (99)_t001.png
+000917_001038_Dry Rot Disease  Aug (450)_t001.png
+000918_000615_Brown Rot Disease  Aug (58)_t001.png
+000919_001795_Soft Rot Disease Aug (559)_t000.png
+000920_001672_Soft Rot Disease Aug (275)_t000.png
+000921_001276_Dry Rot Disease  Aug (87)_t002.png
+000922_001579_Healthy Potato Aug (71)_t000.png
+000923_000143_Img-120_t000.png
+000924_000883_Dry Rot Disease  Aug (142)_t001.png
+000925_000745_Dry Rot Disease  Aug (1092)_t002.png
+000926_000403_Blackspot Bruising Disease Aug (495)_t000.png
+000927_001102_Dry Rot Disease  Aug (58)_t001.png
+000928_001064_Dry Rot Disease  Aug (5)_t000.png
+000929_000003_Blackspot Bruising Disease (27)_t000_error.png
+000930_001311_Dry Rot Disease  Aug (928)_t000.png
+000931_001395_Dry Rot Disease  Aug (93)_t000.png
+000932_000521_Blackspot Bruising Disease Aug (757)_t001.png
+000933_001540_Healthy Potato Aug (580)_t001.png
+000934_001567_Healthy Potato Aug (652)_t000.png
+000935_001688_Soft Rot Disease Aug (307)_t001.png
+000936_001322_Dry Rot Disease  Aug (956)_t000.png
+000937_001047_Dry Rot Disease  Aug (475)_t000.png
+000938_001241_Dry Rot Disease  Aug (823)_t000.png
+000939_000893_Dry Rot Disease  Aug (161)_t000.png
+000940_001492_Healthy Potato Aug (404)_t000.png
+000941_000707_Dry Rot Disease  Aug (1030)_t000.png
+000942_000889_Dry Rot Disease  Aug (158)_t000.png
+000943_001690_Soft Rot Disease Aug (310)_t000.png
+000944_000222_Img-970_t000.png
+000945_000078_Dry Rot Disease (82)_t000.png
+000946_001760_Soft Rot Disease Aug (480)_t000.png
+000947_001189_Dry Rot Disease  Aug (758)_t000.png
+000948_001659_Soft Rot Disease Aug (245)_t001.png
+000949_001607_Soft Rot Disease Aug (118)_t000.png
+000950_001415_Healthy Potato Aug (151)_t000.png
+000951_000056_Dry Rot Disease (184)_t000.png
+000952_000678_Dry Rot Disease  Aug (870)_t002.png
+000953_001539_Healthy Potato Aug (578)_t000.png
+000954_000818_Dry Rot Disease  Aug (1210)_t000.png
+000955_001702_Soft Rot Disease Aug (353)_t000.png
+000956_001313_Dry Rot Disease  Aug (934)_t000.png
+000957_000719_Dry Rot Disease  Aug (1054)_t000.png
+000958_000571_Blackspot Bruising Disease Aug (662)_t002.png
+000959_001782_Soft Rot Disease Aug (530)_t001.png
+000960_001534_Healthy Potato Aug (565)_t000.png
+000961_000672_Dry Rot Disease  Aug (441)_t000.png
+000962_000816_Dry Rot Disease  Aug (1206)_t000.png
+000963_000395_Blackspot Bruising Disease Aug (482)_t000.png
+000964_000048_Dry Rot Disease (14)_t004.png
+000965_000456_Blackspot Bruising Disease Aug (631)_t000.png
+000966_001779_Soft Rot Disease Aug (520)_t000.png
+000967_000625_Brown Rot Disease  Aug (82)_t000.png
+000968_000716_Dry Rot Disease  Aug (1048)_t001.png
+000969_000942_Dry Rot Disease  Aug (253)_t001.png
+000970_000408_Blackspot Bruising Disease Aug (509)_t000.png
+000971_000455_Blackspot Bruising Disease Aug (630)_t000.png
+000972_000963_Dry Rot Disease  Aug (3)_t000.png
+000973_000079_Dry Rot Disease (83)_t000.png
+000974_000783_Dry Rot Disease  Aug (1153)_t000.png
+000975_000221_Img-96_t000.png
+000976_001818_Soft Rot Disease Aug (125)_t001.png
+000977_001674_Soft Rot Disease Aug (278)_t000.png
+000978_000508_Blackspot Bruising Disease Aug (731)_t000.png
+000979_000843_Dry Rot Disease  Aug (1244)_t000.png
+000980_000680_Dry Rot Disease  Aug (950)_t000.png
+000981_000367_Blackspot Bruising Disease Aug (421)_t000.png
+000982_000050_Dry Rot Disease (146)_t000.png
+000983_000844_Dry Rot Disease  Aug (125)_t000.png
+000984_000362_Blackspot Bruising Disease Aug (401)_t000.png
+000985_000332_Blackspot Bruising Disease Aug (356)_t001.png
+000986_001522_Healthy Potato Aug (510)_t000.png
+000987_000316_Blackspot Bruising Disease Aug (318)_t000.png
+000988_001271_Dry Rot Disease  Aug (866)_t000.png
+000989_001520_Healthy Potato Aug (504)_t000.png
+000990_001146_Dry Rot Disease  Aug (673)_t000.png
+000991_000724_Dry Rot Disease  Aug (1062)_t003.png
+000992_000210_Img-797_t000.png
+000993_001365_Dry Rot Disease  Aug (213)_t001.png
+000994_001532_Healthy Potato Aug (560)_t000.png
+000995_000430_Blackspot Bruising Disease Aug (569)_t001.png
+000996_000732_Dry Rot Disease  Aug (1077)_t001.png
+000997_001469_Healthy Potato Aug (323)_t000.png
+000998_000746_Dry Rot Disease  Aug (1095)_t000.png
+000999_000631_Brown Rot Disease  Aug (93)_t000.png
+001000_000085_Dry Rot Disease (96)_t000.png
+001001_000261_Blackspot Bruising Disease Aug (172)_t000.png
+001002_000880_Dry Rot Disease  Aug (139)_t001.png
+001003_000303_Blackspot Bruising Disease Aug (287)_t000.png
+001004_001131_Dry Rot Disease  Aug (636)_t000.png
+001005_001192_Dry Rot Disease  Aug (759)_t002.png
+001006_001432_Healthy Potato Aug (214)_t000.png
+001007_000073_Dry Rot Disease (72)_t000.png
+001008_001117_Dry Rot Disease  Aug (61)_t000.png
+001009_000305_Blackspot Bruising Disease Aug (293)_t001.png
+001010_001531_Healthy Potato Aug (554)_t000.png
+001011_001638_Soft Rot Disease Aug (207)_t001.png
+001012_001446_Healthy Potato Aug (252)_t000.png
+001013_001148_Dry Rot Disease  Aug (675)_t001.png
+001014_000875_Dry Rot Disease  Aug (13)_t000.png
+001015_001129_Dry Rot Disease  Aug (629)_t000.png
+001016_000904_Dry Rot Disease  Aug (185)_t000.png
+001017_001647_Soft Rot Disease Aug (221)_t000.png
+001018_000536_Blackspot Bruising Disease Aug (158)_t000.png
+001019_001304_Dry Rot Disease  Aug (907)_t001.png
+001020_000267_Blackspot Bruising Disease Aug (187)_t000.png
+001021_000683_Dry Rot Disease  Aug (957)_t001.png
+001022_000007_Blackspot Bruising Disease (39)_t000_skin_error.png
+001023_000090_Dry Rot Disease (104)_t002.png
+001024_000566_Blackspot Bruising Disease Aug (524)_t000.png
+001025_001556_Healthy Potato Aug (627)_t000.png
+001026_001299_Dry Rot Disease  Aug (901)_t000.png
+001027_001808_Soft Rot Disease Aug (82)_t001.png
+001028_000104_Dry Rot Disease (38)_t001.png
+001029_001804_Soft Rot Disease Aug (74)_t000.png
+001030_001640_Soft Rot Disease Aug (208)_t002.png
+001031_001035_Dry Rot Disease  Aug (438)_t001.png
+001032_000540_Blackspot Bruising Disease Aug (189)_t001.png
+001033_001298_Dry Rot Disease  Aug (900)_t000.png
+001034_000416_Blackspot Bruising Disease Aug (531)_t000.png
+001035_000702_Dry Rot Disease  Aug (1023)_t000.png
+001036_000431_Blackspot Bruising Disease Aug (570)_t001.png
+001037_001238_Dry Rot Disease  Aug (821)_t000.png
+001038_000577_Blackspot Bruising Disease Aug (71)_t001.png
+001039_000557_Blackspot Bruising Disease Aug (356)_t002.png
+001040_001813_Soft Rot Disease Aug (115)_t001.png
+001041_001682_Soft Rot Disease Aug (294)_t000.png
+001042_000219_Img-892_t000.png
+001043_000236_Blackspot Bruising Disease Aug (101)_t001.png
+001044_001801_Soft Rot Disease Aug (64)_t001.png
+001045_000275_Blackspot Bruising Disease Aug (207)_t000.png
+001046_000212_Img-831_t000.png
+001047_001358_Dry Rot Disease  Aug (127)_t001.png
+001048_000613_Brown Rot Disease  Aug (57)_t000.png
+001049_001135_Dry Rot Disease  Aug (646)_t000.png
+001050_001367_Dry Rot Disease  Aug (234)_t002.png
+001051_000016_Blackspot Bruising Disease (6)_t001_error.png
+001052_001684_Soft Rot Disease Aug (299)_t000.png
+001053_001339_Dry Rot Disease  Aug (981)_t000.png
+001054_001252_Dry Rot Disease  Aug (836)_t001.png
+001055_000619_Brown Rot Disease  Aug (60)_t001.png
+001056_001112_Dry Rot Disease  Aug (593)_t001.png
+001057_001601_Soft Rot Disease Aug (100)_t002.png
+001058_001667_Soft Rot Disease Aug (264)_t000.png
+001059_000583_Blackspot Bruising Disease Aug (77)_t000.png
+001060_000756_Dry Rot Disease  Aug (1110)_t000.png
+001061_000500_Blackspot Bruising Disease Aug (718)_t000.png
+001062_001480_Healthy Potato Aug (375)_t001.png
+001063_000714_Dry Rot Disease  Aug (1046)_t000.png
+001064_000271_Blackspot Bruising Disease Aug (198)_t000.png
+001065_001455_Healthy Potato Aug (268)_t000.png
+001066_001036_Dry Rot Disease  Aug (438)_t002.png
+001067_000436_Blackspot Bruising Disease Aug (581)_t000.png
+001068_001101_Dry Rot Disease  Aug (579)_t000.png
+001069_000150_Img-1247_t000.png
+001070_000204_Img-752_t000.png
+001071_001153_Dry Rot Disease  Aug (680)_t000.png
+001072_001272_Dry Rot Disease  Aug (867)_t001.png
+001073_000938_Dry Rot Disease  Aug (250)_t001.png
+001074_000019_Blackspot Bruising Disease (73)_t000_error.png
+001075_000148_Img-1230_t000.png
+001076_001461_Healthy Potato Aug (286)_t000.png
+001077_000936_Dry Rot Disease  Aug (246)_t000.png
+001078_000614_Brown Rot Disease  Aug (58)_t000.png
+001079_001321_Dry Rot Disease  Aug (955)_t001.png
+001080_001604_Soft Rot Disease Aug (107)_t000.png
+001081_000268_Blackspot Bruising Disease Aug (188)_t000.png
+001082_001721_Soft Rot Disease Aug (390)_t000.png
+001083_001510_Healthy Potato Aug (476)_t001.png
+001084_000488_Blackspot Bruising Disease Aug (691)_t000.png
+001085_000643_Dry Rot Disease  Aug (1129)_t000.png
+001086_001371_Dry Rot Disease  Aug (324)_t000.png
+001087_000418_Blackspot Bruising Disease Aug (538)_t000.png
+001088_000534_Blackspot Bruising Disease Aug (103)_t003.png
+001089_000647_Dry Rot Disease  Aug (120)_t000.png
+001090_001070_Dry Rot Disease  Aug (508)_t000.png
+001091_001157_Dry Rot Disease  Aug (694)_t000.png
+001092_001707_Soft Rot Disease Aug (361)_t002.png
+001093_001346_Dry Rot Disease  Aug (992)_t002.png
+001094_000858_Dry Rot Disease  Aug (1274)_t000.png
+001095_000167_Img-1468_t001.png
+001096_001268_Dry Rot Disease  Aug (861)_t001.png
+001097_000081_Dry Rot Disease (89)_t001.png
+001098_001217_Dry Rot Disease  Aug (79)_t002.png
+001099_001185_Dry Rot Disease  Aug (755)_t000.png
+001100_000504_Blackspot Bruising Disease Aug (727)_t000.png
+001101_001166_Dry Rot Disease  Aug (705)_t000.png
+001102_000245_Blackspot Bruising Disease Aug (117)_t000.png
+001103_000826_Dry Rot Disease  Aug (1221)_t002.png
+001104_000481_Blackspot Bruising Disease Aug (682)_t001.png
+001105_001382_Dry Rot Disease  Aug (606)_t000.png
+001106_000139_Img-1172_t000.png
+001107_001218_Dry Rot Disease  Aug (791)_t000.png
+001108_000140_Img-1175_t000.png
+001109_000380_Blackspot Bruising Disease Aug (451)_t001.png
+001110_000164_Img-1457_t000.png
+001111_001040_Dry Rot Disease  Aug (455)_t001.png
+001112_000116_Soft Rot Disease (45)_t001.png
+001113_000322_Blackspot Bruising Disease Aug (336)_t000.png
+001114_001087_Dry Rot Disease  Aug (545)_t001.png
+001115_001029_Dry Rot Disease  Aug (433)_t000.png
+001116_000976_Dry Rot Disease  Aug (319)_t001.png
+001117_001196_Dry Rot Disease  Aug (763)_t002.png
+001118_000102_Dry Rot Disease (28)_t000.png
+001119_000117_Soft Rot Disease (54)_t000.png
+001120_000642_Dry Rot Disease  Aug (1120)_t000.png
+001121_001699_Soft Rot Disease Aug (341)_t002.png
+001122_001110_Dry Rot Disease  Aug (592)_t000.png
+001123_001186_Dry Rot Disease  Aug (756)_t000.png
+001124_000119_Soft Rot Disease (57)_t000.png
+001125_000445_Blackspot Bruising Disease Aug (610)_t000.png
+001126_000607_Brown Rot Disease  Aug (46)_t001.png
+001127_000388_Blackspot Bruising Disease Aug (47)_t000.png
+001128_000317_Blackspot Bruising Disease Aug (319)_t000.png
+001129_000996_Dry Rot Disease  Aug (362)_t001.png
+001130_001471_Healthy Potato Aug (333)_t000.png
+001131_001355_Dry Rot Disease  Aug (1154)_t001.png
+001132_001138_Dry Rot Disease  Aug (65)_t001.png
+001133_001496_Healthy Potato Aug (421)_t000.png
+001134_001426_Healthy Potato Aug (202)_t000.png
+001135_001614_Soft Rot Disease Aug (131)_t000.png
+001136_000584_Blackspot Bruising Disease Aug (91)_t001.png
+001137_000931_Dry Rot Disease  Aug (234)_t001.png
+001138_000543_Blackspot Bruising Disease Aug (194)_t001.png
+001139_000799_Dry Rot Disease  Aug (118)_t000.png
+001140_000004_Blackspot Bruising Disease (36)_t000_error.png
+001141_000776_Dry Rot Disease  Aug (1143)_t000.png
+001142_000337_Blackspot Bruising Disease Aug (373)_t000.png
+001143_001778_Soft Rot Disease Aug (514)_t001.png
+001144_001731_Soft Rot Disease Aug (415)_t000.png
+001145_000437_Blackspot Bruising Disease Aug (59)_t000.png
+001146_000985_Dry Rot Disease  Aug (343)_t001.png
+001147_001739_Soft Rot Disease Aug (431)_t000.png
+001148_000832_Dry Rot Disease  Aug (1232)_t000.png
+001149_000340_Blackspot Bruising Disease Aug (376)_t002.png
+001150_000484_Blackspot Bruising Disease Aug (685)_t001.png
+001151_001840_Soft Rot Disease Aug (297)_t001.png
+001152_000030_Brown Rot Disease (2)_t000_error.png
+001153_001107_Dry Rot Disease  Aug (59)_t000.png
+001154_001335_Dry Rot Disease  Aug (974)_t000.png
+001155_000103_Dry Rot Disease (37)_t000.png
+001156_000200_Img-65_t000.png
+001157_001127_Dry Rot Disease  Aug (624)_t000.png
+001158_000907_Dry Rot Disease  Aug (191)_t000.png
+001159_000154_Img-1313_t000.png
+001160_000511_Blackspot Bruising Disease Aug (736)_t001.png
+001161_000947_Dry Rot Disease  Aug (267)_t001.png
+001162_001575_Healthy Potato Aug (686)_t000.png
+001163_000375_Blackspot Bruising Disease Aug (442)_t000.png
+001164_001691_Soft Rot Disease Aug (322)_t001.png
+001165_000287_Blackspot Bruising Disease Aug (240)_t000.png
+001166_000918_Dry Rot Disease  Aug (213)_t000.png
+001167_001796_Soft Rot Disease Aug (56)_t000.png
+001168_001562_Healthy Potato Aug (637)_t000.png
+001169_000392_Blackspot Bruising Disease Aug (477)_t000.png
+001170_000509_Blackspot Bruising Disease Aug (731)_t001.png
+001171_000223_Img-971_t000.png
+001172_000694_Dry Rot Disease  Aug (1011)_t001.png
+001173_001491_Healthy Potato Aug (402)_t000.png
+001174_000824_Dry Rot Disease  Aug (1220)_t000.png
+001175_000124_Soft Rot Disease (76)_t000.png
+001176_000201_Img-720_t000.png
+001177_001323_Dry Rot Disease  Aug (957)_t000.png
+001178_001338_Dry Rot Disease  Aug (977)_t000.png
+001179_001379_Dry Rot Disease  Aug (524)_t000.png
+001180_000110_Soft Rot Disease (15)_t000.png
+001181_001752_Soft Rot Disease Aug (455)_t000.png
+001182_000956_Dry Rot Disease  Aug (282)_t001.png
+001183_000841_Dry Rot Disease  Aug (1243)_t001.png
+001184_000867_Dry Rot Disease  Aug (1284)_t002.png
+001185_000725_Dry Rot Disease  Aug (1064)_t000.png
+001186_000882_Dry Rot Disease  Aug (140)_t000.png
+001187_001349_Dry Rot Disease  Aug (992)_t005.png
+001188_001806_Soft Rot Disease Aug (8)_t001.png
+001189_000193_Img-523_t000.png
+001190_000389_Blackspot Bruising Disease Aug (473)_t001.png
+001191_000833_Dry Rot Disease  Aug (1235)_t000.png
+001192_001566_Healthy Potato Aug (648)_t000.png
+001193_000497_Blackspot Bruising Disease Aug (712)_t000.png
+001194_000968_Dry Rot Disease  Aug (307)_t000.png
+001195_001180_Dry Rot Disease  Aug (740)_t000.png
+001196_001169_Dry Rot Disease  Aug (717)_t000.png
+001197_001481_Healthy Potato Aug (379)_t000.png
+001198_000270_Blackspot Bruising Disease Aug (189)_t000.png
+001199_001612_Soft Rot Disease Aug (127)_t000.png
+001200_000438_Blackspot Bruising Disease Aug (590)_t000.png
+001201_000994_Dry Rot Disease  Aug (359)_t001.png
+001202_001370_Dry Rot Disease  Aug (322)_t001.png
+001203_000570_Blackspot Bruising Disease Aug (64)_t000.png
+001204_000487_Blackspot Bruising Disease Aug (690)_t000.png
+001205_001052_Dry Rot Disease  Aug (480)_t000.png
+001206_001586_Healthy Potato Aug (729)_t000.png
+001207_000676_Dry Rot Disease  Aug (662)_t002.png
+001208_000064_Dry Rot Disease (39)_t000.png
+001209_000138_Img-1170_t000.png
+001210_000468_Blackspot Bruising Disease Aug (656)_t001.png
+001211_000120_Soft Rot Disease (57)_t001.png
+001212_001292_Dry Rot Disease  Aug (886)_t001.png
+001213_001449_Healthy Potato Aug (255)_t000.png
+001214_000145_Img-1215_t000.png
+001215_000014_Blackspot Bruising Disease (58)_t000_skin_error.png
+001216_001847_Soft Rot Disease Aug (389)_t000.png
+001217_001205_Dry Rot Disease  Aug (779)_t000.png
+001218_000471_Blackspot Bruising Disease Aug (66)_t000.png
+001219_001134_Dry Rot Disease  Aug (643)_t000.png
+001220_001204_Dry Rot Disease  Aug (774)_t000.png
+001221_000043_Dry Rot Disease (117)_t002.png
+001222_000692_Dry Rot Disease  Aug (1003)_t001.png
+001223_000131_Img-1035_t000.png
+001224_000460_Blackspot Bruising Disease Aug (642)_t001.png
+001225_000507_Blackspot Bruising Disease Aug (730)_t000.png
+001226_000247_Blackspot Bruising Disease Aug (121)_t000.png
+001227_000924_Dry Rot Disease  Aug (223)_t001.png
+001228_001059_Dry Rot Disease  Aug (491)_t000.png
+001229_000897_Dry Rot Disease  Aug (175)_t001.png
+001230_000764_Dry Rot Disease  Aug (1118)_t001.png
+001231_001831_Soft Rot Disease Aug (179)_t001.png
+001232_001375_Dry Rot Disease  Aug (440)_t001.png
+001233_001706_Soft Rot Disease Aug (361)_t000.png
+001234_000638_Dry Rot Disease  Aug (1067)_t001.png
+001235_001460_Healthy Potato Aug (273)_t001.png
+001236_000411_Blackspot Bruising Disease Aug (516)_t000.png
+001237_001412_Healthy Potato Aug (134)_t000.png
+001238_001798_Soft Rot Disease Aug (58)_t000.png
+001239_001546_Healthy Potato Aug (59)_t001.png
+001240_001646_Soft Rot Disease Aug (220)_t001.png
+001241_000433_Blackspot Bruising Disease Aug (578)_t000.png
+001242_000866_Dry Rot Disease  Aug (1282)_t001.png
+001243_001242_Dry Rot Disease  Aug (826)_t000.png
+001244_001080_Dry Rot Disease  Aug (526)_t000.png
+001245_001717_Soft Rot Disease Aug (385)_t000.png
+001246_000338_Blackspot Bruising Disease Aug (375)_t001.png
+001247_001125_Dry Rot Disease  Aug (621)_t000.png
+001248_000973_Dry Rot Disease  Aug (313)_t001.png
+001249_001351_Dry Rot Disease  Aug (999)_t001.png
+001250_000262_Blackspot Bruising Disease Aug (172)_t001.png
+001251_000257_Blackspot Bruising Disease Aug (149)_t000.png
+001252_001568_Healthy Potato Aug (657)_t000.png
+001253_001090_Dry Rot Disease  Aug (556)_t001.png
+001254_001557_Healthy Potato Aug (631)_t000.png
+001255_000141_Img-1180_t000.png
+001256_000995_Dry Rot Disease  Aug (361)_t001.png
+001257_001498_Healthy Potato Aug (432)_t000.png
+001258_000175_Img-202_t000.png
+001259_001793_Soft Rot Disease Aug (554)_t001.png
+001260_001727_Soft Rot Disease Aug (4)_t000.png
+001261_000493_Blackspot Bruising Disease Aug (701)_t000.png
+001262_000118_Soft Rot Disease (56)_t001.png
+001263_000490_Blackspot Bruising Disease Aug (698)_t001.png
+001264_000629_Brown Rot Disease  Aug (90)_t000.png
+001265_000743_Dry Rot Disease  Aug (1090)_t000.png
+001266_000229_Img-66_t000.png
+001267_000039_Dry Rot Disease (108)_t000.png
+001268_001000_Dry Rot Disease  Aug (372)_t001.png
+001269_000663_Dry Rot Disease  Aug (314)_t003.png
+001270_001226_Dry Rot Disease  Aug (802)_t000.png
+001271_000001_Blackspot Bruising Disease (105)_t001_skin_error.png
+001272_001086_Dry Rot Disease  Aug (535)_t002.png
+001273_001594_Healthy Potato Aug (87)_t000.png
+001274_001104_Dry Rot Disease  Aug (581)_t001.png
+001275_000330_Blackspot Bruising Disease Aug (350)_t003.png
+001276_001561_Healthy Potato Aug (636)_t000.png
+001277_000765_Dry Rot Disease  Aug (1119)_t000.png
+001278_001696_Soft Rot Disease Aug (338)_t000.png
+001279_001833_Soft Rot Disease Aug (196)_t000.png
+001280_001756_Soft Rot Disease Aug (472)_t001.png
+001281_001658_Soft Rot Disease Aug (245)_t000.png
+001282_001308_Dry Rot Disease  Aug (914)_t000.png
+001283_000611_Brown Rot Disease  Aug (53)_t000.png
+001284_001280_Dry Rot Disease  Aug (871)_t002.png
+001285_000217_Img-873_t000.png
+001286_001039_Dry Rot Disease  Aug (455)_t000.png
+001287_000365_Blackspot Bruising Disease Aug (417)_t001.png
+001288_001560_Healthy Potato Aug (635)_t000.png
+001289_001025_Dry Rot Disease  Aug (418)_t001.png
+001290_000539_Blackspot Bruising Disease Aug (184)_t000.png
+001291_001473_Healthy Potato Aug (336)_t000.png
+001292_001478_Healthy Potato Aug (365)_t001.png
+001293_000006_Blackspot Bruising Disease (38)_t001_skin_error.png
+001294_000929_Dry Rot Disease  Aug (231)_t000.png
+001295_000323_Blackspot Bruising Disease Aug (336)_t001.png
+001296_000890_Dry Rot Disease  Aug (159)_t000.png
+001297_000601_Brown Rot Disease  Aug (32)_t001.png
+001298_001858_725_t000.png
+001299_001815_Soft Rot Disease Aug (118)_t001.png
+001300_001312_Dry Rot Disease  Aug (932)_t000.png
+001301_001574_Healthy Potato Aug (683)_t002.png
+001302_001761_Soft Rot Disease Aug (484)_t001.png
+001303_001537_Healthy Potato Aug (571)_t000.png
+001304_001099_Dry Rot Disease  Aug (578)_t000.png
+001305_001396_Dry Rot Disease  Aug (957)_t002.png
+001306_000234_Blackspot Bruising Disease Aug (1)_t001.png
+001307_001476_Healthy Potato Aug (358)_t001.png
+001308_001692_Soft Rot Disease Aug (327)_t000.png
+001309_000023_Blackspot Bruising Disease (76)_t000_error.png
+001310_001133_Dry Rot Disease  Aug (640)_t000.png
+001311_000514_Blackspot Bruising Disease Aug (742)_t000.png
+001312_001083_Dry Rot Disease  Aug (530)_t001.png
+001313_000958_Dry Rot Disease  Aug (286)_t002.png
+001314_001220_Dry Rot Disease  Aug (794)_t001.png
+001315_000781_Dry Rot Disease  Aug (1151)_t000.png
+001316_000788_Dry Rot Disease  Aug (1162)_t000.png
+001317_000130_Img-1033_t000.png
+001318_001221_Dry Rot Disease  Aug (798)_t000.png
+001319_001843_Soft Rot Disease Aug (320)_t000.png
+001320_001393_Dry Rot Disease  Aug (904)_t001.png
+001321_001622_Soft Rot Disease Aug (150)_t000.png
+001322_000327_Blackspot Bruising Disease Aug (35)_t000.png
+001323_001285_Dry Rot Disease  Aug (876)_t000.png
+001324_000313_Blackspot Bruising Disease Aug (311)_t000.png
+001325_000224_Img-976_t000.png
+001326_000096_Dry Rot Disease (126)_t001.png
+001327_001547_Healthy Potato Aug (591)_t000.png
+001328_000186_Img-435_t000.png
+001329_001010_Dry Rot Disease  Aug (394)_t000.png
+001330_001043_Dry Rot Disease  Aug (461)_t000.png
+001331_000283_Blackspot Bruising Disease Aug (225)_t001.png
+001332_001743_Soft Rot Disease Aug (437)_t000.png
+001333_000741_Dry Rot Disease  Aug (1087)_t000.png
+001334_000817_Dry Rot Disease  Aug (1207)_t000.png
+001335_001195_Dry Rot Disease  Aug (763)_t000.png
+001336_000877_Dry Rot Disease  Aug (132)_t000.png
+001337_001197_Dry Rot Disease  Aug (764)_t000.png
+001338_001529_Healthy Potato Aug (54)_t000.png
+001339_000538_Blackspot Bruising Disease Aug (181)_t002.png
+001340_001103_Dry Rot Disease  Aug (581)_t000.png
+001341_001834_Soft Rot Disease Aug (203)_t001.png
+001342_001525_Healthy Potato Aug (527)_t000.png
+001343_000505_Blackspot Bruising Disease Aug (727)_t001.png
+001344_001852_Soft Rot Disease Aug (445)_t001.png
+001345_000542_Blackspot Bruising Disease Aug (191)_t000.png
+001346_000292_Blackspot Bruising Disease Aug (257)_t000.png
+001347_000939_Dry Rot Disease  Aug (252)_t000.png
+001348_001316_Dry Rot Disease  Aug (945)_t001.png
+001349_000810_Dry Rot Disease  Aug (1197)_t000.png
+001350_001022_Dry Rot Disease  Aug (416)_t000.png
+001351_001342_Dry Rot Disease  Aug (989)_t001.png
+001352_000435_Blackspot Bruising Disease Aug (579)_t000.png
+001353_000644_Dry Rot Disease  Aug (1168)_t000.png
+001354_001470_Healthy Potato Aug (324)_t000.png
+001355_001161_Dry Rot Disease  Aug (697)_t000.png
+001356_000432_Blackspot Bruising Disease Aug (574)_t001.png
+001357_000135_Img-1135_t000.png
+001358_000548_Blackspot Bruising Disease Aug (236)_t001.png
+001359_000821_Dry Rot Disease  Aug (1215)_t001.png
+001360_000646_Dry Rot Disease  Aug (119)_t001.png
+001361_001648_Soft Rot Disease Aug (222)_t000.png
+001362_001842_Soft Rot Disease Aug (319)_t000.png
+001363_001683_Soft Rot Disease Aug (295)_t000.png
+001364_000469_Blackspot Bruising Disease Aug (659)_t000.png
+001365_000114_Soft Rot Disease (28)_t000.png
+001366_001589_Healthy Potato Aug (735)_t000.png
+001367_001573_Healthy Potato Aug (683)_t000.png
+001368_001726_Soft Rot Disease Aug (399)_t000.png
+001369_000664_Dry Rot Disease  Aug (326)_t001.png
+001370_001402_Healthy Potato Aug (104)_t000.png
+001371_000449_Blackspot Bruising Disease Aug (621)_t001.png
+001372_001140_Dry Rot Disease  Aug (654)_t000.png
+001373_001409_Healthy Potato Aug (13)_t000.png
+001374_001310_Dry Rot Disease  Aug (926)_t000.png
+001375_000552_Blackspot Bruising Disease Aug (297)_t000.png
+001376_000777_Dry Rot Disease  Aug (1147)_t000.png
+001377_000946_Dry Rot Disease  Aug (263)_t002.png
+001378_000334_Blackspot Bruising Disease Aug (361)_t000.png
+001379_001854_Soft Rot Disease Aug (521)_t001.png
+001380_001493_Healthy Potato Aug (409)_t000.png
+001381_001093_Dry Rot Disease  Aug (559)_t000.png
+001382_000350_Blackspot Bruising Disease Aug (386)_t000.png
+001383_001300_Dry Rot Disease  Aug (901)_t002.png
+001384_001247_Dry Rot Disease  Aug (83)_t002.png
+001385_000146_Img-1221_t000.png
+001386_001327_Dry Rot Disease  Aug (960)_t000.png
+001387_001399_Healthy Potato Aug (1)_t000.png
+001388_001437_Healthy Potato Aug (23)_t001.png
+001389_000546_Blackspot Bruising Disease Aug (231)_t001.png
+001390_001372_Dry Rot Disease  Aug (335)_t000.png
+001391_000429_Blackspot Bruising Disease Aug (567)_t000.png
+001392_000727_Dry Rot Disease  Aug (1066)_t000.png
+001393_000758_Dry Rot Disease  Aug (1112)_t000.png
+001394_000333_Blackspot Bruising Disease Aug (360)_t000.png
+001395_000747_Dry Rot Disease  Aug (1097)_t001.png
+001396_001708_Soft Rot Disease Aug (362)_t000.png
+001397_001301_Dry Rot Disease  Aug (902)_t001.png
+001398_000928_Dry Rot Disease  Aug (230)_t001.png
+001399_001814_Soft Rot Disease Aug (116)_t001.png
+001400_001807_Soft Rot Disease Aug (80)_t000.png
+001401_000206_Img-767_t000.png
+001402_001838_Soft Rot Disease Aug (270)_t002.png
+001403_001751_Soft Rot Disease Aug (452)_t002.png
+001404_000163_Img-1453_t000.png
+001405_000592_Brown Rot Disease  Aug (15)_t000.png
+001406_001583_Healthy Potato Aug (716)_t000.png
+001407_000466_Blackspot Bruising Disease Aug (653)_t000.png
+001408_001354_Dry Rot Disease  Aug (1153)_t002.png
+001409_000093_Dry Rot Disease (117)_t000.png
+001410_000142_Img-1208_t000.png
+001411_001442_Healthy Potato Aug (241)_t000.png
+001412_000393_Blackspot Bruising Disease Aug (478)_t000.png
+001413_001182_Dry Rot Disease  Aug (743)_t000.png
+001414_000740_Dry Rot Disease  Aug (1085)_t000.png
+001415_001764_Soft Rot Disease Aug (49)_t001.png
+001416_001266_Dry Rot Disease  Aug (859)_t000.png
+001417_001287_Dry Rot Disease  Aug (88)_t000.png
+001418_001698_Soft Rot Disease Aug (341)_t001.png
+001419_000600_Brown Rot Disease  Aug (31)_t000.png
+001420_001130_Dry Rot Disease  Aug (630)_t000.png
+001421_000161_Img-1420_t000.png
+001422_000775_Dry Rot Disease  Aug (1141)_t000.png
+001423_000255_Blackspot Bruising Disease Aug (143)_t000.png
+001424_001098_Dry Rot Disease  Aug (577)_t001.png
+001425_000940_Dry Rot Disease  Aug (252)_t002.png
+001426_001494_Healthy Potato Aug (41)_t000.png
+001427_000088_Dry Rot Disease (99)_t000.png
+001428_001652_Soft Rot Disease Aug (239)_t000.png
+001429_000541_Blackspot Bruising Disease Aug (190)_t001.png
+001430_001236_Dry Rot Disease  Aug (818)_t000.png
+001431_000704_Dry Rot Disease  Aug (1028)_t000.png
+001432_001735_Soft Rot Disease Aug (424)_t001.png
+001433_000735_Dry Rot Disease  Aug (1080)_t001.png
+001434_000198_Img-648_t000.png
+001435_000778_Dry Rot Disease  Aug (1147)_t001.png
+001436_000189_Img-470_t000.png
+001437_001850_Soft Rot Disease Aug (396)_t000.png
+001438_000689_Dry Rot Disease  Aug (1002)_t000.png
+001439_001563_Healthy Potato Aug (638)_t000.png
+001440_000440_Blackspot Bruising Disease Aug (594)_t001.png
+001441_000318_Blackspot Bruising Disease Aug (326)_t000.png
+001442_001824_Soft Rot Disease Aug (150)_t001.png
+001443_000696_Dry Rot Disease  Aug (1013)_t000.png
+001444_000865_Dry Rot Disease  Aug (1282)_t000.png
+001445_001429_Healthy Potato Aug (207)_t000.png
+001446_000326_Blackspot Bruising Disease Aug (346)_t001.png
+001447_001650_Soft Rot Disease Aug (224)_t000.png
+001448_001554_Healthy Potato Aug (620)_t000.png
+001449_000013_Blackspot Bruising Disease (57)_t000_skin_error.png
+001450_001780_Soft Rot Disease Aug (522)_t000.png
+001451_001657_Soft Rot Disease Aug (241)_t000.png
+001452_000569_Blackspot Bruising Disease Aug (55)_t003.png
+001453_001206_Dry Rot Disease  Aug (779)_t001.png
+001454_000919_Dry Rot Disease  Aug (216)_t000.png
+001455_000451_Blackspot Bruising Disease Aug (622)_t002.png
+001456_000859_Dry Rot Disease  Aug (1276)_t000.png
+001457_001846_Soft Rot Disease Aug (372)_t001.png
+001458_001436_Healthy Potato Aug (223)_t000.png
+001459_001330_Dry Rot Disease  Aug (963)_t000.png
+001460_001466_Healthy Potato Aug (304)_t000.png
+001461_000407_Blackspot Bruising Disease Aug (508)_t001.png
+001462_001149_Dry Rot Disease  Aug (675)_t002.png
+001463_000054_Dry Rot Disease (181)_t000.png
+001464_001232_Dry Rot Disease  Aug (814)_t000.png
+001465_001034_Dry Rot Disease  Aug (438)_t000.png
+001466_000476_Blackspot Bruising Disease Aug (669)_t000.png
+001467_000447_Blackspot Bruising Disease Aug (615)_t000.png
+001468_000191_Img-508_t000.png
+001469_000061_Dry Rot Disease (31)_t001.png
+001470_000065_Dry Rot Disease (47)_t000.png
+001471_000864_Dry Rot Disease  Aug (1281)_t000.png
+001472_001209_Dry Rot Disease  Aug (787)_t000.png
+001473_000178_Img-241_t000.png
+001474_001116_Dry Rot Disease  Aug (607)_t000.png
+001475_001827_Soft Rot Disease Aug (161)_t001.png
+001476_001516_Healthy Potato Aug (497)_t000.png
+001477_001385_Dry Rot Disease  Aug (673)_t001.png
+001478_000209_Img-795_t000.png
+001479_001508_Healthy Potato Aug (470)_t000.png
+001480_000285_Blackspot Bruising Disease Aug (235)_t000.png
+001481_000457_Blackspot Bruising Disease Aug (632)_t000.png
+001482_000501_Blackspot Bruising Disease Aug (719)_t000.png
+001483_000563_Blackspot Bruising Disease Aug (488)_t001.png
+001484_001518_Healthy Potato Aug (500)_t000.png
+001485_000051_Dry Rot Disease (148)_t000.png
+001486_000228_Img-1493_t001.png
+001487_001309_Dry Rot Disease  Aug (916)_t000.png
+
+--- valide (1776 images) ---
+000000_007689_208_t001.png
+000001_007554_195_t000.png
+000002_004296_Brown Rot Disease  Aug (99)_t000.png
+000003_005313_Dry Rot Disease  Aug (902)_t000.png
+000004_002908_20241106_225717_t000.png
+000005_000171_Blackspot Bruising Disease (22)_t000.png
+000006_005185_Dry Rot Disease  Aug (763)_t001.png
+000007_001919_Img-93_t000.png
+000008_005350_Dry Rot Disease  Aug (935)_t000.png
+000009_004125_Blackspot Bruising Disease Aug (703)_t000.png
+000010_004958_Dry Rot Disease  Aug (537)_t000.png
+000011_006788_343_t002.png
+000012_001461_Img-493_t000.png
+000013_001405_Img-439_t000.png
+000014_001326_Img-361_t000.png
+000015_004946_Dry Rot Disease  Aug (523)_t000.png
+000016_001385_Img-41_t000.png
+000017_006316_Soft Rot Disease Aug (317)_t000.png
+000018_003399_IMG_20241105_222534_132_t000.png
+000019_006764_331_t002.png
+000020_000082_IMG_20231105_135428_t000.png
+000021_000190_Blackspot Bruising Disease (4)_t000.png
+000022_007781_219_t002.png
+000023_008597_377_t000.png
+000024_005744_Healthy Potato Aug (417)_t000.png
+000025_000381_Dry Rot Disease (116)_t000.png
+000026_001257_Img-294_t000.png
+000027_003604_Blackspot Bruising Disease Aug (187)_t001.png
+000028_003107_Img-183_t000_1.png
+000029_007858_225_t007.png
+000030_001549_Img-578_t000.png
+000031_004348_Dry Rot Disease  Aug (105)_t000.png
+000032_000866_Img-126_t000.png
+000033_002328_20241105_180940_t000.png
+000034_008174_268_t001.png
+000035_000549_Soft Rot Disease (38)_t000.png
+000036_008002_242_t000.png
+000037_006942_82_t003.png
+000038_008328_297_t002.png
+000039_000912_Img-1311_t000.png
+000040_002769_20241106_223737_t000.png
+000041_002395_20241105_182746_t000.png
+000042_005965_Healthy Potato Aug (63)_t000.png
+000043_002195_20241105_180127_t000.png
+000044_007365_164_t001.png
+000045_004277_Brown Rot Disease  Aug (74)_t000.png
+000046_009277_DSC_0149_t000.png
+000047_000735_Img-1137_t000.png
+000048_006599_102_t003.png
+000049_007855_225_t004.png
+000050_009184_DSC_0150_t001.png
+000051_001850_Img-870_t000.png
+000052_000635_Img-1043_t000.png
+000053_006949_86_t006.png
+000054_001651_Img-677_t000.png
+000055_004644_Dry Rot Disease  Aug (200)_t000.png
+000056_008561_34_t003.png
+000057_002549_20241106_222655_t000.png
+000058_002310_20241105_180823_t000.png
+000059_007991_240_t003.png
+000060_007104_127_t001.png
+000061_003010_20241106_230655_t000.png
+000062_006661_183_t000.png
+000063_006695_250_t003.png
+000064_008473_315_t006.png
+000065_002667_20241106_223204_t000.png
+000066_000824_Img-1226_t000.png
+000067_001596_Img-621_t000.png
+000068_006203_Soft Rot Disease Aug (2)_t000.png
+000069_004783_Dry Rot Disease  Aug (350)_t000.png
+000070_004910_Dry Rot Disease  Aug (486)_t000.png
+000071_006528_Soft Rot Disease Aug (537)_t000.png
+000072_002116_20241105_175741_t000.png
+000073_000182_Blackspot Bruising Disease (32)_t000.png
+000074_008415_308_t007.png
+000075_001772_Img-795_t001.png
+000076_006858_55_t003.png
+000077_006753_329_t001.png
+000078_003933_Blackspot Bruising Disease Aug (518)_t000.png
+000079_004552_Dry Rot Disease  Aug (1268)_t000.png
+000080_007323_157_t003.png
+000081_005092_Dry Rot Disease  Aug (675)_t000.png
+000082_008545_33_t001.png
+000083_006871_58_t004.png
+000084_001120_Img-161_t000.png
+000085_005476_Healthy Potato Aug (162)_t000.png
+000086_004790_Dry Rot Disease  Aug (358)_t000.png
+000087_008997_675_t000.png
+000088_001634_Img-659_t000.png
+000089_000661_Img-1067_t000.png
+000090_003420_IMG_20241105_222620_711_t000.png
+000091_005761_Healthy Potato Aug (433)_t000.png
+000092_003825_Blackspot Bruising Disease Aug (411)_t000.png
+000093_003112_Img-188_t000_1.png
+000094_007655_204_t002.png
+000095_000432_Dry Rot Disease (172)_t000.png
+000096_008511_31_t004.png
+000097_002446_20241105_183106_t000.png
+000098_001632_Img-657_t000.png
+000099_003597_Blackspot Bruising Disease Aug (180)_t000.png
+000100_003869_Blackspot Bruising Disease Aug (458)_t001.png
+000101_005238_Dry Rot Disease  Aug (823)_t001.png
+000102_001940_Img-95_t000.png
+000103_005353_Dry Rot Disease  Aug (938)_t000.png
+000104_005975_Healthy Potato Aug (641)_t001.png
+000105_001947_Img-966_t000.png
+000106_001274_Img-310_t000.png
+000107_002578_20241106_222817_t000.png
+000108_000089_IMG_20231105_135557_t000.png
+000109_003008_20241106_230646_t000.png
+000110_007438_182_t001.png
+000111_001347_Img-381_t000.png
+000112_001216_Img-254_t000.png
+000113_003558_Blackspot Bruising Disease Aug (142)_t000.png
+000114_005672_Healthy Potato Aug (346)_t000.png
+000115_004537_Dry Rot Disease  Aug (1251)_t000.png
+000116_000929_Img-132_t000.png
+000117_008278_285_t003.png
+000118_003531_Blackspot Bruising Disease Aug (117)_t002.png
+000119_007368_165_t000.png
+000120_007983_239_t002.png
+000121_005002_Dry Rot Disease  Aug (583)_t000.png
+000122_007389_170_t002.png
+000123_004731_Dry Rot Disease  Aug (292)_t001.png
+000124_002361_20241105_181114_t000.png
+000125_004556_Dry Rot Disease  Aug (1271)_t000.png
+000126_001714_Img-737_t000.png
+000127_005981_Healthy Potato Aug (647)_t000.png
+000128_002528_20241106_222234_t000.png
+000129_004472_Dry Rot Disease  Aug (1184)_t000.png
+000130_007033_110_t001.png
+000131_000765_Img-1165_t000.png
+000132_000807_Img-1207_t000.png
+000133_000249_Blackspot Bruising Disease (97)_t000.png
+000134_002702_20241106_223321_t000.png
+000135_004069_Blackspot Bruising Disease Aug (650)_t000.png
+000136_000582_Soft Rot Disease (71)_t000.png
+000137_005472_Healthy Potato Aug (158)_t001.png
+000138_000673_Img-1078_t000.png
+000139_008365_302_t005.png
+000140_003243_Img-308_t000_1.png
+000141_007160_136_t001.png
+000142_008815_535_t000.png
+000143_003480_IMG_20241105_222732_434_t000.png
+000144_006906_70_t006.png
+000145_000157_Blackspot Bruising Disease (109)_t000.png
+000146_008869_578_t000.png
+000147_005377_Dry Rot Disease  Aug (963)_t001.png
+000148_008791_517_t000.png
+000149_007644_203_t000.png
+000150_007367_164_t003.png
+000151_005380_Dry Rot Disease  Aug (966)_t000.png
+000152_007799_220_t005.png
+000153_001989_20241030_202009_t000.png
+000154_003790_Blackspot Bruising Disease Aug (371)_t000.png
+000155_004568_Dry Rot Disease  Aug (1287)_t001.png
+000156_006428_Soft Rot Disease Aug (439)_t001.png
+000157_008623_395_t000.png
+000158_002860_20241106_224518_t000.png
+000159_001153_Img-196_t000.png
+000160_002299_20241105_180803_t000.png
+000161_003643_Blackspot Bruising Disease Aug (223)_t000.png
+000162_003360_Img-66_t000_1.png
+000163_007900_229_t006.png
+000164_004896_Dry Rot Disease  Aug (470)_t000.png
+000165_003612_Blackspot Bruising Disease Aug (195)_t000.png
+000166_004563_Dry Rot Disease  Aug (128)_t000.png
+000167_006929_77_t002.png
+000168_007223_143_t004.png
+000169_000417_Dry Rot Disease (157)_t000.png
+000170_000191_Blackspot Bruising Disease (40)_t000.png
+000171_003765_Blackspot Bruising Disease Aug (347)_t001.png
+000172_006985_9_t006.png
+000173_005801_Healthy Potato Aug (471)_t000.png
+000174_001775_Img-798_t000.png
+000175_005538_Healthy Potato Aug (221)_t000.png
+000176_005331_Dry Rot Disease  Aug (920)_t000.png
+000177_008712_459_t000.png
+000178_005439_Healthy Potato Aug (125)_t000.png
+000179_004159_Blackspot Bruising Disease Aug (739)_t000.png
+000180_006849_52_t003.png
+000181_001148_Img-191_t000.png
+000182_001452_Img-484_t000.png
+000183_002025_20241030_202850_t000.png
+000184_003567_Blackspot Bruising Disease Aug (151)_t000.png
+000185_004819_Dry Rot Disease  Aug (391)_t001.png
+000186_006086_Healthy Potato Aug (84)_t000.png
+000187_001013_Img-1409_t000.png
+000188_002787_20241106_223817_t000.png
+000189_008197_271_t003.png
+000190_003542_Blackspot Bruising Disease Aug (128)_t000.png
+000191_004142_Blackspot Bruising Disease Aug (72)_t000.png
+000192_007982_239_t001.png
+000193_007379_168_t002.png
+000194_000669_Img-1074_t000.png
+000195_006307_Soft Rot Disease Aug (308)_t000.png
+000196_001926_Img-947_t000.png
+000197_008395_306_t003.png
+000198_006512_Soft Rot Disease Aug (521)_t000.png
+000199_000941_Img-1340_t000.png
+000200_002903_20241106_225651_t000.png
+000201_000608_Img-1017_t000.png
+000202_002564_20241106_222722_t000.png
+000203_003280_Img-343_t000_1.png
+000204_003731_Blackspot Bruising Disease Aug (309)_t000.png
+000205_006586_Soft Rot Disease Aug (90)_t000.png
+000206_005882_Healthy Potato Aug (547)_t000.png
+000207_008987_668_t000.png
+000208_008057_251_t001.png
+000209_005535_Healthy Potato Aug (219)_t001.png
+000210_001282_Img-319_t000.png
+000211_007831_223_t002.png
+000212_004314_Dry Rot Disease  Aug (1016)_t001.png
+000213_005779_Healthy Potato Aug (45)_t000.png
+000214_007343_15_t002.png
+000215_001476_Img-506_t000.png
+000216_005621_Healthy Potato Aug (298)_t000.png
+000217_008979_660_t000.png
+000218_007558_195_t004.png
+000219_000180_Blackspot Bruising Disease (30)_t000.png
+000220_002269_20241105_180704_t000.png
+000221_008907_605_t000.png
+000222_002088_20241105_175612_t000.png
+000223_005814_Healthy Potato Aug (483)_t000.png
+000224_002357_20241105_181107_t000.png
+000225_002216_20241105_180212_t000.png
+000226_004607_Dry Rot Disease  Aug (161)_t001.png
+000227_007705_20_t001.png
+000228_005625_Healthy Potato Aug (300)_t000.png
+000229_003443_IMG_20241105_222645_463_t000.png
+000230_002018_20241030_202756_t000.png
+000231_005836_Healthy Potato Aug (504)_t001.png
+000232_005469_Healthy Potato Aug (155)_t000.png
+000233_002929_20241106_225847_t000.png
+000234_006233_Soft Rot Disease Aug (230)_t000.png
+000235_004868_Dry Rot Disease  Aug (436)_t000.png
+000236_004860_Dry Rot Disease  Aug (430)_t000.png
+000237_009006_681_t000.png
+000238_008158_265_t003.png
+000239_001239_Img-277_t000.png
+000240_005534_Healthy Potato Aug (218)_t000.png
+000241_002066_20241105_175155_t000.png
+000242_001038_Img-1434_t000.png
+000243_007530_192_t006.png
+000244_004484_Dry Rot Disease  Aug (1197)_t001.png
+000245_006097_Healthy Potato Aug (94)_t000.png
+000246_001928_Img-949_t000.png
+000247_002424_20241105_182945_t000.png
+000248_003095_Img-172_t000_1.png
+000249_008531_32_t002.png
+000250_007904_22_t000.png
+000251_008169_267_t002.png
+000252_005237_Dry Rot Disease  Aug (822)_t000.png
+000253_001049_Img-1444_t000.png
+000254_001733_Img-756_t000.png
+000255_001570_Img-599_t000.png
+000256_005808_Healthy Potato Aug (478)_t000.png
+000257_008959_646_t000.png
+000258_008023_244_t004.png
+000259_004565_Dry Rot Disease  Aug (1282)_t002.png
+000260_003822_Blackspot Bruising Disease Aug (409)_t000.png
+000261_002770_20241106_223738_t000.png
+000262_000351_Healthy Potato (97)_t000.png
+000263_004050_Blackspot Bruising Disease Aug (63)_t000.png
+000264_005024_Dry Rot Disease  Aug (609)_t000.png
+000265_009016_68_t001.png
+000266_006093_Healthy Potato Aug (90)_t000.png
+000267_006902_6_t004.png
+000268_002158_20241105_175923_t000.png
+000269_001188_Img-228_t000.png
+000270_006835_48_t003.png
+000271_005928_Healthy Potato Aug (594)_t000.png
+000272_001673_Img-698_t000.png
+000273_008078_253_t006.png
+000274_008888_592_t000.png
+000275_007318_156_t005.png
+000276_006208_Soft Rot Disease Aug (204)_t000.png
+000277_006120_Soft Rot Disease Aug (116)_t000.png
+000278_000846_Img-124_t000.png
+000279_006938_80_t005.png
+000280_008716_460_t000.png
+000281_005724_Healthy Potato Aug (399)_t000.png
+000282_002144_20241105_175855_t000.png
+000283_001179_Img-21_t000.png
+000284_007760_217_t001.png
+000285_006238_Soft Rot Disease Aug (236)_t000.png
+000286_000832_Img-1235_t000.png
+000287_005627_Healthy Potato Aug (302)_t000.png
+000288_006863_56_t003.png
+000289_006956_89_t004.png
+000290_009063_73_t001.png
+000291_009187_DSC_0152_t000.png
+000292_007222_143_t003.png
+000293_006282_Soft Rot Disease Aug (283)_t002.png
+000294_005619_Healthy Potato Aug (296)_t000.png
+000295_003928_Blackspot Bruising Disease Aug (513)_t001.png
+000296_008638_403_t000.png
+000297_003276_Img-33_t000_1.png
+000298_004143_Blackspot Bruising Disease Aug (720)_t000.png
+000299_005402_Dry Rot Disease  Aug (991)_t000.png
+000300_004170_Blackspot Bruising Disease Aug (749)_t000.png
+000301_000203_Blackspot Bruising Disease (51)_t000.png
+000302_002546_20241106_222641_t000.png
+000303_001072_Img-1468_t000.png
+000304_000812_Img-1213_t000.png
+000305_004990_Dry Rot Disease  Aug (571)_t000.png
+000306_000364_Dry Rot Disease (10)_t001.png
+000307_000936_Img-1336_t000.png
+000308_000094_IMG_20231105_135639_t000.png
+000309_008753_48_t001.png
+000310_003041_Img-123_t000.png
+000311_007698_209_t002.png
+000312_001611_Img-636_t000.png
+000313_000745_Img-1147_t000.png
+000314_006478_Soft Rot Disease Aug (486)_t000.png
+000315_004761_Dry Rot Disease  Aug (325)_t000.png
+000316_006124_Soft Rot Disease Aug (120)_t000.png
+000317_000813_Img-1214_t000.png
+000318_008283_287_t000.png
+000319_004022_Blackspot Bruising Disease Aug (604)_t000.png
+000320_008875_582_t000.png
+000321_005482_Healthy Potato Aug (168)_t000.png
+000322_004273_Brown Rot Disease  Aug (70)_t000.png
+000323_009013_688_t000.png
+000324_001849_Img-86_t000.png
+000325_001308_Img-345_t000.png
+000326_008376_304_t000.png
+000327_003614_Blackspot Bruising Disease Aug (197)_t000.png
+000328_007918_231_t002.png
+000329_001022_Img-1417_t000.png
+000330_008950_63_t000.png
+000331_000453_Dry Rot Disease (26)_t000.png
+000332_004718_Dry Rot Disease  Aug (28)_t000.png
+000333_003912_Blackspot Bruising Disease Aug (498)_t000.png
+000334_004512_Dry Rot Disease  Aug (1225)_t000.png
+000335_002354_20241105_181057_t000.png
+000336_004081_Blackspot Bruising Disease Aug (662)_t001.png
+000337_004279_Brown Rot Disease  Aug (77)_t000.png
+000338_000557_Soft Rot Disease (46)_t000.png
+000339_006158_Soft Rot Disease Aug (157)_t000.png
+000340_008919_614_t000.png
+000341_005790_Healthy Potato Aug (460)_t000.png
+000342_004596_Dry Rot Disease  Aug (151)_t001.png
+000343_005192_Dry Rot Disease  Aug (770)_t000.png
+000344_005155_Dry Rot Disease  Aug (732)_t000.png
+000345_001723_Img-745_t000.png
+000346_001441_Img-474_t000.png
+000347_006574_Soft Rot Disease Aug (79)_t001.png
+000348_004551_Dry Rot Disease  Aug (1266)_t000.png
+000349_006241_Soft Rot Disease Aug (239)_t002.png
+000350_008614_38_t000.png
+000351_000411_Dry Rot Disease (151)_t000.png
+000352_003659_Blackspot Bruising Disease Aug (24)_t001.png
+000353_003579_Blackspot Bruising Disease Aug (162)_t000.png
+000354_003736_Blackspot Bruising Disease Aug (316)_t000.png
+000355_008308_292_t002.png
+000356_008345_300_t001.png
+000357_003014_20241106_230708_t000.png
+000358_001122_Img-164_t000.png
+000359_005823_Healthy Potato Aug (492)_t000.png
+000360_007627_201_t003.png
+000361_004920_Dry Rot Disease  Aug (497)_t000.png
+000362_007536_193_t002.png
+000363_000656_Img-1062_t000.png
+000364_000861_Img-1265_t000.png
+000365_008391_305_t007.png
+000366_006372_Soft Rot Disease Aug (376)_t000.png
+000367_002272_20241105_180709_t000.png
+000368_001232_Img-270_t000.png
+000369_001046_Img-1441_t000.png
+000370_005684_Healthy Potato Aug (358)_t000.png
+000371_000032_IMG_20231105_134048_t000.png
+000372_005003_Dry Rot Disease  Aug (584)_t000.png
+000373_003476_IMG_20241105_222723_364_t000.png
+000374_004278_Brown Rot Disease  Aug (76)_t000.png
+000375_007948_234_t007.png
+000376_006890_62_t003.png
+000377_004659_Dry Rot Disease  Aug (215)_t000.png
+000378_001266_Img-303_t000.png
+000379_003888_Blackspot Bruising Disease Aug (476)_t000.png
+000380_002645_20241106_223101_t000.png
+000381_006533_Soft Rot Disease Aug (541)_t001.png
+000382_003038_Img-120_t000_1.png
+000383_008114_258_t005.png
+000384_006988_9_t009.png
+000385_004197_Blackspot Bruising Disease Aug (80)_t000.png
+000386_006304_Soft Rot Disease Aug (305)_t000.png
+000387_007958_235_t006.png
+000388_001486_Img-517_t000.png
+000389_003801_Blackspot Bruising Disease Aug (385)_t000.png
+000390_007715_211_t000.png
+000391_005778_Healthy Potato Aug (449)_t001.png
+000392_003936_Blackspot Bruising Disease Aug (521)_t000.png
+000393_009060_72_t001.png
+000394_003374_Img-78_t000_1.png
+000395_002403_20241105_182822_t000.png
+000396_008707_454_t000.png
+000397_001534_Img-564_t000.png
+000398_007335_159_t001.png
+000399_002493_20241105_183900_t000.png
+000400_008916_611_t000.png
+000401_001041_Img-1437_t000.png
+000402_001672_Img-697_t000.png
+000403_004489_Dry Rot Disease  Aug (1201)_t001.png
+000404_005693_Healthy Potato Aug (368)_t000.png
+000405_005745_Healthy Potato Aug (418)_t000.png
+000406_007333_158_t006.png
+000407_003474_IMG_20241105_222723_040_t000.png
+000408_005847_Healthy Potato Aug (515)_t000.png
+000409_006474_Soft Rot Disease Aug (482)_t000.png
+000410_005733_Healthy Potato Aug (407)_t000.png
+000411_003766_Blackspot Bruising Disease Aug (348)_t000.png
+000412_005854_Healthy Potato Aug (521)_t000.png
+000413_001348_Img-383_t000.png
+000414_002355_20241105_181059_t000.png
+000415_007431_17_t001.png
+000416_005407_Dry Rot Disease  Aug (996)_t000.png
+000417_002283_20241105_180731_t000.png
+000418_005282_Dry Rot Disease  Aug (87)_t000.png
+000419_003633_Blackspot Bruising Disease Aug (215)_t000.png
+000420_008513_320_t001.png
+000421_005858_Healthy Potato Aug (525)_t000.png
+000422_003363_Img-68_t000_1.png
+000423_008190_270_t002.png
+000424_003006_20241106_230637_t000.png
+000425_004275_Brown Rot Disease  Aug (72)_t001.png
+000426_000575_Soft Rot Disease (65)_t000.png
+000427_001625_Img-64_t000.png
+000428_000369_Dry Rot Disease (105)_t001.png
+000429_002387_20241105_182728_t000.png
+000430_001667_Img-691_t000.png
+000431_004806_Dry Rot Disease  Aug (378)_t000.png
+000432_001220_Img-258_t000.png
+000433_007304_154_t005.png
+000434_000343_Healthy Potato (9)_t000.png
+000435_005076_Dry Rot Disease  Aug (658)_t000.png
+000436_000081_IMG_20231105_135422_t000.png
+000437_001990_20241030_202105_t000.png
+000438_008833_54_t000.png
+000439_007914_230_t007.png
+000440_008156_265_t001.png
+000441_001137_Img-180_t000.png
+000442_001058_Img-1452_t000.png
+000443_002632_20241106_223040_t000.png
+000444_003208_Img-274_t000_1.png
+000445_005792_Healthy Potato Aug (462)_t000.png
+000446_000652_Img-1059_t000.png
+000447_003213_Img-279_t000_1.png
+000448_003914_Blackspot Bruising Disease Aug (500)_t000.png
+000449_001728_Img-74_t000.png
+000450_002758_20241106_223710_t000.png
+000451_004194_Blackspot Bruising Disease Aug (78)_t000.png
+000452_009030_69_t002.png
+000453_003103_Img-17_t000_1.png
+000454_001271_Img-308_t000.png
+000455_001005_Img-1401_t000.png
+000456_000113_IMG_20231105_140333_t000.png
+000457_003296_Img-359_t000_1.png
+000458_006337_Soft Rot Disease Aug (340)_t000.png
+000459_003053_Img-134_t000_1.png
+000460_007978_238_t001.png
+000461_007156_135_t002.png
+000462_003752_Blackspot Bruising Disease Aug (336)_t002.png
+000463_005232_Dry Rot Disease  Aug (818)_t001.png
+000464_002625_20241106_223029_t000.png
+000465_001175_Img-216_t000.png
+000466_009031_6_t000.png
+000467_007884_228_t000.png
+000468_008142_262_t005.png
+000469_000263_Healthy Potato (14)_t000.png
+000470_005919_Healthy Potato Aug (585)_t001.png
+000471_004714_Dry Rot Disease  Aug (274)_t000.png
+000472_006218_Soft Rot Disease Aug (215)_t000.png
+000473_002781_20241106_223810_t000.png
+000474_003002_20241106_230612_t000.png
+000475_000984_Img-1382_t000.png
+000476_005038_Dry Rot Disease  Aug (621)_t001.png
+000477_005010_Dry Rot Disease  Aug (592)_t001.png
+000478_001492_Img-524_t000.png
+000479_008627_399_t000.png
+000480_009264_DSC_0225_t000.png
+000481_000245_Blackspot Bruising Disease (93)_t000.png
+000482_003609_Blackspot Bruising Disease Aug (192)_t000.png
+000483_004346_Dry Rot Disease  Aug (1048)_t002.png
+000484_003025_Img-109_t000_1.png
+000485_008102_257_t000.png
+000486_001914_Img-935_t000.png
+000487_007504_190_t000.png
+000488_008742_480_t000.png
+000489_008698_448_t000.png
+000490_009002_67_t000.png
+000491_003543_Blackspot Bruising Disease Aug (129)_t000.png
+000492_007150_134_t001.png
+000493_006992_100_t003.png
+000494_007872_226_t010.png
+000495_004527_Dry Rot Disease  Aug (1242)_t000.png
+000496_003277_Img-340_t000_1.png
+000497_008755_490_t000.png
+000498_002805_20241106_224018_t000.png
+000499_003452_IMG_20241105_222654_902_t000.png
+000500_007132_130_t005.png
+000501_006867_56_t007.png
+000502_001773_Img-796_t000.png
+000503_006616_12_t005.png
+000504_009218_DSC_0167 - Copy_t001.png
+000505_003501_IMG_20241105_222753_168_t000.png
+000506_002728_20241106_223517_t000.png
+000507_006094_Healthy Potato Aug (91)_t001.png
+000508_005128_Dry Rot Disease  Aug (708)_t002.png
+000509_001749_Img-772_t000.png
+000510_007945_234_t004.png
+000511_008424_30_t000.png
+000512_006736_323_t004.png
+000513_006559_Soft Rot Disease Aug (64)_t000.png
+000514_004695_Dry Rot Disease  Aug (250)_t000.png
+000515_007954_235_t002.png
+000516_000388_Dry Rot Disease (124)_t001.png
+000517_005633_Healthy Potato Aug (308)_t000.png
+000518_004932_Dry Rot Disease  Aug (51)_t001.png
+000519_002999_20241106_230558_t000.png
+000520_003379_Img-82_t000_1.png
+000521_002895_20241106_225615_t000.png
+000522_005663_Healthy Potato Aug (338)_t000.png
+000523_005844_Healthy Potato Aug (511)_t000.png
+000524_006051_Healthy Potato Aug (712)_t001.png
+000525_004465_Dry Rot Disease  Aug (1177)_t000.png
+000526_008250_280_t000.png
+000527_008016_243_t007.png
+000528_000308_Healthy Potato (56)_t000.png
+000529_002035_20241105_174719_t000.png
+000530_000826_Img-1228_t000.png
+000531_007804_220_t010.png
+000532_001488_Img-519_t000.png
+000533_001226_Img-263_t000.png
+000534_000682_Img-1086_t000.png
+000535_001390_Img-424_t000.png
+000536_002059_20241105_175120_t000.png
+000537_008998_676_t000.png
+000538_007276_149_t005.png
+000539_005774_Healthy Potato Aug (445)_t000.png
+000540_006119_Soft Rot Disease Aug (115)_t000.png
+000541_002000_20241030_202403_t000.png
+000542_003642_Blackspot Bruising Disease Aug (222)_t000.png
+000543_002345_20241105_181039_t000.png
+000544_006275_Soft Rot Disease Aug (274)_t000.png
+000545_008058_251_t002.png
+000546_006400_Soft Rot Disease Aug (408)_t000.png
+000547_007532_192_t008.png
+000548_007664_205_t002.png
+000549_005782_Healthy Potato Aug (453)_t000.png
+000550_007258_147_t002.png
+000551_000083_IMG_20231105_135448_t000.png
+000552_006074_Healthy Potato Aug (735)_t001.png
+000553_005087_Dry Rot Disease  Aug (669)_t000.png
+000554_003077_Img-156_t000_1.png
+000555_003835_Blackspot Bruising Disease Aug (424)_t000.png
+000556_006581_Soft Rot Disease Aug (85)_t000.png
+000557_001887_Img-909_t000.png
+000558_004668_Dry Rot Disease  Aug (222)_t000.png
+000559_008988_669_t000.png
+000560_002861_20241106_224523_t000.png
+000561_000080_IMG_20231105_135404_t000.png
+000562_007408_174_t002.png
+000563_004361_Dry Rot Disease  Aug (1066)_t001.png
+000564_004044_Blackspot Bruising Disease Aug (624)_t001.png
+000565_003119_Img-194_t000_1.png
+000566_003018_Img-102_t000_1.png
+000567_005935_Healthy Potato Aug (600)_t000.png
+000568_004705_Dry Rot Disease  Aug (265)_t000.png
+000569_007984_239_t003.png
+000570_006712_295_t004.png
+000571_007707_210_t000.png
+000572_009245_DSC_0188_t000.png
+000573_006243_Soft Rot Disease Aug (242)_t000.png
+000574_002703_20241106_223325_t000.png
+000575_005148_Dry Rot Disease  Aug (726)_t000.png
+000576_003723_Blackspot Bruising Disease Aug (301)_t001.png
+000577_003326_Img-389_t000_1.png
+000578_003402_IMG_20241105_222534_917_t000.png
+000579_008702_44_t002.png
+000580_006373_Soft Rot Disease Aug (377)_t000.png
+000581_008288_288_t001.png
+000582_006146_Soft Rot Disease Aug (144)_t000.png
+000583_001428_Img-461_t000.png
+000584_003066_Img-146_t000_1.png
+000585_000525_Soft Rot Disease (15)_t001.png
+000586_007699_209_t003.png
+000587_008927_620_t000.png
+000588_006476_Soft Rot Disease Aug (484)_t000.png
+000589_004951_Dry Rot Disease  Aug (530)_t000.png
+000590_004744_Dry Rot Disease  Aug (308)_t000.png
+000591_002838_20241106_224327_t000.png
+000592_005877_Healthy Potato Aug (542)_t000.png
+000593_001547_Img-576_t000.png
+000594_003398_Img-9_t000_1.png
+000595_004543_Dry Rot Disease  Aug (1257)_t000.png
+000596_001078_Img-1473_t000.png
+000597_001603_Img-629_t000.png
+000598_000228_Blackspot Bruising Disease (74)_t000.png
+000599_006609_11_t006.png
+000600_000640_Img-1048_t000.png
+000601_007957_235_t005.png
+000602_008605_381_t000.png
+000603_001924_Img-945_t000.png
+000604_008953_640_t000.png
+000605_009152_97_t001.png
+000606_005915_Healthy Potato Aug (581)_t000.png
+000607_002794_20241106_223949_t000.png
+000608_004727_Dry Rot Disease  Aug (29)_t000.png
+000609_000448_Dry Rot Disease (20)_t000.png
+000610_007619_200_t005.png
+000611_005328_Dry Rot Disease  Aug (918)_t000.png
+000612_003830_Blackspot Bruising Disease Aug (417)_t000.png
+000613_004401_Dry Rot Disease  Aug (1106)_t000.png
+000614_001764_Img-786_t000.png
+000615_002558_20241106_222713_t000.png
+000616_000672_Img-1077_t000.png
+000617_001241_Img-27_t000.png
+000618_008149_264_t000.png
+000619_008574_35_t002.png
+000620_008824_541_t000.png
+000621_000147_Blackspot Bruising Disease (1)_t000.png
+000622_006415_Soft Rot Disease Aug (426)_t000.png
+000623_004591_Dry Rot Disease  Aug (146)_t001.png
+000624_001541_Img-570_t000.png
+000625_007542_193_t008.png
+000626_006882_60_t005.png
+000627_001571_Img-59_t000.png
+000628_002974_20241106_230225_t000.png
+000629_001762_Img-784_t000.png
+000630_000129_IMG_20231105_140643_t000.png
+000631_005899_Healthy Potato Aug (564)_t001.png
+000632_002238_20241105_180527_t000.png
+000633_009143_95_t000.png
+000634_003186_Img-253_t000_1.png
+000635_003086_Img-164_t000_1.png
+000636_001071_Img-1466_t001.png
+000637_007763_217_t004.png
+000638_003141_Img-212_t000_1.png
+000639_007527_192_t003.png
+000640_001202_Img-240_t000.png
+000641_006385_Soft Rot Disease Aug (391)_t000.png
+000642_003204_Img-270_t000_1.png
+000643_007346_160_t002.png
+000644_003656_Blackspot Bruising Disease Aug (237)_t000.png
+000645_000313_Healthy Potato (60)_t000.png
+000646_007031_10_t002.png
+000647_004309_Dry Rot Disease  Aug (1011)_t000.png
+000648_000625_Img-1033_t001.png
+000649_008616_38_t002.png
+000650_007838_223_t009.png
+000651_003581_Blackspot Bruising Disease Aug (164)_t000.png
+000652_004623_Dry Rot Disease  Aug (179)_t000.png
+000653_005314_Dry Rot Disease  Aug (903)_t000.png
+000654_003880_Blackspot Bruising Disease Aug (469)_t000.png
+000655_006844_51_t003.png
+000656_005549_Healthy Potato Aug (231)_t000.png
+000657_000407_Dry Rot Disease (146)_t001.png
+000658_000121_IMG_20231105_140541_t000.png
+000659_005743_Healthy Potato Aug (416)_t000.png
+000660_006041_Healthy Potato Aug (702)_t000.png
+000661_003392_Img-94_t000_1.png
+000662_004339_Dry Rot Disease  Aug (1040)_t001.png
+000663_003546_Blackspot Bruising Disease Aug (131)_t002.png
+000664_000500_Dry Rot Disease (78)_t000.png
+000665_006527_Soft Rot Disease Aug (535)_t000.png
+000666_001862_Img-883_t000.png
+000667_007008_105_t001.png
+000668_001142_Img-185_t000.png
+000669_002094_20241105_175626_t000.png
+000670_004520_Dry Rot Disease  Aug (1231)_t002.png
+000671_001656_Img-681_t000.png
+000672_005333_Dry Rot Disease  Aug (921)_t000.png
+000673_002562_20241106_222719_t000.png
+000674_003592_Blackspot Bruising Disease Aug (176)_t000.png
+000675_001639_Img-664_t000.png
+000676_008059_251_t003.png
+000677_003332_Img-41_t000_1.png
+000678_008050_248_t000.png
+000679_007967_236_t004.png
+000680_007040_111_t003.png
+000681_003884_Blackspot Bruising Disease Aug (472)_t000.png
+000682_000953_Img-1352_t000.png
+000683_003030_Img-113_t000_1.png
+000684_008765_49_t000.png
+000685_007876_227_t003.png
+000686_008212_274_t000.png
+000687_006505_Soft Rot Disease Aug (515)_t000.png
+000688_007322_157_t002.png
+000689_005517_Healthy Potato Aug (201)_t000.png
+000690_004329_Dry Rot Disease  Aug (1030)_t004.png
+000691_000691_Img-1095_t000.png
+000692_005937_Healthy Potato Aug (602)_t000.png
+000693_004080_Blackspot Bruising Disease Aug (661)_t000.png
+000694_003499_IMG_20241105_222747_302_t000.png
+000695_006379_Soft Rot Disease Aug (382)_t000.png
+000696_000587_Soft Rot Disease (78)_t000.png
+000697_006445_Soft Rot Disease Aug (456)_t001.png
+000698_000348_Healthy Potato (94)_t000.png
+000699_008231_277_t001.png
+000700_007210_142_t002.png
+000701_004128_Blackspot Bruising Disease Aug (706)_t000.png
+000702_008326_297_t000.png
+000703_007252_146_t004.png
+000704_002709_20241106_223422_t000.png
+000705_007271_149_t000.png
+000706_001505_Img-536_t000.png
+000707_004347_Dry Rot Disease  Aug (1049)_t000.png
+000708_004031_Blackspot Bruising Disease Aug (613)_t000.png
+000709_000773_Img-1173_t000.png
+000710_004737_Dry Rot Disease  Aug (3)_t001.png
+000711_004330_Dry Rot Disease  Aug (1031)_t000.png
+000712_007114_128_t003.png
+000713_003855_Blackspot Bruising Disease Aug (444)_t000.png
+000714_004707_Dry Rot Disease  Aug (267)_t000.png
+000715_007939_233_t006.png
+000716_007096_126_t001.png
+000717_004261_Brown Rot Disease  Aug (55)_t000.png
+000718_006433_Soft Rot Disease Aug (443)_t000.png
+000719_001161_Img-202_t001.png
+000720_003097_Img-174_t000_1.png
+000721_000473_Dry Rot Disease (50)_t001.png
+000722_002022_20241030_202823_t000.png
+000723_004385_Dry Rot Disease  Aug (109)_t000.png
+000724_000336_Healthy Potato (81)_t000.png
+000725_003509_IMG_20241105_222758_267_t000.png
+000726_002282_20241105_180730_t000.png
+000727_007713_210_t006.png
+000728_002737_20241106_223631_t000.png
+000729_007195_140_t007.png
+000730_006484_Soft Rot Disease Aug (491)_t000.png
+000731_007522_191_t008.png
+000732_006879_5_t003.png
+000733_009222_DSC_0168_t000.png
+000734_000506_Dry Rot Disease (84)_t000.png
+000735_001287_Img-323_t000.png
+000736_000462_Dry Rot Disease (4)_t000.png
+000737_004585_Dry Rot Disease  Aug (14)_t001.png
+000738_003229_Img-294_t000_1.png
+000739_002106_20241105_175715_t000.png
+000740_000877_Img-1280_t000.png
+000741_008483_317_t000.png
+000742_004858_Dry Rot Disease  Aug (429)_t000.png
+000743_004319_Dry Rot Disease  Aug (1020)_t000.png
+000744_008115_258_t006.png
+000745_006542_Soft Rot Disease Aug (551)_t001.png
+000746_008827_544_t000.png
+000747_004203_Blackspot Bruising Disease Aug (86)_t001.png
+000748_004861_Dry Rot Disease  Aug (431)_t000.png
+000749_001501_Img-532_t000.png
+000750_007952_235_t000.png
+000751_003147_Img-218_t000_1.png
+000752_004810_Dry Rot Disease  Aug (382)_t000.png
+000753_000404_Dry Rot Disease (140)_t000.png
+000754_002904_20241106_225655_t000.png
+000755_006780_340_t002.png
+000756_002960_20241106_230124_t000.png
+000757_001154_Img-197_t000.png
+000758_000784_Img-1185_t000.png
+000759_003623_Blackspot Bruising Disease Aug (204)_t000.png
+000760_005513_Healthy Potato Aug (198)_t000.png
+000761_000057_IMG_20231105_134928_t000.png
+000762_003872_Blackspot Bruising Disease Aug (460)_t001.png
+000763_000405_Dry Rot Disease (141)_t000.png
+000764_000279_Healthy Potato (3)_t000.png
+000765_004073_Blackspot Bruising Disease Aug (654)_t000.png
+000766_009083_7_t002.png
+000767_006194_Soft Rot Disease Aug (190)_t000.png
+000768_002510_20241105_184045_t000.png
+000769_008983_664_t000.png
+000770_004948_Dry Rot Disease  Aug (528)_t000.png
+000771_007176_139_t000.png
+000772_008062_251_t006.png
+000773_004855_Dry Rot Disease  Aug (426)_t001.png
+000774_001136_Img-17_t000.png
+000775_000596_Img-1005_t000.png
+000776_005468_Healthy Potato Aug (154)_t000.png
+000777_003249_Img-313_t000_1.png
+000778_002836_20241106_224318_t000.png
+000779_003607_Blackspot Bruising Disease Aug (190)_t000.png
+000780_004059_Blackspot Bruising Disease Aug (64)_t001.png
+000781_007232_144_t002.png
+000782_006460_Soft Rot Disease Aug (47)_t000.png
+000783_002464_20241105_183201_t000.png
+000784_004528_Dry Rot Disease  Aug (1244)_t001.png
+000785_007227_143_t008.png
+000786_000042_IMG_20231105_134501_t000.png
+000787_005498_Healthy Potato Aug (183)_t000.png
+000788_000271_Healthy Potato (22)_t000.png
+000789_003257_Img-320_t000_1.png
+000790_008305_291_t003.png
+000791_007129_130_t002.png
+000792_003818_Blackspot Bruising Disease Aug (405)_t000.png
+000793_000242_Blackspot Bruising Disease (90)_t000.png
+000794_008850_561_t000.png
+000795_002103_20241105_175652_t000.png
+000796_000134_IMG_20231105_140746_t000.png
+000797_000441_Dry Rot Disease (180)_t001.png
+000798_008378_304_t002.png
+000799_004870_Dry Rot Disease  Aug (44)_t000.png
+000800_003560_Blackspot Bruising Disease Aug (144)_t000.png
+000801_005146_Dry Rot Disease  Aug (724)_t000.png
+000802_000077_IMG_20231105_135333_t000.png
+000803_000318_Healthy Potato (65)_t000.png
+000804_000457_Dry Rot Disease (30)_t000.png
+000805_001740_Img-763_t000.png
+000806_008372_303_t004.png
+000807_000533_Soft Rot Disease (22)_t000.png
+000808_003047_Img-129_t000_1.png
+000809_000513_Dry Rot Disease (90)_t000.png
+000810_005845_Healthy Potato Aug (512)_t000.png
+000811_007677_206_t006.png
+000812_004148_Blackspot Bruising Disease Aug (725)_t000.png
+000813_008585_369_t000.png
+000814_003525_Blackspot Bruising Disease Aug (111)_t000.png
+000815_007934_233_t001.png
+000816_000117_IMG_20231105_140408_t000.png
+000817_003985_Blackspot Bruising Disease Aug (571)_t000.png
+000818_006279_Soft Rot Disease Aug (278)_t001.png
+000819_004058_Blackspot Bruising Disease Aug (639)_t000.png
+000820_009257_DSC_0218_t000.png
+000821_003805_Blackspot Bruising Disease Aug (39)_t000.png
+000822_002891_20241106_225603_t000.png
+000823_006038_Healthy Potato Aug (70)_t000.png
+000824_005754_Healthy Potato Aug (427)_t000.png
+000825_001276_Img-312_t000.png
+000826_001426_Img-45_t000.png
+000827_001964_Img-984_t000.png
+000828_002858_20241106_224510_t000.png
+000829_008941_631_t000.png
+000830_004786_Dry Rot Disease  Aug (353)_t001.png
+000831_000312_Healthy Potato (6)_t000.png
+000832_005701_Healthy Potato Aug (376)_t000.png
+000833_005910_Healthy Potato Aug (576)_t000.png
+000834_000466_Dry Rot Disease (43)_t000.png
+000835_006639_167_t004.png
+000836_002179_20241105_180012_t000.png
+000837_005204_Dry Rot Disease  Aug (784)_t000.png
+000838_005413_Healthy Potato Aug (100)_t001.png
+000839_004463_Dry Rot Disease  Aug (1175)_t000.png
+000840_007402_173_t001.png
+000841_000905_Img-1305_t000.png
+000842_005089_Dry Rot Disease  Aug (670)_t000.png
+000843_000633_Img-1041_t000.png
+000844_003129_Img-202_t000_1.png
+000845_000419_Dry Rot Disease (159)_t000.png
+000846_002748_20241106_223647_t000.png
+000847_006997_102_t000.png
+000848_004438_Dry Rot Disease  Aug (1147)_t002.png
+000849_007936_233_t003.png
+000850_003576_Blackspot Bruising Disease Aug (16)_t001.png
+000851_009139_94_t000.png
+000852_002122_20241105_175753_t000.png
+000853_004956_Dry Rot Disease  Aug (535)_t001.png
+000854_007450_184_t007.png
+000855_005141_Dry Rot Disease  Aug (72)_t001.png
+000856_001440_Img-472_t000.png
+000857_002375_20241105_181243_t000.png
+000858_008670_427_t000.png
+000859_006410_Soft Rot Disease Aug (419)_t000.png
+000860_006273_Soft Rot Disease Aug (272)_t000.png
+000861_006734_323_t002.png
+000862_009147_96_t000.png
+000863_004751_Dry Rot Disease  Aug (314)_t002.png
+000864_004321_Dry Rot Disease  Aug (1023)_t001.png
+000865_008289_288_t002.png
+000866_009007_682_t000.png
+000867_007351_161_t001.png
+000868_000387_Dry Rot Disease (123)_t000.png
+000869_000750_Img-1151_t001.png
+000870_008463_314_t004.png
+000871_009050_713_t000.png
+000872_002104_20241105_175656_t000.png
+000873_007864_226_t002.png
+000874_008430_310_t003.png
+000875_002169_20241105_175948_t000.png
+000876_009153_97_t002.png
+000877_008603_37_t003.png
+000878_000199_Blackspot Bruising Disease (48)_t000.png
+000879_007646_203_t002.png
+000880_007068_118_t002.png
+000881_001718_Img-740_t000.png
+000882_001479_Img-50_t000.png
+000883_005964_Healthy Potato Aug (629)_t000.png
+000884_003828_Blackspot Bruising Disease Aug (415)_t000.png
+000885_000668_Img-1073_t000.png
+000886_008708_455_t000.png
+000887_007297_153_t002.png
+000888_003666_Blackspot Bruising Disease Aug (246)_t000.png
+000889_004375_Dry Rot Disease  Aug (1080)_t000.png
+000890_000598_Img-1007_t000.png
+000891_008162_266_t001.png
+000892_006451_Soft Rot Disease Aug (461)_t000.png
+000893_000667_Img-1072_t000.png
+000894_005599_Healthy Potato Aug (278)_t000.png
+000895_000071_IMG_20231105_135213_t000.png
+000896_004577_Dry Rot Disease  Aug (131)_t000.png
+000897_005944_Healthy Potato Aug (609)_t000.png
+000898_004856_Dry Rot Disease  Aug (427)_t001.png
+000899_004883_Dry Rot Disease  Aug (457)_t000.png
+000900_006493_Soft Rot Disease Aug (500)_t000.png
+000901_008934_627_t000.png
+000902_007016_107_t001.png
+000903_003522_Blackspot Bruising Disease Aug (107)_t000.png
+000904_005881_Healthy Potato Aug (546)_t000.png
+000905_005894_Healthy Potato Aug (56)_t000.png
+000906_006055_Healthy Potato Aug (716)_t001.png
+000907_001481_Img-511_t000.png
+000908_002453_20241105_183124_t000.png
+000909_007005_104_t002.png
+000910_002019_20241030_202803_t000.png
+000911_007480_187_t008.png
+000912_000488_Dry Rot Disease (67)_t000.png
+000913_000116_IMG_20231105_140401_t000.png
+000914_001002_Img-139_t000.png
+000915_008748_486_t000.png
+000916_003571_Blackspot Bruising Disease Aug (155)_t000.png
+000917_003336_Img-45_t000_1.png
+000918_007341_15_t000.png
+000919_007283_150_t002.png
+000920_004202_Blackspot Bruising Disease Aug (85)_t000.png
+000921_004514_Dry Rot Disease  Aug (1227)_t002.png
+000922_007084_123_t000.png
+000923_003841_Blackspot Bruising Disease Aug (430)_t000.png
+000924_002607_20241106_222913_t000.png
+000925_002623_20241106_223026_t000.png
+000926_009117_89_t001.png
+000927_004403_Dry Rot Disease  Aug (1108)_t000.png
+000928_000630_Img-1039_t000.png
+000929_009190_DSC_0153_t001.png
+000930_000109_IMG_20231105_140311_t000.png
+000931_004207_Blackspot Bruising Disease Aug (9)_t001.png
+000932_004117_Blackspot Bruising Disease Aug (696)_t000.png
+000933_006488_Soft Rot Disease Aug (497)_t000.png
+000934_002023_20241030_202836_t000.png
+000935_008787_513_t000.png
+000936_007951_234_t010.png
+000937_001236_Img-274_t000.png
+000938_008431_310_t004.png
+000939_008908_606_t000.png
+000940_006623_13_t006.png
+000941_001185_Img-225_t000.png
+000942_001563_Img-590_t000.png
+000943_003885_Blackspot Bruising Disease Aug (473)_t000.png
+000944_000816_Img-1218_t000.png
+000945_004985_Dry Rot Disease  Aug (567)_t000.png
+000946_007596_198_t009.png
+000947_005334_Dry Rot Disease  Aug (921)_t001.png
+000948_002276_20241105_180716_t000.png
+000949_005840_Healthy Potato Aug (508)_t000.png
+000950_001697_Img-719_t000.png
+000951_006662_184_t000.png
+000952_007171_138_t004.png
+000953_001677_Img-700_t000.png
+000954_000027_IMG_20231105_133509_t000.png
+000955_008007_242_t005.png
+000956_004555_Dry Rot Disease  Aug (1270)_t000.png
+000957_006358_Soft Rot Disease Aug (361)_t001.png
+000958_004070_Blackspot Bruising Disease Aug (651)_t000.png
+000959_005512_Healthy Potato Aug (197)_t000.png
+000960_003641_Blackspot Bruising Disease Aug (221)_t000.png
+000961_001944_Img-963_t000.png
+000962_009100_85_t000.png
+000963_008066_252_t002.png
+000964_000588_Soft Rot Disease (79)_t001.png
+000965_000352_Healthy Potato (98)_t001.png
+000966_009212_DSC_0165_t001.png
+000967_002405_20241105_182837_t000.png
+000968_008161_266_t000.png
+000969_001696_Img-718_t000.png
+000970_001736_Img-759_t000.png
+000971_000670_Img-1075_t000.png
+000972_008067_252_t003.png
+000973_009024_696_t000.png
+000974_001702_Img-724_t000.png
+000975_007896_229_t002.png
+000976_004561_Dry Rot Disease  Aug (1278)_t000.png
+000977_004815_Dry Rot Disease  Aug (387)_t000.png
+000978_004229_Brown Rot Disease  Aug (17)_t000.png
+000979_005593_Healthy Potato Aug (272)_t001.png
+000980_002881_20241106_225528_t000.png
+000981_008225_276_t001.png
+000982_009020_692_t000.png
+000983_006875_58_t008.png
+000984_008628_39_t000.png
+000985_002918_20241106_225750_t000.png
+000986_001581_Img-608_t000.png
+000987_006306_Soft Rot Disease Aug (307)_t000.png
+000988_001751_Img-774_t000.png
+000989_002919_20241106_225753_t000.png
+000990_001628_Img-652_t000.png
+000991_001478_Img-509_t000.png
+000992_008594_374_t000.png
+000993_007869_226_t007.png
+000994_006416_Soft Rot Disease Aug (427)_t000.png
+000995_002478_20241105_183258_t000.png
+000996_002470_20241105_183218_t000.png
+000997_001301_Img-338_t000.png
+000998_007452_184_t009.png
+000999_004122_Blackspot Bruising Disease Aug (700)_t000.png
+001000_008086_254_t006.png
+001001_005343_Dry Rot Disease  Aug (929)_t000.png
+001002_003163_Img-232_t000.png
+001003_007045_112_t003.png
+001004_008461_314_t002.png
+001005_006207_Soft Rot Disease Aug (203)_t000.png
+001006_004966_Dry Rot Disease  Aug (546)_t001.png
+001007_004437_Dry Rot Disease  Aug (1146)_t000.png
+001008_002998_20241106_230555_t000.png
+001009_003995_Blackspot Bruising Disease Aug (580)_t000.png
+001010_003777_Blackspot Bruising Disease Aug (357)_t000.png
+001011_000909_Img-1309_t000.png
+001012_004118_Blackspot Bruising Disease Aug (697)_t000.png
+001013_007392_171_t001.png
+001014_006570_Soft Rot Disease Aug (74)_t001.png
+001015_009102_85_t002.png
+001016_002490_20241105_183854_t000.png
+001017_000225_Blackspot Bruising Disease (71)_t000.png
+001018_004318_Dry Rot Disease  Aug (102)_t001.png
+001019_000378_Dry Rot Disease (113)_t000.png
+001020_006827_45_t004.png
+001021_003544_Blackspot Bruising Disease Aug (13)_t000.png
+001022_000902_Img-1302_t000.png
+001023_002529_20241106_222235_t000.png
+001024_006059_Healthy Potato Aug (721)_t000.png
+001025_006254_Soft Rot Disease Aug (253)_t001.png
+001026_007582_197_t006.png
+001027_007362_163_t002.png
+001028_006796_350_t002.png
+001029_006083_Healthy Potato Aug (81)_t001.png
+001030_005728_Healthy Potato Aug (401)_t001.png
+001031_008799_522_t000.png
+001032_001961_Img-981_t000.png
+001033_006743_326_t001.png
+001034_004615_Dry Rot Disease  Aug (17)_t000.png
+001035_009177_DSC_0147_t000.png
+001036_001810_Img-830_t000.png
+001037_006371_Soft Rot Disease Aug (375)_t000.png
+001038_008240_278_t004.png
+001039_002731_20241106_223543_t000.png
+001040_008671_428_t000.png
+001041_003486_IMG_20241105_222733_284_t000.png
+001042_004619_Dry Rot Disease  Aug (174)_t000.png
+001043_007127_130_t000.png
+001044_002889_20241106_225554_t000.png
+001045_007704_20_t000.png
+001046_005581_Healthy Potato Aug (261)_t000.png
+001047_003288_Img-350_t000_1.png
+001048_008684_437_t000.png
+001049_008357_301_t005.png
+001050_000639_Img-1047_t000.png
+001051_008178_268_t005.png
+001052_001876_Img-897_t000.png
+001053_008737_478_t000.png
+001054_008219_275_t001.png
+001055_004918_Dry Rot Disease  Aug (495)_t001.png
+001056_000102_IMG_20231105_135840_t000.png
+001057_004791_Dry Rot Disease  Aug (359)_t000.png
+001058_006526_Soft Rot Disease Aug (534)_t000.png
+001059_009161_99_t002.png
+001060_000665_Img-1070_t000.png
+001061_005181_Dry Rot Disease  Aug (76)_t000.png
+001062_001836_Img-854_t000.png
+001063_008856_567_t000.png
+001064_009149_96_t002.png
+001065_001408_Img-441_t000.png
+001066_009216_DSC_0166_t001.png
+001067_002726_20241106_223513_t000.png
+001068_003551_Blackspot Bruising Disease Aug (136)_t000.png
+001069_004992_Dry Rot Disease  Aug (573)_t000.png
+001070_008699_449_t000.png
+001071_006187_Soft Rot Disease Aug (184)_t000.png
+001072_000755_Img-1156_t000.png
+001073_007105_127_t002.png
+001074_006946_85_t006.png
+001075_008201_272_t001.png
+001076_006893_64_t003.png
+001077_003529_Blackspot Bruising Disease Aug (115)_t000.png
+001078_007165_137_t002.png
+001079_006130_Soft Rot Disease Aug (127)_t001.png
+001080_000478_Dry Rot Disease (58)_t000.png
+001081_003733_Blackspot Bruising Disease Aug (313)_t000.png
+001082_000660_Img-1066_t000.png
+001083_000628_Img-1037_t001.png
+001084_002729_20241106_223518_t000.png
+001085_007445_184_t002.png
+001086_004342_Dry Rot Disease  Aug (1043)_t000.png
+001087_003756_Blackspot Bruising Disease Aug (34)_t000.png
+001088_005391_Dry Rot Disease  Aug (98)_t000.png
+001089_001168_Img-209_t000.png
+001090_007835_223_t006.png
+001091_005037_Dry Rot Disease  Aug (620)_t000.png
+001092_000658_Img-1064_t000.png
+001093_007597_198_t010.png
+001094_007807_221_t001.png
+001095_005151_Dry Rot Disease  Aug (729)_t000.png
+001096_008369_303_t001.png
+001097_005171_Dry Rot Disease  Aug (75)_t000.png
+001098_008552_344_t000.png
+001099_000193_Blackspot Bruising Disease (42)_t000.png
+001100_005787_Healthy Potato Aug (458)_t000.png
+001101_005689_Healthy Potato Aug (364)_t001.png
+001102_001983_20241030_201551_t000.png
+001103_007943_234_t002.png
+001104_001064_Img-145_t000.png
+001105_000703_Img-1106_t000.png
+001106_001255_Img-292_t000.png
+001107_009027_699_t000.png
+001108_008772_501_t000.png
+001109_006327_Soft Rot Disease Aug (327)_t001.png
+001110_007463_186_t000.png
+001111_004036_Blackspot Bruising Disease Aug (617)_t001.png
+001112_002246_20241105_180544_t000.png
+001113_003294_Img-357_t000_1.png
+001114_002854_20241106_224443_t000.png
+001115_002727_20241106_223515_t000.png
+001116_002430_20241105_183016_t000.png
+001117_003033_Img-116_t000_1.png
+001118_001336_Img-371_t000.png
+001119_004921_Dry Rot Disease  Aug (498)_t001.png
+001120_007340_159_t006.png
+001121_009228_DSC_0172_t001.png
+001122_007950_234_t009.png
+001123_004461_Dry Rot Disease  Aug (1172)_t000.png
+001124_003080_Img-159_t000_1.png
+001125_002988_20241106_230330_t000.png
+001126_005376_Dry Rot Disease  Aug (962)_t001.png
+001127_000951_Img-134_t000.png
+001128_000090_IMG_20231105_135604_t000.png
+001129_008439_311_t004.png
+001130_000774_Img-1174_t000.png
+001131_008665_422_t000.png
+001132_005366_Dry Rot Disease  Aug (947)_t000.png
+001133_006043_Healthy Potato Aug (704)_t000.png
+001134_001818_Img-838_t000.png
+001135_005768_Healthy Potato Aug (44)_t001.png
+001136_001420_Img-454_t000.png
+001137_007981_239_t000.png
+001138_000540_Soft Rot Disease (29)_t000.png
+001139_002217_20241105_180214_t000.png
+001140_002795_20241106_223952_t000.png
+001141_005879_Healthy Potato Aug (544)_t000.png
+001142_001200_Img-239_t000.png
+001143_005388_Dry Rot Disease  Aug (976)_t000.png
+001144_004998_Dry Rot Disease  Aug (579)_t001.png
+001145_002132_20241105_175821_t000.png
+001146_000836_Img-1239_t000.png
+001147_000616_Img-1025_t000.png
+001148_007717_211_t002.png
+001149_000606_Img-1015_t000.png
+001150_004097_Blackspot Bruising Disease Aug (677)_t001.png
+001151_004238_Brown Rot Disease  Aug (28)_t001.png
+001152_008620_392_t000.png
+001153_005867_Healthy Potato Aug (533)_t000.png
+001154_008445_312_t002.png
+001155_004431_Dry Rot Disease  Aug (114)_t000.png
+001156_003925_Blackspot Bruising Disease Aug (510)_t000.png
+001157_008194_271_t000.png
+001158_007458_185_t005.png
+001159_000328_Healthy Potato (74)_t000.png
+001160_000357_Brown Rot Disease (14)_t000.png
+001161_007777_218_t008.png
+001162_000771_Img-116_t000.png
+001163_000268_Healthy Potato (19)_t000.png
+001164_003132_Img-204_t000_1.png
+001165_007110_127_t007.png
+001166_004462_Dry Rot Disease  Aug (1174)_t000.png
+001167_006242_Soft Rot Disease Aug (240)_t001.png
+001168_001851_Img-872_t000.png
+001169_005635_Healthy Potato Aug (31)_t000.png
+001170_006195_Soft Rot Disease Aug (191)_t000.png
+001171_008491_318_t000.png
+001172_008606_382_t000.png
+001173_002907_20241106_225708_t000.png
+001174_006864_56_t004.png
+001175_000502_Dry Rot Disease (8)_t000.png
+001176_009105_86_t001.png
+001177_006706_28_t006.png
+001178_006637_166_t003.png
+001179_004411_Dry Rot Disease  Aug (1118)_t000.png
+001180_001414_Img-448_t000.png
+001181_005179_Dry Rot Disease  Aug (758)_t001.png
+001182_004219_Brown Rot Disease  Aug (10)_t001.png
+001183_000223_Blackspot Bruising Disease (7)_t000.png
+001184_007794_220_t000.png
+001185_005575_Healthy Potato Aug (256)_t000.png
+001186_004195_Blackspot Bruising Disease Aug (79)_t000.png
+001187_002062_20241105_175136_t000.png
+001188_001095_Img-1489_t000.png
+001189_001444_Img-477_t000.png
+001190_001312_Img-349_t000.png
+001191_007686_207_t006.png
+001192_006376_Soft Rot Disease Aug (38)_t000.png
+001193_002878_20241106_225516_t000.png
+001194_005201_Dry Rot Disease  Aug (780)_t000.png
+001195_005134_Dry Rot Disease  Aug (713)_t000.png
+001196_006015_Healthy Potato Aug (678)_t000.png
+001197_004905_Dry Rot Disease  Aug (480)_t002.png
+001198_006612_11_t009.png
+001199_004608_Dry Rot Disease  Aug (162)_t000.png
+001200_004078_Blackspot Bruising Disease Aug (659)_t001.png
+001201_008381_304_t005.png
+001202_000566_Soft Rot Disease (56)_t000.png
+001203_004157_Blackspot Bruising Disease Aug (737)_t000.png
+001204_002905_20241106_225701_t000.png
+001205_006772_335_t002.png
+001206_004930_Dry Rot Disease  Aug (508)_t001.png
+001207_007203_141_t005.png
+001208_002288_20241105_180738_t000.png
+001209_006884_60_t007.png
+001210_006950_87_t004.png
+001211_001500_Img-531_t000.png
+001212_005878_Healthy Potato Aug (543)_t001.png
+001213_000167_Blackspot Bruising Disease (19)_t000.png
+001214_009029_69_t001.png
+001215_004224_Brown Rot Disease  Aug (104)_t001.png
+001216_007615_200_t001.png
+001217_001568_Img-597_t000.png
+001218_003606_Blackspot Bruising Disease Aug (19)_t000.png
+001219_003792_Blackspot Bruising Disease Aug (373)_t001.png
+001220_001490_Img-520_t000.png
+001221_005117_Dry Rot Disease  Aug (699)_t000.png
+001222_008879_586_t000.png
+001223_005298_Dry Rot Disease  Aug (888)_t000.png
+001224_003013_20241106_230704_t000.png
+001225_007622_200_t008.png
+001226_008832_549_t000.png
+001227_005632_Healthy Potato Aug (307)_t000.png
+001228_008976_65_t000.png
+001229_006250_Soft Rot Disease Aug (25)_t000.png
+001230_008040_246_t001.png
+001231_002221_20241105_180222_t000.png
+001232_003345_Img-53_t000_1.png
+001233_004332_Dry Rot Disease  Aug (1033)_t000.png
+001234_001105_Img-1499_t000.png
+001235_006170_Soft Rot Disease Aug (168)_t000.png
+001236_001744_Img-768_t000.png
+001237_004334_Dry Rot Disease  Aug (1035)_t000.png
+001238_004726_Dry Rot Disease  Aug (289)_t002.png
+001239_008746_484_t000.png
+001240_005132_Dry Rot Disease  Aug (711)_t000.png
+001241_002829_20241106_224244_t000.png
+001242_001576_Img-603_t000.png
+001243_006593_Soft Rot Disease Aug (98)_t000.png
+001244_002569_20241106_222802_t000.png
+001245_005558_Healthy Potato Aug (24)_t000.png
+001246_004875_Dry Rot Disease  Aug (446)_t001.png
+001247_008117_259_t001.png
+001248_003672_Blackspot Bruising Disease Aug (251)_t000.png
+001249_007905_22_t001.png
+001250_001517_Img-548_t000.png
+001251_000757_Img-1158_t000.png
+001252_004364_Dry Rot Disease  Aug (107)_t000.png
+001253_007018_107_t003.png
+001254_000567_Soft Rot Disease (58)_t001.png
+001255_008172_267_t005.png
+001256_004063_Blackspot Bruising Disease Aug (644)_t000.png
+001257_000099_IMG_20231105_135759_t000.png
+001258_006937_80_t004.png
+001259_007589_198_t002.png
+001260_002336_20241105_180958_t000.png
+001261_001881_Img-900_t000.png
+001262_005304_Dry Rot Disease  Aug (894)_t001.png
+001263_006514_Soft Rot Disease Aug (523)_t000.png
+001264_005717_Healthy Potato Aug (391)_t001.png
+001265_002740_20241106_223636_t000.png
+001266_001965_Img-985_t000.png
+001267_007474_187_t002.png
+001268_007266_148_t002.png
+001269_002652_20241106_223112_t000.png
+001270_006057_Healthy Potato Aug (719)_t001.png
+001271_006848_51_t007.png
+001272_005791_Healthy Potato Aug (461)_t001.png
+001273_000543_Soft Rot Disease (32)_t000.png
+001274_004324_Dry Rot Disease  Aug (1026)_t001.png
+001275_001665_Img-68_t000.png
+001276_005198_Dry Rot Disease  Aug (777)_t000.png
+001277_002839_20241106_224331_t000.png
+001278_004258_Brown Rot Disease  Aug (48)_t000.png
+001279_006654_178_t004.png
+001280_002287_20241105_180736_t000.png
+001281_008644_409_t000.png
+001282_006865_56_t005.png
+001283_002028_20241030_202912_t000.png
+001284_004455_Dry Rot Disease  Aug (1164)_t001.png
+001285_008021_244_t002.png
+001286_007470_186_t007.png
+001287_001963_Img-983_t000.png
+001288_008227_276_t003.png
+001289_002175_20241105_180005_t000.png
+001290_005903_Healthy Potato Aug (569)_t000.png
+001291_006536_Soft Rot Disease Aug (545)_t000.png
+001292_002065_20241105_175150_t000.png
+001293_003004_20241106_230630_t000.png
+001294_001927_Img-948_t000.png
+001295_006676_21_t006.png
+001296_004970_Dry Rot Disease  Aug (551)_t000.png
+001297_001711_Img-734_t000.png
+001298_007888_228_t004.png
+001299_009104_86_t000.png
+001300_004046_Blackspot Bruising Disease Aug (626)_t000.png
+001301_003170_Img-239_t000_1.png
+001302_000910_Img-130_t000.png
+001303_003425_IMG_20241105_222628_339_t000.png
+001304_001778_Img-7_t000.png
+001305_001340_Img-375_t000.png
+001306_001015_Img-1410_t000.png
+001307_001010_Img-1406_t000.png
+001308_008458_313_t007.png
+001309_008428_310_t001.png
+001310_008784_510_t000.png
+001311_005009_Dry Rot Disease  Aug (59)_t001.png
+001312_001143_Img-186_t000.png
+001313_001895_Img-916_t000.png
+001314_007393_171_t002.png
+001315_004186_Blackspot Bruising Disease Aug (763)_t001.png
+001316_000886_Img-1289_t000.png
+001317_003520_Blackspot Bruising Disease Aug (105)_t000.png
+001318_002137_20241105_175832_t000.png
+001319_001686_Img-709_t000.png
+001320_000354_Brown Rot Disease (1)_t000.png
+001321_000940_Img-133_t000.png
+001322_007282_150_t001.png
+001323_006631_14_t006.png
+001324_005715_Healthy Potato Aug (39)_t001.png
+001325_008504_319_t005.png
+001326_009236_DSC_0179_t000.png
+001327_006959_8_t003.png
+001328_004762_Dry Rot Disease  Aug (326)_t000.png
+001329_009012_687_t000.png
+001330_000900_Img-1300_t000.png
+001331_003826_Blackspot Bruising Disease Aug (413)_t000.png
+001332_003488_IMG_20241105_222741_771_t000.png
+001333_000701_Img-1104_t000.png
+001334_001713_Img-736_t000.png
+001335_005257_Dry Rot Disease  Aug (838)_t000.png
+001336_008942_632_t000.png
+001337_000455_Dry Rot Disease (29)_t000.png
+001338_000559_Soft Rot Disease (48)_t000.png
+001339_008549_341_t000.png
+001340_000244_Blackspot Bruising Disease (92)_t000.png
+001341_004320_Dry Rot Disease  Aug (1022)_t000.png
+001342_006374_Soft Rot Disease Aug (378)_t000.png
+001343_000131_IMG_20231105_140653_t000.png
+001344_000521_Soft Rot Disease (1)_t000.png
+001345_007974_237_t004.png
+001346_008905_603_t000.png
+001347_004638_Dry Rot Disease  Aug (193)_t000.png
+001348_008325_296_t003.png
+001349_002588_20241106_222832_t000.png
+001350_004777_Dry Rot Disease  Aug (345)_t000.png
+001351_004409_Dry Rot Disease  Aug (1116)_t002.png
+001352_001874_Img-895_t000.png
+001353_007742_215_t003.png
+001354_001529_Img-55_t000.png
+001355_008931_624_t000.png
+001356_006345_Soft Rot Disease Aug (349)_t000.png
+001357_004515_Dry Rot Disease  Aug (1228)_t000.png
+001358_004672_Dry Rot Disease  Aug (227)_t000.png
+001359_008817_537_t000.png
+001360_000593_Img-1001_t000.png
+001361_001785_Img-807_t000.png
+001362_006165_Soft Rot Disease Aug (163)_t000.png
+001363_001984_20241030_201716_t000.png
+001364_008577_361_t000.png
+001365_009057_71_t001.png
+001366_000301_Healthy Potato (5)_t000.png
+001367_004621_Dry Rot Disease  Aug (177)_t000.png
+001368_004976_Dry Rot Disease  Aug (558)_t001.png
+001369_005731_Healthy Potato Aug (405)_t000.png
+001370_001689_Img-711_t000.png
+001371_003021_Img-105_t000_1.png
+001372_000971_Img-1370_t000.png
+001373_004325_Dry Rot Disease  Aug (1027)_t000.png
+001374_004583_Dry Rot Disease  Aug (138)_t000.png
+001375_005102_Dry Rot Disease  Aug (685)_t000.png
+001376_005948_Healthy Potato Aug (612)_t000.png
+001377_004941_Dry Rot Disease  Aug (519)_t000.png
+001378_000942_Img-1341_t000.png
+001379_009064_73_t002.png
+001380_007035_110_t003.png
+001381_009078_79_t000.png
+001382_000814_Img-1216_t000.png
+001383_001716_Img-739_t000.png
+001384_001335_Img-370_t000.png
+001385_003831_Blackspot Bruising Disease Aug (418)_t000.png
+001386_002427_20241105_183001_t000.png
+001387_007315_156_t002.png
+001388_005242_Dry Rot Disease  Aug (826)_t002.png
+001389_004690_Dry Rot Disease  Aug (246)_t001.png
+001390_006107_Soft Rot Disease Aug (104)_t000.png
+001391_007058_116_t000.png
+001392_002109_20241105_175726_t000.png
+001393_004546_Dry Rot Disease  Aug (1260)_t000.png
+001394_000119_IMG_20231105_140500_t000.png
+001395_007917_231_t001.png
+001396_007630_201_t006.png
+001397_000720_Img-1123_t000.png
+001398_007570_196_t005.png
+001399_007667_205_t005.png
+001400_005418_Healthy Potato Aug (105)_t001.png
+001401_000427_Dry Rot Disease (167)_t000.png
+001402_006790_345_t001.png
+001403_001856_Img-878_t000.png
+001404_003106_Img-182_t000_1.png
+001405_008247_27_t000.png
+001406_008822_53_t002.png
+001407_009199_DSC_0160_t000.png
+001408_007009_105_t002.png
+001409_000858_Img-1262_t000.png
+001410_001167_Img-208_t000.png
+001411_007070_119_t001.png
+001412_007064_117_t002.png
+001413_000221_Blackspot Bruising Disease (68)_t000.png
+001414_005416_Healthy Potato Aug (103)_t000.png
+001415_003923_Blackspot Bruising Disease Aug (509)_t001.png
+001416_000654_Img-1060_t000.png
+001417_006089_Healthy Potato Aug (87)_t001.png
+001418_004769_Dry Rot Disease  Aug (333)_t000.png
+001419_007253_146_t005.png
+001420_002806_20241106_224023_t000.png
+001421_008043_246_t004.png
+001422_003262_Img-326_t000_1.png
+001423_009229_DSC_0173_t000.png
+001424_000793_Img-1194_t000.png
+001425_009193_DSC_0156_t000.png
+001426_005367_Dry Rot Disease  Aug (948)_t000.png
+001427_004068_Blackspot Bruising Disease Aug (65)_t000.png
+001428_002700_20241106_223318_t000.png
+001429_005709_Healthy Potato Aug (383)_t000.png
+001430_005405_Dry Rot Disease  Aug (994)_t000.png
+001431_008210_273_t004.png
+001432_008270_284_t000.png
+001433_005414_Healthy Potato Aug (101)_t000.png
+001434_004451_Dry Rot Disease  Aug (116)_t000.png
+001435_004750_Dry Rot Disease  Aug (314)_t001.png
+001436_001482_Img-512_t000.png
+001437_004362_Dry Rot Disease  Aug (1068)_t000.png
+001438_000391_Dry Rot Disease (127)_t000.png
+001439_005096_Dry Rot Disease  Aug (68)_t000.png
+001440_000481_Dry Rot Disease (60)_t001.png
+001441_005866_Healthy Potato Aug (532)_t000.png
+001442_009162_99_t003.png
+001443_002284_20241105_180732_t000.png
+001444_000018_IMG_20231105_133004_t000.png
+001445_006503_Soft Rot Disease Aug (511)_t000.png
+001446_007976_237_t006.png
+001447_007451_184_t008.png
+001448_003754_Blackspot Bruising Disease Aug (338)_t000.png
+001449_005107_Dry Rot Disease  Aug (690)_t002.png
+001450_005127_Dry Rot Disease  Aug (708)_t001.png
+001451_002506_20241105_184038_t000.png
+001452_005001_Dry Rot Disease  Aug (582)_t000.png
+001453_006614_12_t003.png
+001454_004657_Dry Rot Disease  Aug (214)_t000.png
+001455_008470_315_t003.png
+001456_003537_Blackspot Bruising Disease Aug (121)_t001.png
+001457_002833_20241106_224306_t000.png
+001458_008555_347_t000.png
+001459_000714_Img-1117_t000.png
+001460_000979_Img-1378_t000.png
+001461_001687_Img-70_t000.png
+001462_006683_247_t001.png
+001463_007207_141_t009.png
+001464_001109_Img-150_t000.png
+001465_007503_18_t002.png
+001466_004667_Dry Rot Disease  Aug (221)_t000.png
+001467_004176_Blackspot Bruising Disease Aug (754)_t000.png
+001468_003782_Blackspot Bruising Disease Aug (363)_t000.png
+001469_003992_Blackspot Bruising Disease Aug (578)_t002.png
+001470_007056_115_t002.png
+001471_008709_456_t000.png
+001472_006541_Soft Rot Disease Aug (55)_t000.png
+001473_003307_Img-36_t000_1.png
+001474_008786_512_t000.png
+001475_001704_Img-726_t000.png
+001476_001162_Img-203_t000.png
+001477_002431_20241105_183017_t000.png
+001478_002669_20241106_223206_t000.png
+001479_002894_20241106_225612_t000.png
+001480_007309_155_t003.png
+001481_000734_Img-1136_t000.png
+001482_000029_IMG_20231105_134029_t000.png
+001483_000026_IMG_20231105_133451_t000.png
+001484_008619_391_t000.png
+001485_001994_20241030_202318_t000.png
+001486_006290_Soft Rot Disease Aug (292)_t000.png
+001487_007443_183_t003.png
+001488_005997_Healthy Potato Aug (661)_t000.png
+001489_006792_347_t001.png
+001490_002508_20241105_184041_t000.png
+001491_003497_IMG_20241105_222746_777_t000.png
+001492_004422_Dry Rot Disease  Aug (113)_t000.png
+001493_000409_Dry Rot Disease (15)_t001.png
+001494_006818_38_t007.png
+001495_000166_Blackspot Bruising Disease (18)_t000.png
+001496_009158_98_t003.png
+001497_000997_Img-1395_t000.png
+001498_001796_Img-818_t000.png
+001499_008497_318_t006.png
+001500_005876_Healthy Potato Aug (541)_t000.png
+001501_001515_Img-546_t000.png
+001502_009034_700_t000.png
+001503_009265_DSC_0226_t000.png
+001504_008954_641_t000.png
+001505_005165_Dry Rot Disease  Aug (743)_t001.png
+001506_000578_Soft Rot Disease (68)_t000.png
+001507_001121_Img-163_t000.png
+001508_004743_Dry Rot Disease  Aug (306)_t000.png
+001509_004396_Dry Rot Disease  Aug (1100)_t001.png
+001510_009251_DSC_0194_t000.png
+001511_006351_Soft Rot Disease Aug (355)_t000.png
+001512_002429_20241105_183014_t000.png
+001513_005144_Dry Rot Disease  Aug (721)_t002.png
+001514_003130_Img-203_t000_1.png
+001515_006034_Healthy Potato Aug (697)_t001.png
+001516_003248_Img-312_t000_1.png
+001517_001317_Img-353_t000.png
+001518_005115_Dry Rot Disease  Aug (697)_t001.png
+001519_002235_20241105_180303_t000.png
+001520_002359_20241105_181110_t000.png
+001521_002802_20241106_224013_t000.png
+001522_000494_Dry Rot Disease (73)_t001.png
+001523_005863_Healthy Potato Aug (53)_t001.png
+001524_001646_Img-672_t000.png
+001525_008181_269_t002.png
+001526_007473_187_t001.png
+001527_003323_Img-386_t000_1.png
+001528_006972_93_t004.png
+001529_007746_215_t007.png
+001530_007019_108_t000.png
+001531_007825_222_t007.png
+001532_005116_Dry Rot Disease  Aug (698)_t001.png
+001533_000903_Img-1303_t000.png
+001534_006263_Soft Rot Disease Aug (262)_t000.png
+001535_008262_282_t002.png
+001536_002437_20241105_183045_t000.png
+001537_008465_314_t006.png
+001538_000467_Dry Rot Disease (44)_t000.png
+001539_004906_Dry Rot Disease  Aug (482)_t000.png
+001540_004093_Blackspot Bruising Disease Aug (673)_t000.png
+001541_007879_227_t006.png
+001542_000261_Healthy Potato (12)_t000.png
+001543_004065_Blackspot Bruising Disease Aug (646)_t001.png
+001544_000699_Img-1101_t000.png
+001545_002503_20241105_184035_t000.png
+001546_001868_Img-889_t000.png
+001547_007647_203_t003.png
+001548_005652_Healthy Potato Aug (327)_t000.png
+001549_003959_Blackspot Bruising Disease Aug (545)_t000.png
+001550_007434_180_t001.png
+001551_004200_Blackspot Bruising Disease Aug (83)_t001.png
+001552_006935_7_t005.png
+001553_004136_Blackspot Bruising Disease Aug (714)_t000.png
+001554_003769_Blackspot Bruising Disease Aug (35)_t002.png
+001555_006454_Soft Rot Disease Aug (464)_t000.png
+001556_002657_20241106_223132_t000.png
+001557_007975_237_t005.png
+001558_007312_155_t006.png
+001559_008687_43_t000.png
+001560_002532_20241106_222238_t000.png
+001561_006957_89_t005.png
+001562_007440_182_t003.png
+001563_005193_Dry Rot Disease  Aug (771)_t001.png
+001564_007606_199_t008.png
+001565_000579_Soft Rot Disease (69)_t000.png
+001566_005972_Healthy Potato Aug (639)_t000.png
+001567_006552_Soft Rot Disease Aug (58)_t001.png
+001568_005602_Healthy Potato Aug (280)_t000.png
+001569_000954_Img-1353_t000.png
+001570_004654_Dry Rot Disease  Aug (21)_t001.png
+001571_003035_Img-118_t000_1.png
+001572_005961_Healthy Potato Aug (625)_t000.png
+001573_006303_Soft Rot Disease Aug (304)_t000.png
+001574_009178_DSC_0147_t001.png
+001575_005260_Dry Rot Disease  Aug (84)_t001.png
+001576_008943_633_t000.png
+001577_002733_20241106_223549_t000.png
+001578_002678_20241106_223229_t000.png
+001579_003305_Img-368_t000_1.png
+001580_008249_27_t002.png
+001581_000484_Dry Rot Disease (63)_t000.png
+001582_007377_167_t002.png
+001583_000175_Blackspot Bruising Disease (26)_t000.png
+001584_002953_20241106_230046_t000.png
+001585_003226_Img-291_t000_1.png
+001586_001383_Img-417_t000.png
+001587_000229_Blackspot Bruising Disease (75)_t001.png
+001588_001389_Img-423_t000.png
+001589_008731_472_t000.png
+001590_004963_Dry Rot Disease  Aug (543)_t000.png
+001591_001840_Img-858_t000.png
+001592_003325_Img-388_t000_1.png
+001593_003417_IMG_20241105_222608_493_t000.png
+001594_009119_89_t003.png
+001595_007275_149_t004.png
+001596_004881_Dry Rot Disease  Aug (454)_t000.png
+001597_007671_206_t000.png
+001598_003562_Blackspot Bruising Disease Aug (147)_t000.png
+001599_003247_Img-311_t000_1.png
+001600_000258_Healthy Potato (104)_t000.png
+001601_001592_Img-618_t000.png
+001602_008107_257_t005.png
+001603_000976_Img-1375_t000.png
+001604_006136_Soft Rot Disease Aug (133)_t000.png
+001605_008615_38_t001.png
+001606_004936_Dry Rot Disease  Aug (513)_t001.png
+001607_007288_151_t002.png
+001608_006471_Soft Rot Disease Aug (48)_t000.png
+001609_000573_Soft Rot Disease (63)_t000.png
+001610_000776_Img-1177_t000.png
+001611_007769_218_t000.png
+001612_001793_Img-815_t000.png
+001613_005713_Healthy Potato Aug (387)_t001.png
+001614_004426_Dry Rot Disease  Aug (1134)_t000.png
+001615_006636_164_t000.png
+001616_003958_Blackspot Bruising Disease Aug (544)_t000.png
+001617_002821_20241106_224202_t000.png
+001618_004464_Dry Rot Disease  Aug (1176)_t001.png
+001619_000437_Dry Rot Disease (177)_t000.png
+001620_004212_Blackspot Bruising Disease Aug (94)_t000.png
+001621_005186_Dry Rot Disease  Aug (764)_t001.png
+001622_001224_Img-261_t000.png
+001623_007074_11_t002.png
+001624_005316_Dry Rot Disease  Aug (906)_t000.png
+001625_001573_Img-600_t000.png
+001626_006406_Soft Rot Disease Aug (414)_t000.png
+001627_008299_290_t001.png
+001628_000723_Img-1126_t000.png
+001629_008764_499_t000.png
+001630_006260_Soft Rot Disease Aug (26)_t001.png
+001631_001187_Img-227_t000.png
+001632_003139_Img-210_t000_1.png
+001633_003114_Img-18_t000_1.png
+001634_005406_Dry Rot Disease  Aug (995)_t000.png
+001635_003445_IMG_20241105_222649_212_t000.png
+001636_000329_Healthy Potato (75)_t000.png
+001637_006575_Soft Rot Disease Aug (8)_t000.png
+001638_002189_20241105_180116_t000.png
+001639_001496_Img-528_t000.png
+001640_000371_Dry Rot Disease (106)_t000.png
+001641_007130_130_t003.png
+001642_006193_Soft Rot Disease Aug (19)_t001.png
+001643_000226_Blackspot Bruising Disease (72)_t000.png
+001644_005342_Dry Rot Disease  Aug (928)_t001.png
+001645_007743_215_t004.png
+001646_007762_217_t003.png
+001647_001365_Img-399_t000.png
+001648_001470_Img-500_t000.png
+001649_002192_20241105_180122_t000.png
+001650_004060_Blackspot Bruising Disease Aug (640)_t000.png
+001651_008967_651_t000.png
+001652_009219_DSC_0167_t000.png
+001653_003194_Img-261_t000_1.png
+001654_008503_319_t004.png
+001655_002823_20241106_224218_t000.png
+001656_004939_Dry Rot Disease  Aug (517)_t000.png
+001657_000013_IMG_20231105_132821_t000.png
+001658_004908_Dry Rot Disease  Aug (484)_t001.png
+001659_002212_20241105_180204_t000.png
+001660_005058_Dry Rot Disease  Aug (64)_t000.png
+001661_008985_666_t000.png
+001662_003327_Img-38_t000_1.png
+001663_003198_Img-265_t000_1.png
+001664_008505_319_t006.png
+001665_003457_IMG_20241105_222702_072_t000.png
+001666_007363_163_t003.png
+001667_001786_Img-808_t000.png
+001668_001958_Img-979_t000.png
+001669_009049_712_t000.png
+001670_005504_Healthy Potato Aug (19)_t000.png
+001671_004289_Brown Rot Disease  Aug (89)_t000.png
+001672_005142_Dry Rot Disease  Aug (720)_t000.png
+001673_000015_IMG_20231105_132919_t000.png
+001674_005748_Healthy Potato Aug (420)_t001.png
+001675_003667_Blackspot Bruising Disease Aug (247)_t000.png
+001676_006810_356_t002.png
+001677_002867_20241106_225402_t000.png
+001678_000620_Img-1029_t000.png
+001679_001091_Img-1485_t000.png
+001680_008200_272_t000.png
+001681_006085_Healthy Potato Aug (83)_t000.png
+001682_008404_307_t004.png
+001683_004630_Dry Rot Disease  Aug (186)_t000.png
+001684_002622_20241106_223023_t000.png
+001685_002674_20241106_223222_t000.png
+001686_000609_Img-1018_t000.png
+001687_006466_Soft Rot Disease Aug (475)_t000.png
+001688_007375_167_t000.png
+001689_008009_243_t000.png
+001690_007611_1_t000.png
+001691_001026_Img-1421_t000.png
+001692_006291_Soft Rot Disease Aug (293)_t000.png
+001693_002340_20241105_181004_t000.png
+001694_000288_Healthy Potato (38)_t000.png
+001695_000298_Healthy Potato (47)_t000.png
+001696_000142_IMG_20231105_140848_t000.png
+001697_000423_Dry Rot Disease (163)_t000.png
+001698_006491_Soft Rot Disease Aug (5)_t000.png
+001699_005810_Healthy Potato Aug (48)_t000.png
+001700_004663_Dry Rot Disease  Aug (219)_t000.png
+001701_000435_Dry Rot Disease (175)_t000.png
+001702_002635_20241106_223044_t000.png
+001703_002514_20241106_222214_t000.png
+001704_000894_Img-1296_t000.png
+001705_006125_Soft Rot Disease Aug (121)_t000.png
+001706_005378_Dry Rot Disease  Aug (964)_t000.png
+001707_002214_20241105_180208_t000.png
+001708_003916_Blackspot Bruising Disease Aug (502)_t000.png
+001709_006659_181_t003.png
+001710_002015_20241030_202725_t000.png
+001711_002643_20241106_223058_t000.png
+001712_000730_Img-1131_t000.png
+001713_001608_Img-633_t000.png
+001714_008390_305_t006.png
+001715_005821_Healthy Potato Aug (490)_t000.png
+001716_002014_20241030_202609_t000.png
+001717_009256_DSC_0217_t000.png
+001718_001804_Img-825_t000.png
+001719_000728_Img-1130_t000.png
+001720_001084_Img-1479_t000.png
+001721_003329_Img-39_t000_1.png
+001722_001057_Img-1451_t000.png
+001723_000246_Blackspot Bruising Disease (94)_t000.png
+001724_006230_Soft Rot Disease Aug (228)_t000.png
+001725_009167_DSC_0140_t001.png
+001726_006803_354_t001.png
+001727_003967_Blackspot Bruising Disease Aug (552)_t001.png
+001728_006183_Soft Rot Disease Aug (180)_t000.png
+001729_004504_Dry Rot Disease  Aug (1217)_t000.png
+001730_000303_Healthy Potato (51)_t000.png
+001731_003197_Img-264_t000_1.png
+001732_000663_Img-1069_t000.png
+001733_001054_Img-1449_t000.png
+001734_001324_Img-35_t000.png
+001735_003154_Img-224_t000_1.png
+001736_003153_Img-223_t000_1.png
+001737_004270_Brown Rot Disease  Aug (67)_t000.png
+001738_002835_20241106_224313_t000.png
+001739_009089_81_t002.png
+001740_006084_Healthy Potato Aug (82)_t000.png
+001741_001132_Img-176_t000.png
+001742_008745_483_t000.png
+001743_008679_432_t000.png
+001744_005841_Healthy Potato Aug (509)_t000.png
+001745_005586_Healthy Potato Aug (266)_t000.png
+001746_006039_Healthy Potato Aug (700)_t000.png
+001747_003811_Blackspot Bruising Disease Aug (397)_t000.png
+001748_001037_Img-1433_t000.png
+001749_000754_Img-1155_t000.png
+001750_002849_20241106_224418_t000.png
+001751_007548_194_t004.png
+001752_000756_Img-1157_t000.png
+001753_008929_622_t000.png
+001754_002318_20241105_180851_t000.png
+001755_004259_Brown Rot Disease  Aug (50)_t001.png
+001756_003128_Img-201_t000_1.png
+001757_007787_219_t008.png
+001758_004479_Dry Rot Disease  Aug (1191)_t000.png
+001759_000532_Soft Rot Disease (21)_t000.png
+001760_006671_20_t007.png
+001761_007970_237_t000.png
+001762_005552_Healthy Potato Aug (234)_t000.png
+001763_004893_Dry Rot Disease  Aug (467)_t000.png
+001764_002900_20241106_225638_t000.png
+001765_000498_Dry Rot Disease (76)_t002.png
+001766_002613_20241106_222927_t000.png
+001767_008651_412_t000.png
+001768_000888_Img-1290_t001.png
+001769_008512_320_t000.png
+001770_009155_98_t000.png
+001771_002433_20241105_183035_t000.png
+001772_000232_Blackspot Bruising Disease (8)_t000.png
+001773_007441_183_t001.png
+001774_002537_20241106_222247_t000.png
+001775_009054_717_t000.png
+
+=== val (836 images) ===
+
+--- invalide (372 images) ---
+000000_001363_Dry Rot Disease  Aug (211)_t000.png
+000001_001094_Dry Rot Disease  Aug (56)_t001.png
+000002_000922_Dry Rot Disease  Aug (221)_t001.png
+000003_001857_724_t000.png
+000004_001048_Dry Rot Disease  Aug (475)_t002.png
+000005_001662_Soft Rot Disease Aug (254)_t000.png
+000006_000354_Blackspot Bruising Disease Aug (391)_t000.png
+000007_000199_Img-656_t000.png
+000008_001444_Healthy Potato Aug (250)_t000.png
+000009_000355_Blackspot Bruising Disease Aug (391)_t001.png
+000010_001348_Dry Rot Disease  Aug (992)_t004.png
+000011_000264_Blackspot Bruising Disease Aug (181)_t000.png
+000012_000813_Dry Rot Disease  Aug (1202)_t000.png
+000013_001319_Dry Rot Disease  Aug (951)_t001.png
+000014_001502_Healthy Potato Aug (451)_t000.png
+000015_001320_Dry Rot Disease  Aug (952)_t001.png
+000016_000345_Blackspot Bruising Disease Aug (381)_t000.png
+000017_000575_Blackspot Bruising Disease Aug (695)_t001.png
+000018_000028_Blackspot Bruising Disease (93)_t001_skin_error.png
+000019_001145_Dry Rot Disease  Aug (667)_t000.png
+000020_000984_Dry Rot Disease  Aug (343)_t000.png
+000021_001001_Dry Rot Disease  Aug (373)_t000.png
+000022_001121_Dry Rot Disease  Aug (615)_t001.png
+000023_001462_Healthy Potato Aug (287)_t001.png
+000024_000290_Blackspot Bruising Disease Aug (245)_t000.png
+000025_001256_Dry Rot Disease  Aug (845)_t000.png
+000026_001495_Healthy Potato Aug (420)_t000.png
+000027_000721_Dry Rot Disease  Aug (1058)_t000.png
+000028_001328_Dry Rot Disease  Aug (961)_t000.png
+000029_001809_Soft Rot Disease Aug (88)_t001.png
+000030_000182_Img-313_t000.png
+000031_000125_Soft Rot Disease (79)_t000.png
+000032_001275_Dry Rot Disease  Aug (87)_t001.png
+000033_000944_Dry Rot Disease  Aug (254)_t001.png
+000034_001740_Soft Rot Disease Aug (433)_t000.png
+000035_001722_Soft Rot Disease Aug (394)_t000.png
+000036_000574_Blackspot Bruising Disease Aug (683)_t000.png
+000037_001213_Dry Rot Disease  Aug (789)_t000.png
+000038_000751_Dry Rot Disease  Aug (110)_t000.png
+000039_001681_Soft Rot Disease Aug (293)_t001.png
+000040_000069_Dry Rot Disease (66)_t001.png
+000041_001700_Soft Rot Disease Aug (343)_t000.png
+000042_000274_Blackspot Bruising Disease Aug (204)_t001.png
+000043_000238_Blackspot Bruising Disease Aug (103)_t000.png
+000044_000225_Img-978_t000.png
+000045_001548_Healthy Potato Aug (592)_t000.png
+000046_001250_Dry Rot Disease  Aug (834)_t001.png
+000047_000133_Img-1076_t000.png
+000048_000132_Img-1037_t000.png
+000049_001811_Soft Rot Disease Aug (99)_t001.png
+000050_001511_Healthy Potato Aug (485)_t000.png
+000051_001079_Dry Rot Disease  Aug (522)_t002.png
+000052_001654_Soft Rot Disease Aug (24)_t000.png
+000053_000068_Dry Rot Disease (51)_t000.png
+000054_000814_Dry Rot Disease  Aug (1202)_t001.png
+000055_001673_Soft Rot Disease Aug (276)_t001.png
+000056_001231_Dry Rot Disease  Aug (813)_t000.png
+000057_000415_Blackspot Bruising Disease Aug (530)_t000.png
+000058_001352_Dry Rot Disease  Aug (1013)_t001.png
+000059_001799_Soft Rot Disease Aug (61)_t000.png
+000060_001790_Soft Rot Disease Aug (543)_t000.png
+000061_000807_Dry Rot Disease  Aug (1190)_t001.png
+000062_000868_Dry Rot Disease  Aug (1285)_t000.png
+000063_000156_Img-1327_t000.png
+000064_001741_Soft Rot Disease Aug (435)_t000.png
+000065_001397_Dry Rot Disease  Aug (975)_t001.png
+000066_000580_Blackspot Bruising Disease Aug (728)_t000.png
+000067_001670_Soft Rot Disease Aug (27)_t001.png
+000068_000630_Brown Rot Disease  Aug (92)_t000.png
+000069_000414_Blackspot Bruising Disease Aug (53)_t000.png
+000070_001621_Soft Rot Disease Aug (15)_t001.png
+000071_001369_Dry Rot Disease  Aug (247)_t000.png
+000072_001787_Soft Rot Disease Aug (538)_t002.png
+000073_001015_Dry Rot Disease  Aug (402)_t001.png
+000074_000908_Dry Rot Disease  Aug (196)_t000.png
+000075_000458_Blackspot Bruising Disease Aug (632)_t001.png
+000076_000042_Dry Rot Disease (112)_t000.png
+000077_001665_Soft Rot Disease Aug (259)_t000.png
+000078_000427_Blackspot Bruising Disease Aug (566)_t001.png
+000079_000518_Blackspot Bruising Disease Aug (756)_t000.png
+000080_000517_Blackspot Bruising Disease Aug (755)_t000.png
+000081_000682_Dry Rot Disease  Aug (955)_t000.png
+000082_000658_Dry Rot Disease  Aug (223)_t002.png
+000083_001136_Dry Rot Disease  Aug (647)_t000.png
+000084_001337_Dry Rot Disease  Aug (975)_t000.png
+000085_001720_Soft Rot Disease Aug (388)_t000.png
+000086_001018_Dry Rot Disease  Aug (41)_t000.png
+000087_000661_Dry Rot Disease  Aug (258)_t001.png
+000088_001728_Soft Rot Disease Aug (4)_t002.png
+000089_000098_Dry Rot Disease (139)_t000.png
+000090_001356_Dry Rot Disease  Aug (1160)_t003.png
+000091_000137_Img-1151_t000.png
+000092_000394_Blackspot Bruising Disease Aug (479)_t000.png
+000093_000443_Blackspot Bruising Disease Aug (605)_t000.png
+000094_000606_Brown Rot Disease  Aug (45)_t000.png
+000095_000789_Dry Rot Disease  Aug (1163)_t001.png
+000096_001400_Healthy Potato Aug (10)_t001.png
+000097_001403_Healthy Potato Aug (105)_t000.png
+000098_000091_Dry Rot Disease (105)_t000.png
+000099_001362_Dry Rot Disease  Aug (178)_t001.png
+000100_001637_Soft Rot Disease Aug (200)_t002.png
+000101_001269_Dry Rot Disease  Aug (862)_t000.png
+000102_001408_Healthy Potato Aug (126)_t000.png
+000103_000853_Dry Rot Disease  Aug (1262)_t000.png
+000104_001770_Soft Rot Disease Aug (506)_t000.png
+000105_001528_Healthy Potato Aug (538)_t000.png
+000106_000378_Blackspot Bruising Disease Aug (450)_t002.png
+000107_001392_Dry Rot Disease  Aug (866)_t001.png
+000108_000024_Blackspot Bruising Disease (77)_t000_error.png
+000109_000586_Brown Rot Disease  Aug (10)_t000.png
+000110_000578_Blackspot Bruising Disease Aug (715)_t001.png
+000111_001719_Soft Rot Disease Aug (387)_t000.png
+000112_001794_Soft Rot Disease Aug (558)_t000.png
+000113_001656_Soft Rot Disease Aug (240)_t000.png
+000114_001543_Healthy Potato Aug (585)_t002.png
+000115_000971_Dry Rot Disease  Aug (310)_t001.png
+000116_000959_Dry Rot Disease  Aug (289)_t000.png
+000117_000997_Dry Rot Disease  Aug (369)_t000.png
+000118_001159_Dry Rot Disease  Aug (696)_t000.png
+000119_001376_Dry Rot Disease  Aug (456)_t000.png
+000120_000912_Dry Rot Disease  Aug (199)_t002.png
+000121_001745_Soft Rot Disease Aug (440)_t000.png
+000122_001095_Dry Rot Disease  Aug (562)_t000.png
+000123_000382_Blackspot Bruising Disease Aug (458)_t002.png
+000124_001754_Soft Rot Disease Aug (459)_t000.png
+000125_001013_Dry Rot Disease  Aug (400)_t001.png
+000126_000767_Dry Rot Disease  Aug (1120)_t002.png
+000127_001789_Soft Rot Disease Aug (541)_t000.png
+000128_000288_Blackspot Bruising Disease Aug (243)_t000.png
+000129_001246_Dry Rot Disease  Aug (83)_t000.png
+000130_001132_Dry Rot Disease  Aug (638)_t001.png
+000131_001290_Dry Rot Disease  Aug (884)_t001.png
+000132_001265_Dry Rot Disease  Aug (857)_t000.png
+000133_000982_Dry Rot Disease  Aug (34)_t000.png
+000134_001845_Soft Rot Disease Aug (366)_t000.png
+000135_001162_Dry Rot Disease  Aug (698)_t000.png
+000136_001489_Healthy Potato Aug (4)_t001.png
+000137_001307_Dry Rot Disease  Aug (911)_t002.png
+000138_000344_Blackspot Bruising Disease Aug (38)_t000.png
+000139_000656_Dry Rot Disease  Aug (184)_t001.png
+000140_001451_Healthy Potato Aug (259)_t001.png
+000141_001306_Dry Rot Disease  Aug (911)_t000.png
+000142_001044_Dry Rot Disease  Aug (465)_t000.png
+000143_000017_Blackspot Bruising Disease (62)_t000_error.png
+000144_000112_Soft Rot Disease (18)_t000.png
+000145_000522_Blackspot Bruising Disease Aug (760)_t000.png
+000146_000793_Dry Rot Disease  Aug (1166)_t001.png
+000147_000666_Dry Rot Disease  Aug (343)_t003.png
+000148_001499_Healthy Potato Aug (44)_t000.png
+000149_000310_Blackspot Bruising Disease Aug (299)_t002.png
+000150_000744_Dry Rot Disease  Aug (1092)_t000.png
+000151_001071_Dry Rot Disease  Aug (51)_t000.png
+000152_000894_Dry Rot Disease  Aug (162)_t001.png
+000153_001416_Healthy Potato Aug (158)_t000.png
+000154_000045_Dry Rot Disease (138)_t000.png
+000155_000252_Blackspot Bruising Disease Aug (133)_t000.png
+000156_001387_Dry Rot Disease  Aug (679)_t002.png
+000157_001608_Soft Rot Disease Aug (12)_t000.png
+000158_000409_Blackspot Bruising Disease Aug (51)_t000.png
+000159_000363_Blackspot Bruising Disease Aug (407)_t001.png
+000160_000515_Blackspot Bruising Disease Aug (743)_t000.png
+000161_001624_Soft Rot Disease Aug (156)_t002.png
+000162_000358_Blackspot Bruising Disease Aug (396)_t001.png
+000163_000060_Dry Rot Disease (31)_t000.png
+000164_000385_Blackspot Bruising Disease Aug (464)_t001.png
+000165_001006_Dry Rot Disease  Aug (377)_t001.png
+000166_001277_Dry Rot Disease  Aug (87)_t003.png
+000167_001825_Soft Rot Disease Aug (150)_t002.png
+000168_000172_Img-173_t000.png
+000169_000422_Blackspot Bruising Disease Aug (55)_t000.png
+000170_001020_Dry Rot Disease  Aug (413)_t000.png
+000171_001625_Soft Rot Disease Aug (16)_t000.png
+000172_001109_Dry Rot Disease  Aug (591)_t000.png
+000173_000207_Img-788_t000.png
+000174_000888_Dry Rot Disease  Aug (157)_t000.png
+000175_001762_Soft Rot Disease Aug (488)_t000.png
+000176_001791_Soft Rot Disease Aug (550)_t000.png
+000177_000086_Dry Rot Disease (97)_t000.png
+000178_001617_Soft Rot Disease Aug (139)_t001.png
+000179_001075_Dry Rot Disease  Aug (516)_t000.png
+000180_001050_Dry Rot Disease  Aug (478)_t000.png
+000181_000736_Dry Rot Disease  Aug (1080)_t002.png
+000182_001448_Healthy Potato Aug (254)_t002.png
+000183_000368_Blackspot Bruising Disease Aug (421)_t002.png
+000184_000187_Img-443_t000.png
+000185_001671_Soft Rot Disease Aug (270)_t000.png
+000186_000027_Blackspot Bruising Disease (87)_t001_skin_error.png
+000187_000376_Blackspot Bruising Disease Aug (447)_t001.png
+000188_000462_Blackspot Bruising Disease Aug (646)_t000.png
+000189_000485_Blackspot Bruising Disease Aug (687)_t000.png
+000190_000835_Dry Rot Disease  Aug (1238)_t000.png
+000191_000815_Dry Rot Disease  Aug (1203)_t000.png
+000192_000491_Blackspot Bruising Disease Aug (699)_t000.png
+000193_000872_Dry Rot Disease  Aug (1292)_t000.png
+000194_000785_Dry Rot Disease  Aug (1160)_t000.png
+000195_000005_Blackspot Bruising Disease (36)_t002_skin_error.png
+000196_000879_Dry Rot Disease  Aug (135)_t002.png
+000197_001457_Healthy Potato Aug (269)_t001.png
+000198_000233_Blackspot Bruising Disease Aug (1)_t000.png
+000199_001343_Dry Rot Disease  Aug (99)_t000.png
+000200_001776_Soft Rot Disease Aug (513)_t000.png
+000201_001019_Dry Rot Disease  Aug (41)_t001.png
+000202_001527_Healthy Potato Aug (53)_t000.png
+000203_000621_Brown Rot Disease  Aug (65)_t000.png
+000204_000598_Brown Rot Disease  Aug (29)_t000.png
+000205_000320_Blackspot Bruising Disease Aug (333)_t001.png
+000206_000753_Dry Rot Disease  Aug (1101)_t001.png
+000207_001384_Dry Rot Disease  Aug (629)_t002.png
+000208_000977_Dry Rot Disease  Aug (319)_t002.png
+000209_001512_Healthy Potato Aug (49)_t000.png
+000210_001649_Soft Rot Disease Aug (223)_t000.png
+000211_001582_Healthy Potato Aug (715)_t000.png
+000212_000948_Dry Rot Disease  Aug (269)_t000.png
+000213_001073_Dry Rot Disease  Aug (513)_t000.png
+000214_000018_Blackspot Bruising Disease (64)_t000_error.png
+000215_001222_Dry Rot Disease  Aug (799)_t000.png
+000216_001773_Soft Rot Disease Aug (51)_t000.png
+000217_001849_Soft Rot Disease Aug (394)_t002.png
+000218_000213_Img-855_t000.png
+000219_001433_Healthy Potato Aug (217)_t000.png
+000220_001267_Dry Rot Disease  Aug (859)_t002.png
+000221_000366_Blackspot Bruising Disease Aug (420)_t000.png
+000222_001500_Healthy Potato Aug (440)_t000.png
+000223_000297_Blackspot Bruising Disease Aug (271)_t000.png
+000224_000712_Dry Rot Disease  Aug (1044)_t000.png
+000225_001390_Dry Rot Disease  Aug (714)_t001.png
+000226_001053_Dry Rot Disease  Aug (481)_t000.png
+000227_000428_Blackspot Bruising Disease Aug (566)_t002.png
+000228_000342_Blackspot Bruising Disease Aug (379)_t000.png
+000229_001168_Dry Rot Disease  Aug (710)_t001.png
+000230_000241_Blackspot Bruising Disease Aug (110)_t000.png
+000231_000695_Dry Rot Disease  Aug (1012)_t000.png
+000232_000911_Dry Rot Disease  Aug (199)_t001.png
+000233_000636_Dry Rot Disease  Aug (104)_t000.png
+000234_001734_Soft Rot Disease Aug (424)_t000.png
+000235_000371_Blackspot Bruising Disease Aug (426)_t000.png
+000236_000286_Blackspot Bruising Disease Aug (24)_t000.png
+000237_001011_Dry Rot Disease  Aug (4)_t000.png
+000238_001755_Soft Rot Disease Aug (467)_t000.png
+000239_000550_Blackspot Bruising Disease Aug (272)_t000.png
+000240_000773_Dry Rot Disease  Aug (1135)_t000.png
+000241_001334_Dry Rot Disease  Aug (971)_t001.png
+000242_000296_Blackspot Bruising Disease Aug (268)_t000.png
+000243_000153_Img-1290_t000.png
+000244_001538_Healthy Potato Aug (575)_t000.png
+000245_001291_Dry Rot Disease  Aug (886)_t000.png
+000246_001233_Dry Rot Disease  Aug (815)_t001.png
+000247_000884_Dry Rot Disease  Aug (146)_t000.png
+000248_001404_Healthy Potato Aug (117)_t000.png
+000249_001332_Dry Rot Disease  Aug (964)_t002.png
+000250_000808_Dry Rot Disease  Aug (1195)_t001.png
+000251_000151_Img-1252_t000.png
+000252_000253_Blackspot Bruising Disease Aug (137)_t001.png
+000253_001718_Soft Rot Disease Aug (386)_t000.png
+000254_001535_Healthy Potato Aug (57)_t000.png
+000255_000878_Dry Rot Disease  Aug (135)_t000.png
+000256_001440_Healthy Potato Aug (236)_t001.png
+000257_000176_Img-207_t000.png
+000258_001174_Dry Rot Disease  Aug (728)_t000.png
+000259_000717_Dry Rot Disease  Aug (105)_t001.png
+000260_000399_Blackspot Bruising Disease Aug (487)_t000.png
+000261_000349_Blackspot Bruising Disease Aug (385)_t001.png
+000262_000265_Blackspot Bruising Disease Aug (183)_t000.png
+000263_001223_Dry Rot Disease  Aug (799)_t001.png
+000264_001823_Soft Rot Disease Aug (147)_t000.png
+000265_001014_Dry Rot Disease  Aug (402)_t000.png
+000266_000730_Dry Rot Disease  Aug (1076)_t000.png
+000267_000384_Blackspot Bruising Disease Aug (460)_t002.png
+000268_000962_Dry Rot Disease  Aug (296)_t001.png
+000269_000862_Dry Rot Disease  Aug (1279)_t001.png
+000270_001599_Soft Rot Disease Aug (1)_t000.png
+000271_000321_Blackspot Bruising Disease Aug (335)_t001.png
+000272_000400_Blackspot Bruising Disease Aug (489)_t000.png
+000273_000401_Blackspot Bruising Disease Aug (489)_t002.png
+000274_001826_Soft Rot Disease Aug (153)_t001.png
+000275_001325_Dry Rot Disease  Aug (959)_t000.png
+000276_001661_Soft Rot Disease Aug (253)_t000.png
+000277_001636_Soft Rot Disease Aug (200)_t000.png
+000278_001002_Dry Rot Disease  Aug (374)_t000.png
+000279_000214_Img-860_t000.png
+000280_000827_Dry Rot Disease  Aug (1222)_t000.png
+000281_000357_Blackspot Bruising Disease Aug (393)_t000.png
+000282_001160_Dry Rot Disease  Aug (696)_t002.png
+000283_000477_Blackspot Bruising Disease Aug (671)_t000.png
+000284_000693_Dry Rot Disease  Aug (1008)_t001.png
+000285_000978_Dry Rot Disease  Aug (320)_t001.png
+000286_001619_Soft Rot Disease Aug (143)_t000.png
+000287_000700_Dry Rot Disease  Aug (102)_t000.png
+000288_000869_Dry Rot Disease  Aug (1287)_t000.png
+000289_000729_Dry Rot Disease  Aug (1075)_t000.png
+000290_001769_Soft Rot Disease Aug (503)_t001.png
+000291_001191_Dry Rot Disease  Aug (759)_t001.png
+000292_000352_Blackspot Bruising Disease Aug (390)_t000.png
+000293_001366_Dry Rot Disease  Aug (214)_t002.png
+000294_000728_Dry Rot Disease  Aug (1067)_t000.png
+000295_000545_Blackspot Bruising Disease Aug (220)_t000.png
+000296_000560_Blackspot Bruising Disease Aug (422)_t000.png
+000297_000136_Img-1138_t000.png
+000298_001139_Dry Rot Disease  Aug (652)_t000.png
+000299_001716_Soft Rot Disease Aug (382)_t001.png
+000300_001096_Dry Rot Disease  Aug (569)_t001.png
+000301_001414_Healthy Potato Aug (140)_t000.png
+000302_000115_Soft Rot Disease (4)_t000.png
+000303_001431_Healthy Potato Aug (210)_t002.png
+000304_001331_Dry Rot Disease  Aug (964)_t001.png
+000305_000361_Blackspot Bruising Disease Aug (4)_t000.png
+000306_001413_Healthy Potato Aug (14)_t000.png
+000307_000791_Dry Rot Disease  Aug (1165)_t000.png
+000308_000708_Dry Rot Disease  Aug (1030)_t001.png
+000309_001767_Soft Rot Disease Aug (496)_t000.png
+000310_001737_Soft Rot Disease Aug (427)_t001.png
+000311_000626_Brown Rot Disease  Aug (82)_t001.png
+000312_001345_Dry Rot Disease  Aug (992)_t000.png
+000313_001427_Healthy Potato Aug (202)_t001.png
+000314_000259_Blackspot Bruising Disease Aug (160)_t000.png
+000315_000801_Dry Rot Disease  Aug (1185)_t000.png
+000316_000053_Dry Rot Disease (180)_t000.png
+000317_000180_Img-278_t000.png
+000318_000159_Img-1362_t000.png
+000319_000307_Blackspot Bruising Disease Aug (296)_t001.png
+000320_000881_Dry Rot Disease  Aug (14)_t000.png
+000321_001450_Healthy Potato Aug (259)_t000.png
+000322_000914_Dry Rot Disease  Aug (201)_t000.png
+000323_000181_Img-298_t000.png
+000324_001364_Dry Rot Disease  Aug (211)_t001.png
+000325_000478_Blackspot Bruising Disease Aug (671)_t001.png
+000326_001828_Soft Rot Disease Aug (161)_t002.png
+000327_001590_Healthy Potato Aug (74)_t000.png
+000328_001675_Soft Rot Disease Aug (28)_t000.png
+000329_001464_Healthy Potato Aug (291)_t000.png
+000330_001524_Healthy Potato Aug (525)_t001.png
+000331_000820_Dry Rot Disease  Aug (1214)_t000.png
+000332_001812_Soft Rot Disease Aug (99)_t002.png
+000333_001653_Soft Rot Disease Aug (239)_t001.png
+000334_000049_Dry Rot Disease (145)_t000.png
+000335_001701_Soft Rot Disease Aug (347)_t000.png
+000336_001584_Healthy Potato Aug (717)_t000.png
+000337_001593_Healthy Potato Aug (84)_t001.png
+000338_000474_Blackspot Bruising Disease Aug (666)_t001.png
+000339_001577_Healthy Potato Aug (699)_t001.png
+000340_001360_Dry Rot Disease  Aug (1294)_t001.png
+000341_001317_Dry Rot Disease  Aug (946)_t000.png
+000342_001253_Dry Rot Disease  Aug (840)_t000.png
+000343_001689_Soft Rot Disease Aug (31)_t000.png
+000344_000709_Dry Rot Disease  Aug (1034)_t000.png
+000345_001258_Dry Rot Disease  Aug (848)_t000.png
+000346_000713_Dry Rot Disease  Aug (1044)_t001.png
+000347_001262_Dry Rot Disease  Aug (852)_t000.png
+000348_001336_Dry Rot Disease  Aug (974)_t001.png
+000349_000761_Dry Rot Disease  Aug (1116)_t001.png
+000350_001783_Soft Rot Disease Aug (531)_t000.png
+000351_000594_Brown Rot Disease  Aug (22)_t000.png
+000352_001257_Dry Rot Disease  Aug (845)_t002.png
+000353_000211_Img-810_t000.png
+000354_000750_Dry Rot Disease  Aug (1099)_t002.png
+000355_000547_Blackspot Bruising Disease Aug (232)_t001.png
+000356_001341_Dry Rot Disease  Aug (985)_t001.png
+000357_001297_Dry Rot Disease  Aug (894)_t000.png
+000358_000759_Dry Rot Disease  Aug (1115)_t000.png
+000359_001766_Soft Rot Disease Aug (495)_t000.png
+000360_001851_Soft Rot Disease Aug (420)_t000.png
+000361_001536_Healthy Potato Aug (570)_t000.png
+000362_000359_Blackspot Bruising Disease Aug (398)_t000.png
+000363_000961_Dry Rot Disease  Aug (292)_t000.png
+000364_000220_Img-927_t000.png
+000365_000527_Blackspot Bruising Disease Aug (764)_t000.png
+000366_000792_Dry Rot Disease  Aug (1166)_t000.png
+000367_000528_Blackspot Bruising Disease Aug (765)_t000.png
+000368_001441_Healthy Potato Aug (237)_t000.png
+000369_000671_Dry Rot Disease  Aug (440)_t000.png
+000370_000573_Blackspot Bruising Disease Aug (681)_t000.png
+000371_000731_Dry Rot Disease  Aug (1077)_t000.png
+
+--- valide (464 images) ---
+000000_005410_Dry Rot Disease  Aug (999)_t000.png
+000001_007284_150_t003.png
+000002_007326_157_t006.png
+000003_008607_383_t000.png
+000004_009096_84_t000.png
+000005_005160_Dry Rot Disease  Aug (737)_t000.png
+000006_002747_20241106_223646_t000.png
+000007_007819_222_t001.png
+000008_002598_20241106_222849_t000.png
+000009_005005_Dry Rot Disease  Aug (586)_t000.png
+000010_005630_Healthy Potato Aug (305)_t001.png
+000011_008355_301_t003.png
+000012_003009_20241106_230651_t000.png
+000013_008418_309_t002.png
+000014_000389_Dry Rot Disease (125)_t000.png
+000015_003617_Blackspot Bruising Disease Aug (2)_t000.png
+000016_000680_Img-1084_t000.png
+000017_006774_337_t001.png
+000018_009061_72_t002.png
+000019_002325_20241105_180935_t000.png
+000020_003424_IMG_20241105_222628_321_t000.png
+000021_006106_Soft Rot Disease Aug (103)_t000.png
+000022_007310_155_t004.png
+000023_001019_Img-1414_t000.png
+000024_001201_Img-23_t000.png
+000025_003337_Img-46_t000_1.png
+000026_004879_Dry Rot Disease  Aug (452)_t000.png
+000027_000956_Img-1355_t000.png
+000028_001243_Img-281_t000.png
+000029_005461_Healthy Potato Aug (147)_t000.png
+000030_000687_Img-1091_t000.png
+000031_008144_263_t001.png
+000032_007643_202_t009.png
+000033_005052_Dry Rot Disease  Aug (634)_t000.png
+000034_007083_122_t002.png
+000035_006127_Soft Rot Disease Aug (123)_t000.png
+000036_001612_Img-637_t000.png
+000037_004007_Blackspot Bruising Disease Aug (591)_t001.png
+000038_002590_20241106_222834_t000.png
+000039_007290_151_t004.png
+000040_008237_278_t001.png
+000041_008808_52_t001.png
+000042_003759_Blackspot Bruising Disease Aug (342)_t001.png
+000043_007097_126_t002.png
+000044_008868_577_t000.png
+000045_000361_Brown Rot Disease (8)_t000.png
+000046_008112_258_t003.png
+000047_003845_Blackspot Bruising Disease Aug (434)_t000.png
+000048_003620_Blackspot Bruising Disease Aug (201)_t000.png
+000049_000890_Img-1292_t000.png
+000050_003554_Blackspot Bruising Disease Aug (139)_t000.png
+000051_000916_Img-1316_t000.png
+000052_006014_Healthy Potato Aug (677)_t000.png
+000053_004180_Blackspot Bruising Disease Aug (759)_t000.png
+000054_005582_Healthy Potato Aug (262)_t000.png
+000055_007924_231_t008.png
+000056_007259_147_t003.png
+000057_008030_245_t001.png
+000058_004972_Dry Rot Disease  Aug (553)_t000.png
+000059_003816_Blackspot Bruising Disease Aug (403)_t000.png
+000060_009118_89_t002.png
+000061_001890_Img-911_t000.png
+000062_007727_213_t000.png
+000063_002798_20241106_224000_t000.png
+000064_008024_244_t005.png
+000065_003241_Img-306_t000_1.png
+000066_001398_Img-431_t000.png
+000067_001380_Img-413_t000.png
+000068_003680_Blackspot Bruising Disease Aug (259)_t000.png
+000069_001437_Img-46_t000.png
+000070_001601_Img-627_t000.png
+000071_006709_28_t009.png
+000072_007479_187_t007.png
+000073_003484_IMG_20241105_222732_950_t000.png
+000074_001400_Img-433_t000.png
+000075_002813_20241106_224128_t000.png
+000076_002443_20241105_183059_t000.png
+000077_004995_Dry Rot Disease  Aug (575)_t000.png
+000078_001760_Img-782_t000.png
+000079_002091_20241105_175620_t000.png
+000080_007660_204_t007.png
+000081_004771_Dry Rot Disease  Aug (336)_t000.png
+000082_001053_Img-1448_t000.png
+000083_001690_Img-712_t000.png
+000084_003919_Blackspot Bruising Disease Aug (505)_t000.png
+000085_005177_Dry Rot Disease  Aug (755)_t001.png
+000086_008297_28_t002.png
+000087_006952_87_t006.png
+000088_006583_Soft Rot Disease Aug (88)_t000.png
+000089_004736_Dry Rot Disease  Aug (299)_t000.png
+000090_005251_Dry Rot Disease  Aug (832)_t001.png
+000091_007152_134_t003.png
+000092_003787_Blackspot Bruising Disease Aug (369)_t001.png
+000093_000803_Img-1202_t000.png
+000094_000307_Healthy Potato (55)_t000.png
+000095_002555_20241106_222706_t000.png
+000096_005464_Healthy Potato Aug (15)_t000.png
+000097_003911_Blackspot Bruising Disease Aug (497)_t001.png
+000098_001957_Img-977_t000.png
+000099_004108_Blackspot Bruising Disease Aug (688)_t001.png
+000100_003029_Img-112_t000_1.png
+000101_002978_20241106_230242_t000.png
+000102_001626_Img-650_t000.png
+000103_005611_Healthy Potato Aug (289)_t000.png
+000104_007459_185_t006.png
+000105_001156_Img-199_t000.png
+000106_002087_20241105_175610_t000.png
+000107_006903_70_t003.png
+000108_008166_266_t005.png
+000109_006411_Soft Rot Disease Aug (42)_t000.png
+000110_003528_Blackspot Bruising Disease Aug (114)_t000.png
+000111_008524_325_t000.png
+000112_000296_Healthy Potato (45)_t000.png
+000113_003441_IMG_20241105_222645_144_t000.png
+000114_001621_Img-645_t000.png
+000115_004945_Dry Rot Disease  Aug (522)_t000.png
+000116_004747_Dry Rot Disease  Aug (311)_t000.png
+000117_000501_Dry Rot Disease (79)_t000.png
+000118_006673_21_t003.png
+000119_008084_254_t004.png
+000120_000887_Img-128_t000.png
+000121_002668_20241106_223205_t000.png
+000122_005561_Healthy Potato Aug (242)_t000.png
+000123_007853_225_t002.png
+000124_002524_20241106_222229_t000.png
+000125_000169_Blackspot Bruising Disease (20)_t000.png
+000126_004056_Blackspot Bruising Disease Aug (637)_t000.png
+000127_004263_Brown Rot Disease  Aug (57)_t001.png
+000128_008949_639_t000.png
+000129_002056_20241105_175055_t000.png
+000130_005248_Dry Rot Disease  Aug (83)_t001.png
+000131_005955_Healthy Potato Aug (619)_t000.png
+000132_002130_20241105_175818_t000.png
+000133_001315_Img-351_t000.png
+000134_008779_508_t000.png
+000135_005615_Healthy Potato Aug (292)_t001.png
+000136_003299_Img-362_t000_1.png
+000137_006668_20_t004.png
+000138_007145_133_t001.png
+000139_005122_Dry Rot Disease  Aug (703)_t000.png
+000140_006968_91_t006.png
+000141_005240_Dry Rot Disease  Aug (825)_t000.png
+000142_000847_Img-1250_t000.png
+000143_001980_Img-9_t000.png
+000144_007399_172_t004.png
+000145_002294_20241105_180755_t000.png
+000146_006632_15_t003.png
+000147_001620_Img-644_t000.png
+000148_008041_246_t002.png
+000149_003793_Blackspot Bruising Disease Aug (374)_t000.png
+000150_008088_255_t000.png
+000151_004531_Dry Rot Disease  Aug (1247)_t000.png
+000152_007514_191_t000.png
+000153_004696_Dry Rot Disease  Aug (252)_t001.png
+000154_007569_196_t004.png
+000155_007560_195_t006.png
+000156_002738_20241106_223633_t000.png
+000157_007509_190_t005.png
+000158_009141_94_t002.png
+000159_006115_Soft Rot Disease Aug (111)_t000.png
+000160_002107_20241105_175720_t000.png
+000161_004652_Dry Rot Disease  Aug (208)_t000.png
+000162_000552_Soft Rot Disease (41)_t000.png
+000163_003405_IMG_20241105_222541_449_t000.png
+000164_005213_Dry Rot Disease  Aug (798)_t001.png
+000165_006905_70_t005.png
+000166_001710_Img-733_t001.png
+000167_002516_20241106_222218_t000.png
+000168_008718_462_t000.png
+000169_005616_Healthy Potato Aug (293)_t000.png
+000170_009234_DSC_0177_t000.png
+000171_000114_IMG_20231105_140339_t000.png
+000172_003896_Blackspot Bruising Disease Aug (483)_t000.png
+000173_003169_Img-238_t000_1.png
+000174_002743_20241106_223640_t000.png
+000175_003079_Img-158_t000_1.png
+000176_008073_253_t001.png
+000177_005766_Healthy Potato Aug (438)_t000.png
+000178_007264_148_t000.png
+000179_002917_20241106_225745_t000.png
+000180_007168_138_t001.png
+000181_007700_209_t004.png
+000182_005172_Dry Rot Disease  Aug (750)_t000.png
+000183_007170_138_t003.png
+000184_002825_20241106_224227_t000.png
+000185_001042_Img-1438_t000.png
+000186_001624_Img-649_t000.png
+000187_008622_394_t000.png
+000188_003729_Blackspot Bruising Disease Aug (307)_t000.png
+000189_002020_20241030_202810_t000.png
+000190_008602_37_t002.png
+000191_000791_Img-1192_t000.png
+000192_003464_IMG_20241105_222710_039_t000.png
+000193_008139_262_t002.png
+000194_002324_20241105_180933_t000.png
+000195_004957_Dry Rot Disease  Aug (536)_t000.png
+000196_006277_Soft Rot Disease Aug (276)_t000.png
+000197_002146_20241105_175858_t000.png
+000198_000960_Img-1359_t000.png
+000199_003671_Blackspot Bruising Disease Aug (250)_t000.png
+000200_002333_20241105_180952_t000.png
+000201_008269_283_t004.png
+000202_001459_Img-491_t000.png
+000203_008750_488_t000.png
+000204_006325_Soft Rot Disease Aug (325)_t000.png
+000205_000856_Img-1260_t000.png
+000206_001666_Img-690_t000.png
+000207_004094_Blackspot Bruising Disease Aug (674)_t000.png
+000208_003000_20241106_230601_t000.png
+000209_005665_Healthy Potato Aug (34)_t000.png
+000210_005486_Healthy Potato Aug (171)_t000.png
+000211_003720_Blackspot Bruising Disease Aug (3)_t000.png
+000212_002463_20241105_183146_t000.png
+000213_005514_Healthy Potato Aug (2)_t000.png
+000214_004149_Blackspot Bruising Disease Aug (726)_t000.png
+000215_005109_Dry Rot Disease  Aug (692)_t000.png
+000216_009223_DSC_0169_t000.png
+000217_006296_Soft Rot Disease Aug (298)_t000.png
+000218_006206_Soft Rot Disease Aug (202)_t000.png
+000219_006715_297_t005.png
+000220_000664_Img-106_t000.png
+000221_005470_Healthy Potato Aug (156)_t000.png
+000222_000433_Dry Rot Disease (173)_t000.png
+000223_006402_Soft Rot Disease Aug (41)_t001.png
+000224_002136_20241105_175831_t000.png
+000225_001023_Img-1418_t000.png
+000226_007913_230_t006.png
+000227_001141_Img-184_t000.png
+000228_002884_20241106_225536_t000.png
+000229_006123_Soft Rot Disease Aug (12)_t001.png
+000230_007139_132_t000.png
+000231_000515_Dry Rot Disease (93)_t000.png
+000232_001967_Img-987_t000.png
+000233_006840_49_t006.png
+000234_007091_125_t000.png
+000235_009059_72_t000.png
+000236_001678_Img-701_t000.png
+000237_003964_Blackspot Bruising Disease Aug (55)_t002.png
+000238_007242_145_t003.png
+000239_004738_Dry Rot Disease  Aug (300)_t000.png
+000240_008703_450_t000.png
+000241_003640_Blackspot Bruising Disease Aug (220)_t002.png
+000242_002966_20241106_230153_t000.png
+000243_008682_435_t000.png
+000244_000604_Img-1013_t000.png
+000245_003451_IMG_20241105_222654_879_t000.png
+000246_002413_20241105_182916_t000.png
+000247_000185_Blackspot Bruising Disease (35)_t000.png
+000248_005208_Dry Rot Disease  Aug (792)_t000.png
+000249_004179_Blackspot Bruising Disease Aug (758)_t000.png
+000250_005971_Healthy Potato Aug (638)_t001.png
+000251_004748_Dry Rot Disease  Aug (312)_t000.png
+000252_008103_257_t001.png
+000253_002434_20241105_183036_t000.png
+000254_002761_20241106_223714_t000.png
+000255_008182_269_t003.png
+000256_007230_144_t000.png
+000257_001525_Img-556_t000.png
+000258_004172_Blackspot Bruising Disease Aug (750)_t001.png
+000259_001910_Img-931_t000.png
+000260_008579_363_t000.png
+000261_004281_Brown Rot Disease  Aug (79)_t000.png
+000262_008596_376_t000.png
+000263_003865_Blackspot Bruising Disease Aug (454)_t000.png
+000264_001331_Img-366_t000.png
+000265_006760_32_t010.png
+000266_002462_20241105_183145_t000.png
+000267_001550_Img-579_t000.png
+000268_004341_Dry Rot Disease  Aug (1042)_t000.png
+000269_005699_Healthy Potato Aug (374)_t000.png
+000270_005942_Healthy Potato Aug (607)_t001.png
+000271_003184_Img-251_t000_1.png
+000272_004787_Dry Rot Disease  Aug (354)_t001.png
+000273_008587_36_t001.png
+000274_005856_Healthy Potato Aug (523)_t000.png
+000275_002673_20241106_223220_t000.png
+000276_006431_Soft Rot Disease Aug (441)_t000.png
+000277_004414_Dry Rot Disease  Aug (112)_t002.png
+000278_001681_Img-704_t000.png
+000279_000516_Dry Rot Disease (94)_t002.png
+000280_003227_Img-292_t000_1.png
+000281_008514_320_t002.png
+000282_007911_230_t004.png
+000283_007122_129_t004.png
+000284_003990_Blackspot Bruising Disease Aug (576)_t000.png
+000285_004100_Blackspot Bruising Disease Aug (68)_t000.png
+000286_004217_Blackspot Bruising Disease Aug (99)_t000.png
+000287_004153_Blackspot Bruising Disease Aug (732)_t000.png
+000288_000700_Img-1102_t000.png
+000289_003370_Img-74_t000_1.png
+000290_008865_574_t000.png
+000291_003311_Img-373_t000_1.png
+000292_002369_20241105_181152_t000.png
+000293_001310_Img-347_t000.png
+000294_008049_247_t000.png
+000295_000482_Dry Rot Disease (61)_t001.png
+000296_004220_Brown Rot Disease  Aug (100)_t000.png
+000297_008725_469_t000.png
+000298_002830_20241106_224250_t000.png
+000299_007605_199_t007.png
+000300_000922_Img-1321_t000.png
+000301_005210_Dry Rot Disease  Aug (795)_t000.png
+000302_005659_Healthy Potato Aug (333)_t001.png
+000303_007465_186_t002.png
+000304_003481_IMG_20241105_222732_561_t000.png
+000305_002698_20241106_223315_t000.png
+000306_005556_Healthy Potato Aug (238)_t000.png
+000307_000088_IMG_20231105_135553_t000.png
+000308_008550_342_t000.png
+000309_007866_226_t004.png
+000310_007496_189_t005.png
+000311_003087_Img-165_t000_1.png
+000312_002679_20241106_223230_t000.png
+000313_004016_Blackspot Bruising Disease Aug (6)_t000.png
+000314_007708_210_t001.png
+000315_007770_218_t001.png
+000316_000277_Healthy Potato (28)_t000.png
+000317_006444_Soft Rot Disease Aug (454)_t000.png
+000318_000983_Img-1381_t000.png
+000319_003677_Blackspot Bruising Disease Aug (256)_t000.png
+000320_006778_339_t002.png
+000321_007516_191_t002.png
+000322_003473_IMG_20241105_222722_860_t000.png
+000323_004538_Dry Rot Disease  Aug (1252)_t000.png
+000324_000471_Dry Rot Disease (49)_t000.png
+000325_003322_Img-385_t000_1.png
+000326_002803_20241106_224015_t000.png
+000327_006967_91_t005.png
+000328_001231_Img-269_t000.png
+000329_006597_101_t004.png
+000330_007946_234_t005.png
+000331_007880_227_t007.png
+000332_008064_252_t000.png
+000333_000007_IMG_20230921_152512_t000.png
+000334_007577_197_t001.png
+000335_004019_Blackspot Bruising Disease Aug (601)_t000.png
+000336_007731_213_t004.png
+000337_002477_20241105_183256_t000.png
+000338_007716_211_t001.png
+000339_004226_Brown Rot Disease  Aug (11)_t000.png
+000340_003747_Blackspot Bruising Disease Aug (331)_t000.png
+000341_003162_Img-231_t000_1.png
+000342_001391_Img-425_t000.png
+000343_006742_325_t003.png
+000344_002927_20241106_225839_t000.png
+000345_001889_Img-910_t000.png
+000346_006285_Soft Rot Disease Aug (287)_t000.png
+000347_008633_3_t001.png
+000348_007859_225_t008.png
+000349_009084_80_t000.png
+000350_002969_20241106_230202_t000.png
+000351_006782_341_t001.png
+000352_002193_20241105_180124_t000.png
+000353_001349_Img-384_t000.png
+000354_005471_Healthy Potato Aug (157)_t000.png
+000355_004192_Blackspot Bruising Disease Aug (77)_t001.png
+000356_005086_Dry Rot Disease  Aug (668)_t000.png
+000357_005433_Healthy Potato Aug (119)_t000.png
+000358_004575_Dry Rot Disease  Aug (1295)_t001.png
+000359_005959_Healthy Potato Aug (623)_t000.png
+000360_007485_188_t004.png
+000361_008845_559_t000.png
+000362_001727_Img-749_t000.png
+000363_004091_Blackspot Bruising Disease Aug (671)_t002.png
+000364_000917_Img-1317_t001.png
+000365_006201_Soft Rot Disease Aug (198)_t001.png
+000366_003781_Blackspot Bruising Disease Aug (361)_t001.png
+000367_006352_Soft Rot Disease Aug (356)_t000.png
+000368_004389_Dry Rot Disease  Aug (1093)_t000.png
+000369_003631_Blackspot Bruising Disease Aug (212)_t000.png
+000370_001322_Img-358_t000.png
+000371_004925_Dry Rot Disease  Aug (500)_t000.png
+000372_008290_288_t003.png
+000373_002010_20241030_202550_t000.png
+000374_000759_Img-115_t000.png
+000375_008642_407_t000.png
+000376_004317_Dry Rot Disease  Aug (1019)_t001.png
+000377_003539_Blackspot Bruising Disease Aug (123)_t000.png
+000378_004792_Dry Rot Disease  Aug (36)_t000.png
+000379_002983_20241106_230303_t000.png
+000380_001028_Img-1423_t000.png
+000381_004837_Dry Rot Disease  Aug (411)_t000.png
+000382_006762_330_t002.png
+000383_008448_312_t005.png
+000384_006889_61_t005.png
+000385_002263_20241105_180653_t000.png
+000386_007805_220_t011.png
+000387_002159_20241105_175925_t000.png
+000388_008573_35_t001.png
+000389_005321_Dry Rot Disease  Aug (910)_t000.png
+000390_004540_Dry Rot Disease  Aug (1254)_t001.png
+000391_007513_190_t009.png
+000392_008432_310_t005.png
+000393_004338_Dry Rot Disease  Aug (1039)_t000.png
+000394_001457_Img-48_t000.png
+000395_007329_158_t002.png
+000396_003819_Blackspot Bruising Disease Aug (406)_t000.png
+000397_003450_IMG_20241105_222654_547_t000.png
+000398_009074_77_t001.png
+000399_005526_Healthy Potato Aug (21)_t000.png
+000400_008727_46_t001.png
+000401_003979_Blackspot Bruising Disease Aug (563)_t000.png
+000402_006308_Soft Rot Disease Aug (309)_t000.png
+000403_002684_20241106_223242_t000.png
+000404_000128_IMG_20231105_140625_t000.png
+000405_007006_104_t003.png
+000406_001088_Img-1482_t000.png
+000407_003167_Img-236_t000_1.png
+000408_001016_Img-1411_t000.png
+000409_002080_20241105_175246_t000.png
+000410_004114_Blackspot Bruising Disease Aug (693)_t000.png
+000411_002135_20241105_175829_t000.png
+000412_008783_50_t002.png
+000413_002518_20241106_222220_t000.png
+000414_006829_45_t006.png
+000415_002968_20241106_230159_t000.png
+000416_004162_Blackspot Bruising Disease Aug (741)_t000.png
+000417_004208_Blackspot Bruising Disease Aug (90)_t001.png
+000418_004541_Dry Rot Disease  Aug (1255)_t001.png
+000419_008082_254_t002.png
+000420_000493_Dry Rot Disease (73)_t000.png
+000421_002682_20241106_223238_t000.png
+000422_008571_359_t000.png
+000423_005294_Dry Rot Disease  Aug (884)_t000.png
+000424_007672_206_t001.png
+000425_009268_DSC_0229_t000.png
+000426_007180_139_t004.png
+000427_003057_Img-138_t000_1.png
+000428_002141_20241105_175851_t000.png
+000429_008798_521_t000.png
+000430_004899_Dry Rot Disease  Aug (473)_t000.png
+000431_003813_Blackspot Bruising Disease Aug (40)_t000.png
+000432_009133_92_t002.png
+000433_002721_20241106_223449_t000.png
+000434_003287_Img-34_t000_1.png
+000435_001769_Img-791_t000.png
+000436_003416_IMG_20241105_222608_458_t000.png
+000437_001638_Img-663_t000.png
+000438_002554_20241106_222704_t000.png
+000439_007712_210_t005.png
+000440_006497_Soft Rot Disease Aug (504)_t000.png
+000441_003770_Blackspot Bruising Disease Aug (350)_t002.png
+000442_004002_Blackspot Bruising Disease Aug (587)_t000.png
+000443_003176_Img-244_t000_1.png
+000444_003767_Blackspot Bruising Disease Aug (348)_t001.png
+000445_005219_Dry Rot Disease  Aug (805)_t000.png
+000446_006933_7_t003.png
+000447_003966_Blackspot Bruising Disease Aug (551)_t000.png
+000448_008995_673_t000.png
+000449_008387_305_t003.png
+000450_009126_90_t003.png
+000451_004283_Brown Rot Disease  Aug (82)_t002.png
+000452_005017_Dry Rot Disease  Aug (601)_t000.png
+000453_004189_Blackspot Bruising Disease Aug (767)_t000.png
+000454_008384_305_t000.png
+000455_008085_254_t005.png
+000456_004595_Dry Rot Disease  Aug (150)_t000.png
+000457_005874_Healthy Potato Aug (54)_t001.png
+000458_008338_29_t000.png
+000459_004882_Dry Rot Disease  Aug (455)_t002.png
+000460_009261_DSC_0222_t000.png
+000461_001139_Img-182_t000.png
+000462_005295_Dry Rot Disease  Aug (885)_t000.png
+000463_005509_Healthy Potato Aug (194)_t000.png
+

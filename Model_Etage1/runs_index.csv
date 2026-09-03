@@ -1,0 +1,3 @@
+run_name,date_heure,dataset,epochs_demandes,epochs_effectifs,reduce_dataset_to,arch,selection_metric,dropout,weight_decay,val_acc_finale,val_f1_macro_finale,n_train,n_val,n_classes
+etage1_crop_split_epoch10_frac15_20260903_205231,2026-09-03 21:02:25,etage1_crop_split,10,8,15.0,resnet18,val_f1_macro,0.3,0.0001,0.985,0.973,1337,334,2
+etage1_crop_split_epoch30_20260903_235922,2026-09-04 00:26:12,etage1_crop_split,30,14,,resnet18,val_f1_macro,0.3,0.0001,0.988,0.9879,3264,836,2
