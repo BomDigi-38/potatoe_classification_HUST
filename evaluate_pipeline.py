@@ -26,6 +26,13 @@ Sortie (dans --output_dir) :
     detail_par_image.csv       une ligne par image
     matrice_confusion_stage2.png / _stage3.png, rapport_classification_stage2.txt / _stage3.txt
         (si scikit-learn/matplotlib disponibles)
+    Erreur/<label prédit à tort>/   crops (hard links) pour lesquels un étage
+        s'est trompé par rapport à la vérité terrain du dossier — la cascade
+        ne s'arrête pas au premier étage en échec (contrairement à la
+        production, cf. classify_crop(force_all_stages=True)) : on regarde
+        systématiquement ce que les étages suivants auraient dit, pour
+        inspection visuelle. Un même crop peut apparaître sous plusieurs
+        labels s'il se trompe à plusieurs étages.
 
 Usage :
     python evaluate_pipeline.py --data_dir dataset_test_pipeline --output_dir eval_pipeline_out \
@@ -227,14 +234,33 @@ def main():
             recorder = RowRecorder()
             segment_tubers.process_image(path, rel_key, gen, ctx, seg_args, recorder, seg_out_root)
 
+            true_group = infer_group(true_class)
             n_valide_rows = []
             for crop_row in recorder.rows:
                 crop_path = seg_out_root / crop_row["crop_path"]
+                # force_all_stages=True : même quand la cascade se serait arrêtée en
+                # production (stage1 invalide ou stage2 saine), on fait quand même
+                # tourner les étages suivants pour voir leur comportement sur ce crop.
                 s1_row = classify_crop(crop_path, tf, device, stage1_model, stage1_classes,
                                         stage2_model, stage2_classes, stage3_model, stage3_classes,
-                                        args.uncertain_label, args.confidence_threshold)
+                                        args.uncertain_label, args.confidence_threshold,
+                                        force_all_stages=True)
                 if s1_row["stage1_pred"] == "valide":
                     n_valide_rows.append(s1_row)
+
+                wrong_labels = []
+                if s1_row["stage1_pred"] != "valide":
+                    wrong_labels.append(s1_row["stage1_pred"])  # "invalide" alors que le dossier garantit un vrai tubercule
+                if infer_group(s1_row["stage2_pred"]) != true_group:
+                    wrong_labels.append(s1_row["stage2_pred"])
+                if true_group == "malade" and s1_row["stage3_pred"] != true_class:
+                    wrong_labels.append(s1_row["stage3_pred"])
+                for wrong_label in wrong_labels:
+                    err_dir = output_dir / "Erreur" / wrong_label
+                    err_dir.mkdir(parents=True, exist_ok=True)
+                    link_path = err_dir / crop_path.name
+                    if not link_path.exists():
+                        link_path.hardlink_to(crop_path.resolve())
 
             stage1_ok = len(n_valide_rows) == 1
             detail = {"image": f"{true_class}/{path.name}", "vraie_classe": true_class,
@@ -244,7 +270,6 @@ def main():
 
             if stage1_ok:
                 row = n_valide_rows[0]
-                true_group = infer_group(true_class)
                 pred_group = infer_group(row["stage2_pred"])
                 detail["stage2_pred"] = row["stage2_pred"]
                 detail["stage2_ok"] = (pred_group == true_group)
