@@ -1,0 +1,32 @@
+{
+  "saine": [
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Healthy_Potato_Images",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Original Images/Healthy Potato",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato disease classification/Potato disease classification/Potato Image/Potato Image/H-potato-Output",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Disease Dataset-20250303T183921Z-001/Potato Disease Dataset/Healthy Potatoes",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Slice Image Dataset/Potato Slice Image Dataset/Potato Slice Image Dataset/healthy slices"
+  ],
+  "malade_blackspot_bruising": [
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Original Images/Blackspot Bruising Disease",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Disease Dataset-20250303T183921Z-001/Potato Disease Dataset/Blackspot Bruising"
+  ],
+  "malade_brown_rot": [
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Original Images/Potato Brown Rot Disease",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Disease Dataset-20250303T183921Z-001/Potato Disease Dataset/Brown Rot"
+  ],
+  "malade_dry_rot": [
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Original Images/Potato Dry Rot Disease",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Disease Dataset-20250303T183921Z-001/Potato Disease Dataset/Dry Rot"
+  ],
+  "malade_soft_rot": [
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Original Images/Potato Soft Rot Disease",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Disease Dataset-20250303T183921Z-001/Potato Disease Dataset/Soft Rot"
+  ],
+  "malade_pstvd": [
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___PSTVD/PSTVD"
+  ],
+  "malade_indeterminee": [
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato disease classification/Potato disease classification/Potato Image/Potato Image/D-potato-Output",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Disease Dataset-20250303T183921Z-001/Potato Disease Dataset/Dry Rot/dis _error",
+    "C:/Users/Olivier/Documents/HUST Stage Hanoi/potatoe_classification_HUST/Stage1/test/crops/final_sort_augmented/___Potato Slice Image Dataset/Potato Slice Image Dataset/Potato Slice Image Dataset/defected slices"]
+}
