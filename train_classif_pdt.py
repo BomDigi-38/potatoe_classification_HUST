@@ -429,35 +429,57 @@ def format_duration(seconds: float) -> str:
     return f"{s}s"
 
 
-def estimate_duration(model, train_loader, val_loader, criterion, optimizer, device, epochs: int, n_probe_batches: int = 3):
+def estimate_duration(model, train_loader, val_loader, criterion, optimizer, device, epochs: int,
+                       n_probe_batches: int = 5, n_warmup_batches: int = 2):
     """Chronomètre quelques batches réels (train + val) pour estimer la durée
-    totale de l'entraînement avant de lancer les époques."""
+    totale de l'entraînement avant de lancer les époques.
+
+    Sur GPU, les tout premiers batches incluent des coûts fixes ponctuels
+    (initialisation du contexte CUDA, autotuning cuDNN, compilation des
+    premiers kernels) qui n'ont rien à voir avec le régime de croisière — les
+    inclure dans la mesure fausserait l'estimation d'un facteur ~10x. On les
+    absorbe donc via un échauffement non chronométré avant de mesurer, et on
+    synchronise le GPU pour que le chrono reflète un travail réellement
+    terminé (les appels CUDA sont asynchrones sinon)."""
+    def sync():
+        if device.type == "cuda":
+            torch.cuda.synchronize()
+
+    def time_batches(loader, train: bool):
+        it = iter(loader)
+        n_avail = len(loader)
+        n_warmup = min(n_warmup_batches, n_avail)
+        n_timed = min(n_probe_batches, max(n_avail - n_warmup, 0))
+
+        def run_one(imgs, labels):
+            imgs = imgs.to(device, non_blocking=True)
+            labels = labels.to(device, non_blocking=True)
+            if train:
+                optimizer.zero_grad()
+                loss = criterion(model(imgs), labels)
+                loss.backward()
+                optimizer.step()
+            else:
+                model(imgs)
+
+        for _ in range(n_warmup):
+            run_one(*next(it))
+        sync()
+
+        t0 = time.time()
+        n = 0
+        for _ in range(n_timed):
+            run_one(*next(it))
+            n += 1
+        sync()
+        return (time.time() - t0) / max(n, 1)
+
     model.train()
-    t0 = time.time()
-    n = 0
-    for imgs, labels in train_loader:
-        if n >= n_probe_batches:
-            break
-        imgs, labels = imgs.to(device), labels.to(device)
-        optimizer.zero_grad()
-        outputs = model(imgs)
-        loss = criterion(outputs, labels)
-        loss.backward()
-        optimizer.step()
-        n += 1
-    train_batch_time = (time.time() - t0) / max(n, 1)
+    train_batch_time = time_batches(train_loader, train=True)
 
     model.eval()
-    t0 = time.time()
-    n = 0
     with torch.no_grad():
-        for imgs, labels in val_loader:
-            if n >= n_probe_batches:
-                break
-            imgs, labels = imgs.to(device), labels.to(device)
-            model(imgs)
-            n += 1
-    val_batch_time = (time.time() - t0) / max(n, 1)
+        val_batch_time = time_batches(val_loader, train=False)
 
     epoch_time = train_batch_time * len(train_loader) + val_batch_time * len(val_loader)
     return epoch_time, epoch_time * epochs
@@ -509,7 +531,8 @@ def run_epoch(model, loader, criterion, optimizer, device, train: bool):
     torch.set_grad_enabled(train)
     for imgs, labels in loader:
         check_pause()
-        imgs, labels = imgs.to(device), labels.to(device)
+        imgs = imgs.to(device, non_blocking=True)
+        labels = labels.to(device, non_blocking=True)
         if train:
             optimizer.zero_grad()
 
@@ -625,8 +648,9 @@ def main():
     train_weights = build_group_balanced_weights(train_targets, classes)
     train_sampler = WeightedRandomSampler(train_weights, num_samples=len(train_targets), replacement=True)
 
-    train_loader = DataLoader(train_ds, batch_size=args.batch_size, sampler=train_sampler, num_workers=args.num_workers, drop_last=False)
-    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
+    pin_memory = device.type == "cuda"
+    train_loader = DataLoader(train_ds, batch_size=args.batch_size, sampler=train_sampler, num_workers=args.num_workers, drop_last=False, pin_memory=pin_memory)
+    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers, pin_memory=pin_memory)
 
     print(f"[info] Train: {len(train_ds)} images | Val: {len(val_ds)} images")
 
