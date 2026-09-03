@@ -133,12 +133,18 @@ def classify_crop(crop_path, tf, device,
                    stage1_model, stage1_classes,
                    stage2_model, stage2_classes,
                    stage3_model, stage3_classes,
-                   uncertain_label, confidence_threshold):
+                   uncertain_label, confidence_threshold,
+                   force_all_stages=False):
     """Fait passer un crop déjà détouré par les 3 étages (court-circuite dès
-    qu'un étage tranche invalide/saine). Retourne un dict stage1/2/3_pred/conf
-    (chaînes vides pour les étages non atteints) + verdict_final. Réutilisée
-    par predict_cascade.main() et par evaluate_pipeline.py — logique de
-    cascade centralisée à un seul endroit."""
+    qu'un étage tranche invalide/saine, sauf si force_all_stages=True). Retourne
+    un dict stage1/2/3_pred/conf (chaînes vides pour les étages non atteints
+    quand le court-circuit s'applique) + verdict_final. verdict_final reflète
+    toujours le comportement réel de production (première étape qui tranche),
+    même quand force_all_stages fait tourner les étages suivants en plus —
+    c'est un usage diagnostic (voir evaluate_pipeline.py --debug_erreurs) pour
+    observer ce que les étages en aval auraient dit sur un crop déjà rejeté
+    en amont. Réutilisée par predict_cascade.main() et par
+    evaluate_pipeline.py — logique de cascade centralisée à un seul endroit."""
     img = tf(Image.open(crop_path).convert("RGB"))
     row = {"stage1_pred": "", "stage1_conf": "", "stage2_pred": "", "stage2_conf": "",
            "stage3_pred": "", "stage3_conf": "", "verdict_final": ""}
@@ -146,15 +152,19 @@ def classify_crop(crop_path, tf, device,
     s1_idx, s1_probs = classify_one(stage1_model, img, device)
     s1_pred = stage1_classes[s1_idx]
     row["stage1_pred"], row["stage1_conf"] = s1_pred, f"{s1_probs[s1_idx]:.4f}"
-    if s1_pred != "valide":
+    stage1_stop = s1_pred != "valide"
+    if stage1_stop:
         row["verdict_final"] = "invalide"
-        return row
+        if not force_all_stages:
+            return row
 
     s2_idx, s2_probs = classify_one(stage2_model, img, device)
     s2_pred = stage2_classes[s2_idx]
     row["stage2_pred"], row["stage2_conf"] = s2_pred, f"{s2_probs[s2_idx]:.4f}"
-    if infer_group(s2_pred) == "saine":
+    stage2_stop = infer_group(s2_pred) == "saine"
+    if stage2_stop and not stage1_stop:
         row["verdict_final"] = s2_pred
+    if (stage1_stop or stage2_stop) and not force_all_stages:
         return row
 
     s3_idx, s3_probs = classify_one(stage3_model, img, device)
@@ -162,7 +172,8 @@ def classify_crop(crop_path, tf, device,
     s3_conf = s3_probs[s3_idx]
     final_stage3 = resolve_stage3_label(s3_pred_name, s3_conf, uncertain_label, confidence_threshold)
     row["stage3_pred"], row["stage3_conf"] = final_stage3, f"{s3_conf:.4f}"
-    row["verdict_final"] = final_stage3
+    if not stage1_stop and not stage2_stop:
+        row["verdict_final"] = final_stage3
     return row
 
 
