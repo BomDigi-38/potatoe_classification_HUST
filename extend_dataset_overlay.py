@@ -1,40 +1,29 @@
 #!/usr/bin/env python3
 """
-Résumé
-extend_dataset_overlay.py créé et testé (compilation + test fonctionnel + inspection visuelle de 2 composites) :
-
-Estime le masque de chaque crop par seuillage sur le fond blanc (pas de canal alpha disponible dans vos crops actuels).
-Pour chaque image, tire une autre pomme de terre au hasard (toutes classes confondues) et la pose en périphérie (un des 4 côtés, avec un léger décalage aléatoire) avec un bord adouci.
-Écrit dans --output_dir : l'original (hard link, jamais modifié) + le composite _occ.png, pour chaque classe.
-occlusion_manifest.csv trace chaque composite (image de base, occultant utilisé, côté, échelle).
-Utilisation sur votre vrai dataset :
-
-
-python extend_dataset_overlay.py --data_dir "chemin\vers\data_multiclass_split\train" --output_dir "chemin\vers\data_multiclass_split_occ"
-(pointez bien sur le dossier train/ si votre dataset est déjà splitté train/val, pour ne jamais injecter de synthétique dans la validation)
-
-Puis entraînez avec --data_dir sur ce nouveau dossier. Avant de lancer sur tout le dataset, je vous recommande d'inspecter visuellement quelques composites générés sur vos vraies images (pas juste les disques de test) — la qualité du masque par seuillage dépend de la propreté du fond blanc réel de vos crops, moins parfait qu'un aplat de test synthétique.
-
-"""
-
-
-"""
 extend_dataset_overlay.py — Étend un dataset de classification (crops
 individuels de tubercules) avec des occlusions synthétiques réalistes : pour
-chaque image, une autre pomme de terre (silhouette extraite par seuillage sur
-le fond) est posée en périphérie, pour simuler un tubercule voisin qui en
-cache un autre dans un tas en vrac.
+chaque image, la silhouette d'une autre pomme de terre (masque extrait par
+seuillage sur le fond, jamais ses pixels de couleur) sert à **effacer** une
+zone en périphérie de l'image de base, pour simuler un tubercule voisin qui
+en cache un autre dans un tas en vrac.
 
-Contrairement à RandomOcclusion (train_classif_pdt.py — rectangle/cercle
-synthétique appliqué à la volée pendant l'entraînement), ce script compose de
-vraies silhouettes de pommes de terre et écrit le résultat une fois sur
-disque, dans un nouveau dossier : le dataset de sortie double de taille
-(chaque image d'origine + sa version occluse). Aucune donnée source n'est
-modifiée (originaux repris par hard link, jamais copiés/déplacés).
+Logique de type "Random Erasing" (comme RandomOcclusion dans
+train_classif_pdt.py — rectangle/cercle appliqué à la volée pendant
+l'entraînement), mais avec une vraie silhouette de tubercule comme forme
+d'effacement, et écrite une fois sur disque dans un nouveau dossier plutôt
+qu'à la volée. Le dataset de sortie double de taille (chaque image d'origine
++ sa version occluse). Aucune donnée source n'est modifiée (originaux repris
+par hard link, jamais copiés/déplacés).
 
 Les crops n'ayant pas de canal alpha (fond --bg white uni de
 segment_tubers.py), le masque de chaque image est estimé par seuillage sur le
-fond clair, pas lu directement.
+fond clair, pas lu directement. Les images sources ayant des résolutions très
+variables, chaque image est redimensionnée à --img_size avant tout calcul, de
+sorte que le masque, le positionnement et l'effacement se comportent de façon
+cohérente quelle que soit la résolution native du crop (le composite produit
+fait toujours --img_size x --img_size ; l'original conservé par hard link
+garde sa résolution native, sans conséquence puisque train_classif_pdt.py
+redimensionne de toute façon tout à --img_size à l'entraînement).
 
 Structure attendue de --data_dir (Mode B) :
     data_dir/
@@ -58,6 +47,7 @@ import cv2
 import numpy as np
 
 IMG_EXTENSIONS = (".jpg", ".jpeg", ".png")
+FILL_COLOR = (255, 255, 255)  # blanc, cohérent avec --bg white de segment_tubers.py
 
 
 def list_class_images(data_dir: Path):
@@ -89,25 +79,27 @@ def extract_mask(img_bgr, bg_threshold=235):
     return mask.astype(bool)
 
 
-def composite_occlusion(base_bgr, base_mask, occ_bgr, occ_mask, scale_range, feather, rng):
-    """Pose occ_bgr/occ_mask en périphérie de base_bgr. Retourne
-    (image composée, côté choisi, échelle utilisée), ou None si le
-    placement est impossible (bbox dégénérée d'un côté ou de l'autre)."""
-    bx, by, bw, bh = cv2.boundingRect(base_mask.astype(np.uint8))
+def build_erase_region(occ_mask, base_bbox, base_shape, scale_range, rng):
+    """Choisit une position en périphérie de la pomme de terre de base
+    (base_bbox, sa propre bbox — pas le cadre entier, sinon l'effacement peut
+    tomber dans la marge de fond et devenir invisible) et y redimensionne la
+    silhouette occ_mask (jamais ses pixels de couleur). Retourne
+    (masque booléen à effacer, côté choisi, échelle utilisée), ou None si le
+    placement est impossible (bbox dégénérée)."""
+    H, W = base_shape
+    bx, by, bw, bh = base_bbox
     if bw < 4 or bh < 4:
         return None
 
     ox, oy, ow, oh = cv2.boundingRect(occ_mask.astype(np.uint8))
     if ow < 2 or oh < 2:
         return None
-    occ_crop = occ_bgr[oy:oy + oh, ox:ox + ow]
     occ_m = occ_mask[oy:oy + oh, ox:ox + ow].astype(np.uint8)
 
     scale = rng.uniform(*scale_range)
     target = max(1, int(scale * max(bw, bh)))
     ratio = target / max(ow, oh)
     new_w, new_h = max(1, int(ow * ratio)), max(1, int(oh * ratio))
-    occ_crop = cv2.resize(occ_crop, (new_w, new_h), interpolation=cv2.INTER_AREA)
     occ_m = cv2.resize(occ_m, (new_w, new_h), interpolation=cv2.INTER_NEAREST)
 
     side = rng.choice(["gauche", "droite", "haut", "bas"])
@@ -123,7 +115,6 @@ def composite_occlusion(base_bgr, base_mask, occ_bgr, occ_mask, scale_range, fea
 
     px, py = int(cx - new_w / 2), int(cy - new_h / 2)
 
-    H, W = base_bgr.shape[:2]
     x0, y0 = max(0, px), max(0, py)
     x1, y1 = min(W, px + new_w), min(H, py + new_h)
     if x1 <= x0 or y1 <= y0:
@@ -131,30 +122,35 @@ def composite_occlusion(base_bgr, base_mask, occ_bgr, occ_mask, scale_range, fea
     sx0, sy0 = x0 - px, y0 - py
     sx1, sy1 = sx0 + (x1 - x0), sy0 + (y1 - y0)
 
-    alpha = occ_m[sy0:sy1, sx0:sx1].astype(np.float32)
+    erase_mask = np.zeros((H, W), dtype=bool)
+    erase_mask[y0:y1, x0:x1] = occ_m[sy0:sy1, sx0:sx1].astype(bool)
+    return erase_mask, side, scale
+
+
+def apply_erase(base_bgr, erase_mask, feather):
+    """Efface erase_mask sur base_bgr (remplissage FILL_COLOR), bord adouci."""
+    alpha = erase_mask.astype(np.float32)
     if feather > 0:
         k = feather * 2 + 1
         alpha = cv2.GaussianBlur(alpha * 255, (k, k), 0) / 255.0
     alpha = alpha[..., None]
-
-    out = base_bgr.copy()
-    region = out[y0:y1, x0:x1].astype(np.float32)
-    occ_region = occ_crop[sy0:sy1, sx0:sx1].astype(np.float32)
-    out[y0:y1, x0:x1] = (occ_region * alpha + region * (1 - alpha)).astype(np.uint8)
-
-    return out, side, scale
+    out = (base_bgr.astype(np.float32) * (1 - alpha)
+           + np.array(FILL_COLOR, dtype=np.float32) * alpha)
+    return out.astype(np.uint8)
 
 
 def main():
     parser = argparse.ArgumentParser(
         description="Étend un dataset de classification avec des occlusions "
-                     "synthétiques réalistes (une pomme de terre posée devant une autre).")
+                     "synthétiques réalistes (silhouette d'une autre pomme de terre "
+                     "utilisée pour effacer une zone en périphérie de l'image de base).")
     parser.add_argument("--data_dir", type=str, required=True, help="Dossier <classe>/*.png|jpg (Mode B).")
     parser.add_argument("--output_dir", type=str, required=True, help="Dossier de sortie (créé si absent).")
+    parser.add_argument("--img_size", type=int, default=224, help="Taille canonique (carrée) à laquelle chaque image est redimensionnée avant calcul/effacement.")
     parser.add_argument("--bg_threshold", type=int, default=235, help="Seuil (0-255) : un pixel dont les 3 canaux dépassent ce seuil est considéré comme fond.")
-    parser.add_argument("--occ_scale_min", type=float, default=0.25, help="Taille mini de l'occultant, en fraction de la plus grande dimension de la pomme de terre de base.")
+    parser.add_argument("--occ_scale_min", type=float, default=0.25, help="Taille mini de la zone effacée, en fraction de --img_size.")
     parser.add_argument("--occ_scale_max", type=float, default=0.5)
-    parser.add_argument("--feather", type=int, default=3, help="Adoucissement du bord de l'occultant (px).")
+    parser.add_argument("--feather", type=int, default=3, help="Adoucissement du bord effacé (px).")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
@@ -176,6 +172,7 @@ def main():
     rng = random.Random(args.seed)
     manifest_path = output_dir / "occlusion_manifest.csv"
     n_ok, n_skip = 0, 0
+    size = (args.img_size, args.img_size)
 
     with open(manifest_path, "w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=[
@@ -196,7 +193,9 @@ def main():
                 print(f"  !! illisible, ignorée : {base_path}")
                 n_skip += 1
                 continue
+            base_bgr = cv2.resize(base_bgr, size, interpolation=cv2.INTER_AREA)
             base_mask = extract_mask(base_bgr, args.bg_threshold)
+            base_bbox = cv2.boundingRect(base_mask.astype(np.uint8))
 
             occ_idx = rng.randrange(len(pool) - 1)
             if occ_idx >= i:
@@ -207,16 +206,18 @@ def main():
                 print(f"  !! occultant illisible, ignorée : {occ_path}")
                 n_skip += 1
                 continue
+            occ_bgr = cv2.resize(occ_bgr, size, interpolation=cv2.INTER_AREA)
             occ_mask = extract_mask(occ_bgr, args.bg_threshold)
 
-            result = composite_occlusion(
-                base_bgr, base_mask, occ_bgr, occ_mask,
-                (args.occ_scale_min, args.occ_scale_max), args.feather, rng)
+            result = build_erase_region(
+                occ_mask, base_bbox, base_bgr.shape[:2],
+                (args.occ_scale_min, args.occ_scale_max), rng)
             if result is None:
-                print(f"  !! composite impossible, ignorée : {base_path.name}")
+                print(f"  !! effacement impossible, ignorée : {base_path.name}")
                 n_skip += 1
                 continue
-            composite, side, scale = result
+            erase_mask, side, scale = result
+            composite = apply_erase(base_bgr, erase_mask, args.feather)
 
             out_path = cls_out_dir / f"{base_path.stem}_occ.png"
             cv2.imwrite(str(out_path), composite)
