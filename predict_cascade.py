@@ -187,8 +187,9 @@ def main():
                         help="Stage 3 : si la confiance max est sous ce seuil, la prédiction est "
                              "remplacée par --uncertain_label (0 = désactivé).")
     parser.add_argument("--uncertain_label", type=str, default="malade_indeterminee",
-                        help="Nom de la classe stage 3 vers laquelle basculer une prédiction peu "
-                             "confiante — doit être une classe réelle du checkpoint stage 3.")
+                        help="Étiquette de repli pour une prédiction stage 3 peu confiante — "
+                             "libre, n'a pas besoin d'être une classe réellement entraînée.")
+    parser.add_argument("--limit", type=int, default=0, help="Ne traiter que les N premières images (0 = toutes).")
     parser.add_argument("--img_size", type=int, default=224, help="Doit correspondre à la valeur utilisée à l'entraînement des 3 modèles.")
     parser.add_argument("--device", type=str, default="auto", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--seed", type=int, default=42)
@@ -232,6 +233,8 @@ def main():
     files = collect_images(args.input, args.exclude)
     if not files:
         sys.exit(f"[erreur] Aucune image trouvée dans {args.input}.")
+    if args.limit:
+        files = files[:args.limit]
     print(f"[info] {len(files)} photo(s) à analyser.")
 
     tf = build_eval_transform(args.img_size)

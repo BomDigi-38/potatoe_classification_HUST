@@ -38,6 +38,7 @@ Usage :
 import argparse
 import csv
 import json
+import random
 import sys
 from pathlib import Path
 
@@ -97,6 +98,10 @@ def main():
     parser.add_argument("--img_size", type=int, default=224)
     parser.add_argument("--device", type=str, default="auto", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--debug", action="store_true", help="Passe --debug à segment_tubers.py.")
+    parser.add_argument("--sample_frac", type=float, default=1.0,
+                        help="Fraction du dataset à évaluer (0-1], tirage aléatoire stratifié par "
+                             "classe (jamais moins d'1 image gardée par classe). 1.0 = tout le dataset.")
+    parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu") if args.device == "auto" else torch.device(args.device)
@@ -116,6 +121,24 @@ def main():
     items = list_class_images(data_dir)
     if not items:
         sys.exit(f"[erreur] Aucune image trouvée dans {data_dir}.")
+
+    if not (0 < args.sample_frac <= 1.0):
+        sys.exit(f"[erreur] --sample_frac doit être dans ]0, 1], reçu {args.sample_frac}.")
+    if args.sample_frac < 1.0:
+        rng = random.Random(args.seed)
+        by_class = {}
+        for img, cls in items:
+            by_class.setdefault(cls, []).append(img)
+        sampled = []
+        for cls, imgs in by_class.items():
+            imgs = imgs[:]
+            rng.shuffle(imgs)
+            n_keep = max(1, round(len(imgs) * args.sample_frac))
+            sampled.extend((img, cls) for img in imgs[:n_keep])
+        items = sampled
+        print(f"[info] --sample_frac {args.sample_frac} : {len(items)} images retenues "
+              f"(tirage aléatoire stratifié par classe, seed={args.seed}).")
+
     ground_truth_classes = sorted({c for _, c in items})
     print(f"[info] {len(items)} images dans {len(ground_truth_classes)} classes : {ground_truth_classes}")
 
