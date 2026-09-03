@@ -50,14 +50,21 @@ IMG_EXTENSIONS = (".jpg", ".jpeg", ".png")
 FILL_COLOR = (255, 255, 255)  # blanc, cohérent avec --bg white de segment_tubers.py
 
 
-def list_class_images(data_dir: Path):
-    """Retourne [(chemin, classe), ...] pour toutes les images de data_dir/<classe>/
-    (recherche récursive par classe, tolère des sous-dossiers de sous-type)."""
+def list_class_images(data_dir: Path, exclude_dirnames):
+    """Retourne [(chemin, classe, chemin_relatif), ...] pour toutes les images
+    de data_dir/<classe>/ (recherche récursive, préserve les sous-dossiers de
+    sous-type via chemin_relatif). Ignore tout fichier dont un composant de
+    chemin (sous data_dir) correspond à exclude_dirnames (ex. "err/")."""
+    exclude_set = {d.lower() for d in exclude_dirnames}
     items = []
     for cls_dir in sorted(p for p in data_dir.iterdir() if p.is_dir()):
         for img in sorted(cls_dir.rglob("*")):
-            if img.is_file() and img.suffix.lower() in IMG_EXTENSIONS:
-                items.append((img, cls_dir.name))
+            if not img.is_file() or img.suffix.lower() not in IMG_EXTENSIONS:
+                continue
+            rel = img.relative_to(data_dir)
+            if any(part.lower() in exclude_set for part in rel.parts[:-1]):
+                continue
+            items.append((img, cls_dir.name, rel))
     return items
 
 
@@ -148,9 +155,10 @@ def main():
     parser.add_argument("--output_dir", type=str, required=True, help="Dossier de sortie (créé si absent).")
     parser.add_argument("--img_size", type=int, default=224, help="Taille canonique (carrée) à laquelle chaque image est redimensionnée avant calcul/effacement.")
     parser.add_argument("--bg_threshold", type=int, default=235, help="Seuil (0-255) : un pixel dont les 3 canaux dépassent ce seuil est considéré comme fond.")
-    parser.add_argument("--occ_scale_min", type=float, default=0.25, help="Taille mini de la zone effacée, en fraction de --img_size.")
-    parser.add_argument("--occ_scale_max", type=float, default=0.5)
+    parser.add_argument("--occ_scale_min", type=float, default=0.4, help="Taille mini de la zone effacée, en fraction de --img_size.")
+    parser.add_argument("--occ_scale_max", type=float, default=0.8)
     parser.add_argument("--feather", type=int, default=3, help="Adoucissement du bord effacé (px).")
+    parser.add_argument("--exclude_dirnames", type=str, nargs="+", default=["err"], help="Nom(s) de sous-dossier à exclure où qu'ils apparaissent sous --data_dir (ex. err/).")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
@@ -161,10 +169,11 @@ def main():
     if not data_dir.is_dir():
         sys.exit(f"[erreur] {data_dir} n'existe pas ou n'est pas un dossier.")
 
-    pool = list_class_images(data_dir)
+    pool = list_class_images(data_dir, args.exclude_dirnames)
     if len(pool) < 2:
         sys.exit(f"[erreur] Au moins 2 images sont nécessaires (trouvé {len(pool)}).")
-    print(f"[info] {len(pool)} images trouvées dans {len({c for _, c in pool})} classes.")
+    print(f"[info] {len(pool)} images trouvées dans {len({c for _, c, _ in pool})} classes "
+          f"(dossiers exclus : {args.exclude_dirnames}).")
 
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -180,11 +189,11 @@ def main():
             "cote", "echelle", "composite_path"])
         writer.writeheader()
 
-        for i, (base_path, cls) in enumerate(pool):
-            cls_out_dir = output_dir / cls
-            cls_out_dir.mkdir(parents=True, exist_ok=True)
+        for i, (base_path, cls, rel_path) in enumerate(pool):
+            out_subdir = output_dir / rel_path.parent
+            out_subdir.mkdir(parents=True, exist_ok=True)
 
-            link_path = cls_out_dir / base_path.name
+            link_path = out_subdir / base_path.name
             if not link_path.exists():
                 link_path.hardlink_to(base_path.resolve())
 
@@ -200,7 +209,7 @@ def main():
             occ_idx = rng.randrange(len(pool) - 1)
             if occ_idx >= i:
                 occ_idx += 1
-            occ_path, occ_cls = pool[occ_idx]
+            occ_path, occ_cls, _ = pool[occ_idx]
             occ_bgr = cv2.imread(str(occ_path), cv2.IMREAD_COLOR)
             if occ_bgr is None:
                 print(f"  !! occultant illisible, ignorée : {occ_path}")
@@ -219,7 +228,7 @@ def main():
             erase_mask, side, scale = result
             composite = apply_erase(base_bgr, erase_mask, args.feather)
 
-            out_path = cls_out_dir / f"{base_path.stem}_occ.png"
+            out_path = out_subdir / f"{base_path.stem}_occ.png"
             cv2.imwrite(str(out_path), composite)
 
             writer.writerow({
