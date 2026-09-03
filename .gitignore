@@ -9,6 +9,7 @@ __Old_dataset/
 Stage 1/
 Stage1/
 multiple_out/
+eval_pipeline_out*/
 
 # Checkpoint de test MobileSAM, sans rapport avec l'entraînement du classifieur
 mobile_sam.pt
