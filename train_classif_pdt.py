@@ -682,13 +682,15 @@ def main():
                   f"envisagez d'augmenter --batch_size pour garder une taille de batch par GPU raisonnable).")
 
     epoch_time, total_time = estimate_duration(model, train_loader, val_loader, criterion, optimizer, device, epochs)
-    print(f"[info] Estimation : ~{format_duration(epoch_time)}/époque, ~{format_duration(total_time)} pour {epochs} époques "
-          "(early stopping peut arrêter avant la fin).")
+    print(f"[info] Estimation grossière (avant le 1er epoch réel, à prendre comme ordre de grandeur) : "
+          f"~{format_duration(epoch_time)}/époque, ~{format_duration(total_time)} pour {epochs} époques. "
+          "Une estimation fiable s'affichera après le premier epoch.")
 
     history = {"train_loss": [], "train_acc": [], "val_loss": [], "val_acc": [], "val_f1_macro": []}
     best_metric, best_state, epochs_no_improve = 0.0, None, 0
     report_labels = list(range(len(classes)))
 
+    loop_t0 = time.time()
     for epoch in range(1, epochs + 1):
         t0 = time.time()
         train_loss, train_acc, _, _ = run_epoch(model, train_loader, criterion, optimizer, device, train=True)
@@ -705,9 +707,13 @@ def main():
         history["val_f1_macro"].append(val_f1_macro)
 
         dt = time.time() - t0
+        elapsed = time.time() - loop_t0
+        avg_epoch = elapsed / epoch
+        eta = avg_epoch * (epochs - epoch)  # borne haute : ignore un early stopping qui arrêterait avant
         f1_str = f" val_f1_macro={val_f1_macro:.4f}" if val_f1_macro is not None else ""
         print(f"[epoch {epoch:03d}/{epochs}] train_loss={train_loss:.4f} train_acc={train_acc:.4f} "
               f"val_loss={val_loss:.4f} val_acc={val_acc:.4f}{f1_str} ({dt:.1f}s)")
+        print(f"    -> moyenne {avg_epoch:.1f}s/époque | restant estimé (si pas d'early stopping) : {format_duration(eta)}")
 
         if selection_value > best_metric:
             best_metric = selection_value
