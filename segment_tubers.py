@@ -197,38 +197,32 @@ def _pair_intersection(mi, mj, bi, bj) -> int:
     return int(np.count_nonzero(mi[y0:y1, x0:x1] & mj[y0:y1, x0:x1]))
 
 
-def filter_masks(records, img_shape, args, stats):
-    """Cascade de filtres. Retourne la liste des masques conservés."""
-    H, W = img_shape[:2]
-    img_area = H * W
+def geometric_reject(r, args, img_area):
+    """Rejets Filtre 0 bon marché (forme du masque uniquement, aucun accès
+    aux pixels de l'image) — appliqués dans process_image() avant le calcul
+    coûteux flou/saturation, pour ne pas le payer sur des candidats de toute
+    façon condamnés (cas dominant observé : des centaines de micro-fragments
+    par image). Retourne la clé de stats du rejet, ou None si le candidat
+    passe ce premier tri."""
+    a = r["px_area"]
+    if a > args.max_area_frac * img_area:
+        return "fond/tas"
+    if a < args.min_area_frac * img_area:
+        return "trop petit"
+    if r["elongation"] > args.max_elongation:
+        return "trop allonge"
+    if r["solidity"] < args.min_solidity_hard:
+        return "non convexe"
+    if r["n_vertices"] <= args.sq_max_vertices and r["rect_fill"] > args.sq_min_rect_fill:
+        return "anguleux (carré)"
+    return None
 
-    # --- Filtre 0 : rejets absolus ----------------------------------------
-    kept = []
-    for r in records:
-        a = r["px_area"]
-        if a > args.max_area_frac * img_area:
-            stats["fond/tas"] += 1
-            continue
-        if a < args.min_area_frac * img_area:
-            stats["trop petit"] += 1
-            continue
-        if r["elongation"] > args.max_elongation:
-            stats["trop allonge"] += 1
-            continue
-        if r["solidity"] < args.min_solidity_hard:
-            stats["non convexe"] += 1
-            continue
-        if r["n_vertices"] <= args.sq_max_vertices and r["rect_fill"] > args.sq_min_rect_fill:
-            stats["anguleux (carré)"] += 1
-            continue
-        if r["sharpness"] < args.min_sharpness:
-            stats["flou"] += 1
-            continue
-        if r["mean_saturation"] < args.min_saturation:
-            stats["caillou (couleur)"] += 1
-            continue
-        kept.append(r)
 
+def filter_masks(records, args, stats):
+    """Cascade de filtres. Retourne la liste des masques conservés.
+    Les candidats reçus ont déjà passé geometric_reject() + les seuils
+    flou/saturation (appliqués en amont dans process_image)."""
+    kept = records
     if not kept:
         return []
 
@@ -442,7 +436,7 @@ def process_image(path: Path, rel_key: str, gen, ctx_factory, args, writer, out_
     img0 = cv2.imread(str(path), cv2.IMREAD_COLOR)
     if img0 is None:
         print(f"  !! illisible : {rel_key}{path.suffix}")
-        return 0, 0
+        return 0, 0, 0.0, 0.0, 0.0
 
     H0, W0 = img0.shape[:2]
     scale = 1.0
@@ -452,8 +446,17 @@ def process_image(path: Path, rel_key: str, gen, ctx_factory, args, writer, out_
         img = cv2.resize(img0, (int(W0 * scale), int(H0 * scale)),
                          interpolation=cv2.INTER_AREA)
 
+    t0_gen = time.time()
     with ctx_factory():
         raw = gen.generate(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+    t_gen = time.time() - t0_gen
+
+    t0_filt = time.time()
+    img_area = img.shape[0] * img.shape[1]
+    stats = {k: 0 for k in ["fond/tas", "trop petit", "trop allonge", "non convexe",
+                            "anguleux (carré)", "flou", "caillou (couleur)",
+                            "parent (groupe)", "fragment", "doublon (NMS)",
+                            "aire incoherente"]}
 
     records = []
     for m in raw:
@@ -466,29 +469,44 @@ def process_image(path: Path, rel_key: str, gen, ctx_factory, args, writer, out_
         met["stability"] = float(m.get("stability_score", 0.0))
         met["pred_iou"] = float(m.get("predicted_iou", 0.0))
 
+        # Rejets bon marché (forme seule) AVANT le calcul flou/saturation :
+        # évite de payer cette étape coûteuse sur les candidats de toute
+        # façon condamnés (cas dominant observé : micro-fragments par dizaines).
+        reason = geometric_reject(met, args, img_area)
+        if reason is not None:
+            stats[reason] += 1
+            continue
+
         x, y, w, h = met["bbox"]
         mask_crop = seg[y:y + h, x:x + w]
         sub_img = img[y:y + h, x:x + w]
         if mask_crop.any():
-            lap = cv2.Laplacian(cv2.cvtColor(sub_img, cv2.COLOR_BGR2GRAY), cv2.CV_64F)
-            met["sharpness"] = float(lap[mask_crop].var())
+            # HSV une seule fois : le canal V sert de proxy niveaux de gris
+            # pour le flou, évite une 2e conversion couleur (BGR2GRAY).
             hsv = cv2.cvtColor(sub_img, cv2.COLOR_BGR2HSV)
+            lap = cv2.Laplacian(hsv[..., 2], cv2.CV_64F)
+            met["sharpness"] = float(lap[mask_crop].var())
             met["mean_saturation"] = float(hsv[..., 1][mask_crop].mean())
         else:
             met["sharpness"] = 0.0
             met["mean_saturation"] = 0.0
 
+        if met["sharpness"] < args.min_sharpness:
+            stats["flou"] += 1
+            continue
+        if met["mean_saturation"] < args.min_saturation:
+            stats["caillou (couleur)"] += 1
+            continue
+
         records.append(met)
 
-    stats = {k: 0 for k in ["fond/tas", "trop petit", "trop allonge", "non convexe",
-                            "anguleux (carré)", "flou", "caillou (couleur)",
-                            "parent (groupe)", "fragment", "doublon (NMS)",
-                            "aire incoherente"]}
-    kept = filter_masks(records, img.shape, args, stats)
+    kept = filter_masks(records, args, stats)
     kept.sort(key=lambda r: (r["bbox"][1], r["bbox"][0]))
     for r in kept:
         r["quality"] = grade(r, args)
+    t_filt = time.time() - t0_filt
 
+    t0_crop = time.time()
     crop_dir = out_root / "crops" / rel_key
     crop_dir.mkdir(parents=True, exist_ok=True)
     base = Path(rel_key).name
@@ -545,12 +563,14 @@ def process_image(path: Path, rel_key: str, gen, ctx_factory, args, writer, out_
         cv2.imwrite(str(remainder_path),
                     draw_remainder(img, kept, REMAINDER_COLOR[args.remainder_color]),
                     [cv2.IMWRITE_JPEG_QUALITY, 88])
+    t_crop = time.time() - t0_crop
 
     rej = ", ".join(f"{k}={v}" for k, v in stats.items() if v)
     print(f"  {rel_key}{path.suffix}: {len(raw)} masques bruts -> {len(kept)} tubercules "
           f"({n_ok} ok, {len(kept) - n_ok} suspects)"
           + (f"  [rejets: {rej}]" if rej else ""))
-    return len(kept), n_ok
+    print(f"    [timing] SAM2={t_gen:.2f}s  filtrage={t_filt:.2f}s  export={t_crop:.2f}s")
+    return len(kept), n_ok, t_gen, t_filt, t_crop
 
 
 # ===========================================================================
@@ -731,15 +751,20 @@ def main(argv=None):
         writer = csv.DictWriter(fh, fieldnames=CSV_FIELDS)
         if write_header:
             writer.writeheader()
+        total_gen, total_filt, total_crop = 0.0, 0.0, 0.0
         for k, (f, rel_key) in enumerate(files, 1):
             print(f"[{k}/{len(files)}]", end=" ")
             try:
-                n, n_ok = process_image(f, rel_key, gen, ctx, args, writer, out_root)
+                n, n_ok, t_gen, t_filt, t_crop = process_image(
+                    f, rel_key, gen, ctx, args, writer, out_root)
             except Exception as e:
                 print(f"  !! image ignorée (erreur : {e})")
-                n, n_ok = 0, 0
+                n, n_ok, t_gen, t_filt, t_crop = 0, 0, 0.0, 0.0, 0.0
             total += n
             total_ok += n_ok
+            total_gen += t_gen
+            total_filt += t_filt
+            total_crop += t_crop
             with open(processed_log, "a", encoding="utf-8") as plog:
                 plog.write(rel_key + "\n")
             elapsed = time.time() - loop_t0
@@ -748,8 +773,13 @@ def main(argv=None):
             print(f"    -> ecoule {elapsed / 60:.1f} min | restant estime {eta / 60:.1f} min "
                   f"({avg:.1f} s/image en moyenne)")
 
+    total_measured = total_gen + total_filt + total_crop
     print(f"\n{total} tubercules extraits ({total_ok} 'ok', {total - total_ok} 'suspect') "
           f"en {time.time() - t0:.1f}s")
+    if total_measured > 0:
+        print(f"Repartition du temps : SAM2={total_gen:.1f}s ({100*total_gen/total_measured:.0f}%)  "
+              f"filtrage={total_filt:.1f}s ({100*total_filt/total_measured:.0f}%)  "
+              f"export={total_crop:.1f}s ({100*total_crop/total_measured:.0f}%)")
     print(f"-> {out_root / 'tubers.csv'}")
     print(f"-> {out_root / 'crops'}")
 

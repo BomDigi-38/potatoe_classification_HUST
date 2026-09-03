@@ -538,6 +538,8 @@ def main():
     parser.add_argument("--img_size", type=int, default=224)
     parser.add_argument("--epochs", type=int, default=30)
     parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--num_workers", type=int, default=4, help="Processus de chargement/augmentation des images en parallèle (CPU) ; augmentez si le GPU attend souvent après les données (cf. nvidia-smi).")
+    parser.add_argument("--multi_gpu", action="store_true", help="Utilise tous les GPU CUDA disponibles (torch.nn.DataParallel) si 2 ou plus sont détectés ; ignoré sinon.")
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--weight_decay", type=float, default=1e-4, help="Régularisation L2 de l'optimiseur Adam (0 = désactivée).")
     parser.add_argument("--dropout", type=float, default=0.3, help="Dropout juste avant la couche de classification finale (0 = désactivé, tête = nn.Linear seul comme avant).")
@@ -623,21 +625,37 @@ def main():
     train_weights = build_group_balanced_weights(train_targets, classes)
     train_sampler = WeightedRandomSampler(train_weights, num_samples=len(train_targets), replacement=True)
 
-    train_loader = DataLoader(train_ds, batch_size=args.batch_size, sampler=train_sampler, num_workers=2, drop_last=False)
-    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=2)
+    train_loader = DataLoader(train_ds, batch_size=args.batch_size, sampler=train_sampler, num_workers=args.num_workers, drop_last=False)
+    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
 
     print(f"[info] Train: {len(train_ds)} images | Val: {len(val_ds)} images")
 
-    model = build_model(args.arch, num_classes=len(classes), dropout=args.dropout).to(device)
+    # raw_model reste la référence pour tout ce qui touche aux poids
+    # (state_dict/checkpoints) : identique que --multi_gpu soit actif ou non,
+    # pour garder le format de best_model.pt compatible avec l'existant
+    # (DataParallel préfixerait les clés de "model.state_dict()" par "module.").
+    raw_model = build_model(args.arch, num_classes=len(classes), dropout=args.dropout).to(device)
     if args.freeze_backbone:
-        for name, param in model.named_parameters():
+        for name, param in raw_model.named_parameters():
             if "fc" not in name and "classifier" not in name:
                 param.requires_grad = False
         print("[info] Backbone gelé, seule la tête de classification est entraînée.")
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr, weight_decay=args.weight_decay)
+    optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, raw_model.parameters()), lr=args.lr, weight_decay=args.weight_decay)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=3)
+
+    model = raw_model
+    if args.multi_gpu:
+        if device.type != "cuda":
+            print("[warn] --multi_gpu ignoré : aucun GPU CUDA disponible.")
+        elif torch.cuda.device_count() < 2:
+            print(f"[warn] --multi_gpu ignoré : {torch.cuda.device_count()} GPU CUDA détecté (2+ requis).")
+        else:
+            model = nn.DataParallel(raw_model)
+            print(f"[info] DataParallel actif sur {torch.cuda.device_count()} GPU "
+                  f"(batch_size={args.batch_size} réparti entre eux, ~{args.batch_size // torch.cuda.device_count()} par GPU — "
+                  f"envisagez d'augmenter --batch_size pour garder une taille de batch par GPU raisonnable).")
 
     epoch_time, total_time = estimate_duration(model, train_loader, val_loader, criterion, optimizer, device, epochs)
     print(f"[info] Estimation : ~{format_duration(epoch_time)}/époque, ~{format_duration(total_time)} pour {epochs} époques "
@@ -669,7 +687,7 @@ def main():
 
         if selection_value > best_metric:
             best_metric = selection_value
-            best_state = copy.deepcopy(model.state_dict())
+            best_state = copy.deepcopy(raw_model.state_dict())
             epochs_no_improve = 0
             torch.save({"model_state": best_state, "arch": args.arch, "classes": classes, "head_dropout": args.dropout},
                        run_dir / "best_model.pt")
@@ -686,7 +704,7 @@ def main():
         json.dump(history, f, indent=2)
 
     if best_state is not None:
-        model.load_state_dict(best_state)
+        raw_model.load_state_dict(best_state)
     _, final_val_acc, val_preds, val_labels = run_epoch(model, val_loader, criterion, optimizer, device, train=False)
 
     final_val_f1_macro, final_val_f1_weighted = None, None
