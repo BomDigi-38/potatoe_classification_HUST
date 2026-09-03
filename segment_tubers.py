@@ -619,7 +619,7 @@ def parse_args(argv=None):
                     help="Redimensionnement avant AMG (0 = désactivé)")
 
     am = p.add_argument_group("AMG")
-    am.add_argument("--points-per-side", type=int, default=24)
+    am.add_argument("--points-per-side", type=int, default=8)
     am.add_argument("--pred-iou-thresh", type=float, default=0.80)
     am.add_argument("--stability-thresh", type=float, default=0.92)
     am.add_argument("--crop-n-layers", type=int, default=0)

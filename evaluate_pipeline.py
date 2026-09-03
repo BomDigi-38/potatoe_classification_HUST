@@ -143,6 +143,10 @@ def main():
                         help="Fraction du dataset à évaluer (0-1], tirage aléatoire stratifié par "
                              "classe (jamais moins d'1 image gardée par classe). 1.0 = tout le dataset.")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--shuffle", action="store_true",
+                        help="Mélange l'ordre de traitement des images (sinon groupées par classe). "
+                             "Utile avec l'écriture incrémentale : un arrêt en cours de route montre "
+                             "alors un aperçu représentatif de toutes les classes.")
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu") if args.device == "auto" else torch.device(args.device)
@@ -179,6 +183,10 @@ def main():
         items = sampled
         print(f"[info] --sample_frac {args.sample_frac} : {len(items)} images retenues "
               f"(tirage aléatoire stratifié par classe, seed={args.seed}).")
+
+    if args.shuffle:
+        random.Random(args.seed).shuffle(items)
+        print(f"[info] --shuffle : ordre de traitement mélangé (seed={args.seed}).")
 
     ground_truth_classes = sorted({c for _, c in items})
     print(f"[info] {len(items)} images dans {len(ground_truth_classes)} classes : {ground_truth_classes}")
