@@ -7,10 +7,14 @@ __Old_dataset/
 
 # Sorties de tests segment_tubers.py (pas des données d'entraînement du classifieur)
 Stage 1/
+Stage1/
 multiple_out/
 
 # Checkpoint de test MobileSAM, sans rapport avec l'entraînement du classifieur
 mobile_sam.pt
+
+# Ignorer les poids de modèles PyTorch
+*.pt
 
 # Cache Python régénérable
 __pycache__/
