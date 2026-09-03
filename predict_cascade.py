@@ -140,9 +140,18 @@ def predict_probs(model, loader, device):
     return all_preds, all_probs
 
 
+def apply_uncertainty(pred_idx, probs, uncertain_idx, threshold):
+    """Stage 2 (type de maladie) seulement : bascule vers uncertain_idx si la
+    confiance max est sous threshold. threshold=0 ou uncertain_idx=None ->
+    no-op (comportement identique à avant l'ajout de cette option)."""
+    if threshold > 0 and uncertain_idx is not None and max(probs) < threshold:
+        return uncertain_idx
+    return pred_idx
+
+
 def run_evaluation_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
                          stage2_model, stage2_classes, class_map, batch_size, num_workers,
-                         device, output_dir, no_plots):
+                         device, output_dir, no_plots, confidence_threshold, uncertain_idx):
     try:
         eval_ds = datasets.ImageFolder(data_dir, transform=tf)
     except FileNotFoundError as e:
@@ -208,6 +217,7 @@ def run_evaluation_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine
         else:
             s2_pred_local = stage2_preds_by_idx[i]
             s2_probs_local = stage2_probs_by_idx[i]
+            s2_pred_local = apply_uncertainty(s2_pred_local, s2_probs_local, uncertain_idx, confidence_threshold)
             pred_name = stage2_classes[s2_pred_local]
             final_preds.append(stage2_name_to_report_idx[pred_name])
             # Replace chaque probabilité du stage 2 (indexée localement dans
@@ -266,7 +276,8 @@ def run_evaluation_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine
 
 
 def run_prediction_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
-                         stage2_model, stage2_classes, batch_size, num_workers, device, output_dir):
+                         stage2_model, stage2_classes, batch_size, num_workers, device, output_dir,
+                         confidence_threshold, uncertain_idx):
     paths = sorted(p for p in data_dir.iterdir() if p.is_file() and p.suffix.lower() in IMG_EXTENSIONS)
     if not paths:
         sys.exit(f"[erreur] Aucune image trouvée directement dans {data_dir}.")
@@ -296,9 +307,10 @@ def run_prediction_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine
             final_pred_name = "saine"
             final_conf = stage1_probs[i][stage1_saine_idx]
         else:
-            s2_pred = stage2_preds_by_idx[i]
+            s2_probs = stage2_probs_by_idx[i]
+            s2_pred = apply_uncertainty(stage2_preds_by_idx[i], s2_probs, uncertain_idx, confidence_threshold)
             stage2_pred_name = stage2_classes[s2_pred]
-            stage2_conf = stage2_probs_by_idx[i][s2_pred]
+            stage2_conf = s2_probs[s2_pred]
             stage2_conf_str = f"{stage2_conf:.4f}"
             final_pred_name = stage2_pred_name
             final_conf = stage2_conf
@@ -336,6 +348,12 @@ def main():
     parser.add_argument("--device", type=str, default="auto", choices=["auto", "cpu", "cuda"])
     parser.add_argument("--class_map", type=str, default=None, help="Mode évaluation seulement : fait correspondre des noms de sous-dossiers de --data_dir aux classes du stage 2 quand les noms diffèrent.")
     parser.add_argument("--no_plots", action="store_true", help="Mode évaluation seulement : n'écrit que metrics.json et images_mal_classees.csv.")
+    parser.add_argument("--confidence_threshold", type=float, default=0.0,
+                        help="Stage 2 (type de maladie) : si la confiance max est sous ce seuil, "
+                             "la prédiction est remplacée par --uncertain_label (0 = désactivé).")
+    parser.add_argument("--uncertain_label", type=str, default="malade_indeterminee",
+                        help="Nom de la classe stage 2 vers laquelle basculer une prédiction peu "
+                             "confiante — doit être une classe réelle du checkpoint stage 2.")
     args = parser.parse_args()
 
     set_seed(args.seed)
@@ -362,6 +380,13 @@ def main():
         sys.exit(f"[erreur] Impossible de déterminer la classe saine du stage 1 parmi {stage1_classes}.")
     stage1_saine_idx = stage1_saine_candidates[0]
 
+    uncertain_idx = None
+    if args.confidence_threshold > 0:
+        if args.uncertain_label not in stage2_classes:
+            sys.exit(f"[erreur] --uncertain_label '{args.uncertain_label}' absent des classes "
+                     f"du stage 2 : {stage2_classes}.")
+        uncertain_idx = stage2_classes.index(args.uncertain_label)
+
     if args.output_dir:
         output_dir = Path(args.output_dir)
     else:
@@ -377,10 +402,11 @@ def main():
         class_map = parse_class_map(args.class_map) if args.class_map else None
         run_evaluation_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
                              stage2_model, stage2_classes, class_map, args.batch_size, args.num_workers,
-                             device, output_dir, args.no_plots)
+                             device, output_dir, args.no_plots, args.confidence_threshold, uncertain_idx)
     else:
         run_prediction_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
-                             stage2_model, stage2_classes, args.batch_size, args.num_workers, device, output_dir)
+                             stage2_model, stage2_classes, args.batch_size, args.num_workers, device, output_dir,
+                             args.confidence_threshold, uncertain_idx)
 
 
 if __name__ == "__main__":
