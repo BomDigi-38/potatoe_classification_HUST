@@ -81,6 +81,7 @@ import copy
 import csv
 import json
 import math
+import os
 import random
 import shutil
 import sys
@@ -814,4 +815,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        # Sur Windows, les workers du DataLoader (--num_workers > 0, des
+        # processus séparés) peuvent bloquer indéfiniment la fermeture propre
+        # de l'interpréteur après un Ctrl+C. os._exit() coupe immédiatement,
+        # sans attendre de les rejoindre — le dernier best_model.pt (déjà
+        # sauvegardé à chaque amélioration) n'est pas perdu.
+        print("\n[info] Interruption clavier (Ctrl+C) détectée — arrêt immédiat.")
+        sys.stdout.flush()
+        os._exit(1)
