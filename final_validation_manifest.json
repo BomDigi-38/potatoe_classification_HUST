@@ -1,0 +1,37 @@
+{
+  "saines": [
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___dataset_papas_hibrido\\train\\Buen estado",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___dataset_papas_hibrido\\val\\Buen estado",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___dataset_papas_hibrido\\test\\Buen estado",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Healthy_Potato_Images",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Original Images\\Healthy Potato",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato disease classification\\Potato disease classification\\Potato Image\\Potato Image\\H-potato-Output",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Healthy Potatoes",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Slice Image Dataset\\Potato Slice Image Dataset\\Potato Slice Image Dataset\\healthy slices\\single",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Slice Image Dataset\\Potato Slice Image Dataset\\Potato Slice Image Dataset\\healthy slices\\bulk"
+  ],
+  "malade_dry_rot": [
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Dry Rot",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Original Images\\Potato Dry Rot Disease"
+  ],
+  "malade_soft_rot": [
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Soft Rot",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Original Images\\Potato Soft Rot Disease"
+  ],
+  "malade_pstvd": [
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___PSTVD\\PSTVD"
+  ],
+  "malade_blackspot_bruising": [
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Blackspot Bruising",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Original Images\\Blackspot Bruising Disease"
+  ],
+  "malade_indeterminee": [
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Black Scurf",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Brown Rot",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Miscellaneous",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Blackleg",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Pink Rot",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Potato Disease Dataset-20250303T183921Z-001\\Potato Disease Dataset\\Common Scab",
+    "C:\\Users\\LBS\\Downloads\\Potatoes_DATASET\\___Original Images\\Potato Brown Rot Disease"
+  ]
+}

@@ -1,84 +1,53 @@
 #!/usr/bin/env python3
 """
-predict_cascade.py — Classification à deux étages, à partir de deux modèles
-déjà entraînés (train_classif_pdt.py). Ce script n'entraîne rien, ne modifie
-aucun des scripts existants : il charge deux checkpoints .pt et enchaîne :
+predict_cascade.py — Pipeline complet à 3 étages, à partir de photos brutes
+(pas encore détourées) et de 3 modèles déjà entraînés (train_classif_pdt.py).
+Ce script n'entraîne rien.
 
-    Stage 1 (binaire, ex. V1_savemodels/.../best_model.pt, classes
-             ["malades", "saines"]) : chaque image est classée saine/malade
-             en argmax. Les images "saine" ressortent directement ainsi,
-             SANS jamais passer par le stage 2.
+    segment_tubers.py : détoure chaque tubercule individuel de la photo brute
+                         (réutilisé directement, mêmes réglages déjà calibrés
+                         — voir segment_tubers.py, aucun dupliqué ici).
 
-    Stage 2 (multiclasse, ex. Model/<run>/best_model.pt, classes
-             malade_dry_rot, ..., saine) : appliqué UNIQUEMENT aux images que
-             le stage 1 a jugées malades, pour obtenir le nom précis de la
-             maladie (ou malade_indeterminee).
+    Stage 1 (binaire, classes ["invalide", "valide"]) : le crop est-il bien
+             une pomme de terre ? Les crops "invalide" s'arrêtent ici.
 
-Le stage 1 doit être un modèle binaire (2 classes) — c'est un filtre, pas un
-classifieur fin. Le stage 2 peut être entraîné sur un sous-ensemble des
-maladies seulement (ex. --exclude_classes utilisé à l'entraînement) : il n'a
-pas besoin de connaître "saine" lui-même, cette sortie est ajoutée par ce
-script pour les images court-circuitées au stage 1.
+    Stage 2 (binaire, groupe "malade"/"saine" par préfixe de nom de classe) :
+             le tubercule est-il malade ? Les crops "saine" s'arrêtent ici.
 
-Deux modes, détectés automatiquement sur la structure de --data_dir :
+    Stage 3 (multiclasse, type de maladie précis) : appliqué uniquement aux
+             crops jugés malades par le stage 2. Si la confiance maximale est
+             sous --confidence_threshold, la prédiction est remplacée par
+             --uncertain_label ("malade_indeterminee" par défaut) plutôt que
+             de faire confiance à un choix peu sûr.
 
-    Mode évaluation (--data_dir a des sous-dossiers de classe, ex.
-    dataset/data_multiclass_test/) : la taxonomie de référence pour le
-    rapport est celle du DOSSIER DE TEST (pas forcément celle du stage 2) —
-    le stage 2 doit juste couvrir un sous-ensemble de ces classes, plus
-    "saine" doit être parmi les classes du dossier de test. Toute vraie
-    classe que le stage 2 ne connaît pas (ex. une maladie explicitement
-    exclue à l'entraînement) ne pourra jamais être prédite correctement :
-    elle apparaît comme erreur systématique dans le rapport — c'est le
-    comportement attendu, pas un bug, ça montre où la cascade "retombe"
-    faute d'avoir appris cette classe.
-        - accuracy binaire du stage 1 seul, accuracy de la cascade complète
-        - rapport de classification, matrice de confusion (taxonomie du jeu de test)
-        - images_mal_classees.csv, metrics.json
-
-    Mode prédiction (--data_dir est un dossier plat d'images, pas de
-    sous-dossiers — aucune vérité terrain) :
-        - tri_images.csv : une ligne par image (prédictions des deux étages
-          + prédiction finale + confiance)
-        - tri/<classe_predite>/... : les images organisées par classe prédite
-          via hardlinks (ne duplique ni ne déplace les fichiers d'origine)
+Sortie (dans --output_dir) :
+    crops_segmentation/   sortie brute de segment_tubers.py (crops, debug si --debug)
+    pipeline_resultats.csv   une ligne par crop détouré : prédiction de chaque
+                             étage atteint + confiance + verdict final
+    tri/<verdict_final>/     crops organisés par verdict (hard links, originaux intacts)
 
 Usage :
-    python predict_cascade.py --stage1_model_path V1_savemodels/alldataset_v1/outputs_classif/best_model.pt --stage2_model_path Model/<run>/best_model.pt --data_dir ./dataset/data_multiclass_test
-    python predict_cascade.py --stage1_model_path ... --stage2_model_path ... --data_dir ./nouvelles_images_sans_etiquette
+    python predict_cascade.py --input photos/ --output_dir out_pipeline \
+        --stage1_model_path Model_Etage1/.../best_model.pt \
+        --stage2_model_path Model_Etage2/.../best_model.pt \
+        --stage3_model_path Model_Etage3/.../best_model.pt \
+        --confidence_threshold 0.5
 """
 
 import argparse
 import csv
-import json
 import random
 import sys
-from datetime import datetime
 from pathlib import Path
 
 import numpy as np
 import torch
 from PIL import Image
-from torch.utils.data import DataLoader, Dataset, Subset
-from torchvision import datasets
 
-from evaluate_classif_pdt import (
-    build_eval_transform,
-    build_model,
-    parse_class_map,
-    plot_confidence_histogram,
-    plot_confusion_matrix,
-    write_misclassified_csv,
-)
+import segment_tubers
+from evaluate_classif_pdt import build_eval_transform, build_model
 
-try:
-    import matplotlib  # noqa: F401 (déjà configuré en mode "Agg" par evaluate_classif_pdt.py)
-    from sklearn.metrics import classification_report
-    HAS_PLOT = True
-except ImportError:
-    HAS_PLOT = False
-
-IMG_EXTENSIONS = (".jpg", ".jpeg", ".png")
+IMG_EXTENSIONS = segment_tubers.IMG_EXT
 
 
 def set_seed(seed: int):
@@ -90,26 +59,42 @@ def set_seed(seed: int):
 
 def infer_group(class_name: str) -> str:
     """Même contrat de nommage que train_classif_pdt.py/prepare_dataset.py :
-    tout nom de classe commençant par "malade" (singulier ou pluriel, ex.
-    "malades", "malade_dry_rot") appartient au groupe malade, le reste au
-    groupe saine."""
+    tout nom de classe commençant par "malade" appartient au groupe malade,
+    le reste au groupe saine."""
     return "malade" if class_name.startswith("malade") else "saine"
 
 
-class FlatImageDataset(Dataset):
-    """Dataset minimal pour un dossier plat d'images sans sous-dossiers de
-    classe (mode prédiction : pas de vérité terrain)."""
+class RowRecorder:
+    """Remplace le csv.DictWriter réel attendu par segment_tubers.process_image
+    : récupère en mémoire les lignes (crops) produites pour une image, sans
+    jamais écrire de CSV segment_tubers séparé."""
 
-    def __init__(self, paths, transform):
-        self.paths = paths
-        self.transform = transform
+    def __init__(self):
+        self.rows = []
 
-    def __len__(self):
-        return len(self.paths)
+    def writerow(self, row):
+        self.rows.append(dict(row))
 
-    def __getitem__(self, idx):
-        img = Image.open(self.paths[idx]).convert("RGB")
-        return self.transform(img), idx
+
+def collect_images(inputs, excludes):
+    """Même logique de collecte que segment_tubers.main() (dédoublonnage,
+    --exclude, rel_key préservant l'arborescence) — réutilise IMG_EXT et
+    rel_key_for du module plutôt que de les redéfinir."""
+    srcs = [Path(p) for p in inputs]
+    exclude_paths = [Path(p).resolve() for p in excludes]
+    seen = {}
+    for src in srcs:
+        candidates = [src] if src.is_file() else sorted(src.rglob("*"))
+        for f in candidates:
+            if not f.is_file() or f.suffix.lower() not in IMG_EXTENSIONS:
+                continue
+            resolved = f.resolve()
+            if any(resolved == ex or ex in resolved.parents for ex in exclude_paths):
+                continue
+            if resolved in seen:
+                continue
+            seen[resolved] = (f, segment_tubers.rel_key_for(f, src))
+    return sorted(seen.values(), key=lambda t: t[1])
 
 
 def load_stage_model(path: Path, device, stage_name: str):
@@ -125,288 +110,171 @@ def load_stage_model(path: Path, device, stage_name: str):
     return model, classes
 
 
-def predict_probs(model, loader, device):
-    """Passe d'inférence pure, alignée sur l'ordre du DataLoader
-    (shuffle=False) : retourne (all_preds, all_probs)."""
-    all_preds, all_probs = [], []
+def classify_one(model, img_tensor, device):
+    """Une seule image (déjà transformée) -> (index prédit, liste de probas)."""
     with torch.no_grad():
-        for imgs, _ in loader:
-            imgs = imgs.to(device)
-            outputs = model(imgs)
-            probs = torch.softmax(outputs, dim=1)
-            preds = outputs.argmax(dim=1)
-            all_preds.extend(preds.cpu().tolist())
-            all_probs.extend(probs.cpu().tolist())
-    return all_preds, all_probs
+        outputs = model(img_tensor.unsqueeze(0).to(device))
+        probs = torch.softmax(outputs, dim=1)[0]
+    return int(probs.argmax().item()), probs.cpu().tolist()
 
 
-def apply_uncertainty(pred_idx, probs, uncertain_idx, threshold):
-    """Stage 2 (type de maladie) seulement : bascule vers uncertain_idx si la
-    confiance max est sous threshold. threshold=0 ou uncertain_idx=None ->
-    no-op (comportement identique à avant l'ajout de cette option)."""
-    if threshold > 0 and uncertain_idx is not None and max(probs) < threshold:
-        return uncertain_idx
-    return pred_idx
+def resolve_stage3_label(pred_name, confidence, uncertain_label, threshold):
+    """Retourne uncertain_label si confidence est sous threshold — repli
+    libre : uncertain_label n'a pas besoin d'être une classe réellement
+    entraînée du stage 3 (beaucoup de checkpoints stage 3 réels n'ont pas de
+    classe "indéterminée" dédiée). Sinon pred_name inchangé. threshold=0 ->
+    no-op."""
+    if threshold > 0 and confidence < threshold:
+        return uncertain_label
+    return pred_name
 
 
-def run_evaluation_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
-                         stage2_model, stage2_classes, class_map, batch_size, num_workers,
-                         device, output_dir, no_plots, confidence_threshold, uncertain_idx):
-    try:
-        eval_ds = datasets.ImageFolder(data_dir, transform=tf)
-    except FileNotFoundError as e:
-        sys.exit(f"[erreur] Impossible de charger {data_dir} : {e}")
+def classify_crop(crop_path, tf, device,
+                   stage1_model, stage1_classes,
+                   stage2_model, stage2_classes,
+                   stage3_model, stage3_classes,
+                   uncertain_label, confidence_threshold):
+    """Fait passer un crop déjà détouré par les 3 étages (court-circuite dès
+    qu'un étage tranche invalide/saine). Retourne un dict stage1/2/3_pred/conf
+    (chaînes vides pour les étages non atteints) + verdict_final. Réutilisée
+    par predict_cascade.main() et par evaluate_pipeline.py — logique de
+    cascade centralisée à un seul endroit."""
+    img = tf(Image.open(crop_path).convert("RGB"))
+    row = {"stage1_pred": "", "stage1_conf": "", "stage2_pred": "", "stage2_conf": "",
+           "stage3_pred": "", "stage3_conf": "", "verdict_final": ""}
 
-    if len(eval_ds.classes) < 2:
-        sys.exit(f"[erreur] Attendu au moins 2 sous-dossiers de classe dans {data_dir}, trouvé : {eval_ds.classes}.")
+    s1_idx, s1_probs = classify_one(stage1_model, img, device)
+    s1_pred = stage1_classes[s1_idx]
+    row["stage1_pred"], row["stage1_conf"] = s1_pred, f"{s1_probs[s1_idx]:.4f}"
+    if s1_pred != "valide":
+        row["verdict_final"] = "invalide"
+        return row
 
-    # La taxonomie de référence pour le rapport est celle du jeu de test
-    # (pas celle du stage 2 : le stage 2 peut ne couvrir qu'un sous-ensemble
-    # des maladies, ex. entraîné avec --exclude_classes). --class_map permet
-    # juste de renommer des dossiers dont le nom diffère ; eval_ds.targets
-    # reste valide tel quel (aucun réindexage nécessaire, contrairement à
-    # reconcile_classes qui alignait sur l'ordre du checkpoint).
-    classes = [class_map.get(c, c) for c in eval_ds.classes] if class_map else list(eval_ds.classes)
+    s2_idx, s2_probs = classify_one(stage2_model, img, device)
+    s2_pred = stage2_classes[s2_idx]
+    row["stage2_pred"], row["stage2_conf"] = s2_pred, f"{s2_probs[s2_idx]:.4f}"
+    if infer_group(s2_pred) == "saine":
+        row["verdict_final"] = s2_pred
+        return row
 
-    missing_stage2_classes = set(stage2_classes) - set(classes)
-    if missing_stage2_classes:
-        sys.exit(f"[erreur] Le stage 2 a des classes absentes du jeu de test {data_dir} : "
-                  f"{sorted(missing_stage2_classes)}. Classes du jeu de test : {classes}.")
-    if "saine" not in classes:
-        sys.exit(f"[erreur] 'saine' doit être une des classes du jeu de test {data_dir} "
-                  f"(nécessaire pour représenter les images court-circuitées au stage 1). Trouvé : {classes}.")
-
-    saine_idx = classes.index("saine")
-    stage2_name_to_report_idx = {name: classes.index(name) for name in stage2_classes}
-    known_stage2_classes = set(stage2_classes)
-    unreachable = [c for c in classes if c != "saine" and c not in known_stage2_classes]
-    if unreachable:
-        print(f"[warn] Classes du jeu de test que le stage 2 ne connaît pas (jamais prédites correctement) : {unreachable}")
-
-    loader = DataLoader(eval_ds, batch_size=batch_size, shuffle=False, num_workers=num_workers)
-    print(f"[info] Mode évaluation : {len(eval_ds)} images, classes={classes}")
-
-    sample_paths = [p for p, _ in eval_ds.samples]
-    true_labels = eval_ds.targets
-
-    stage1_preds, stage1_probs = predict_probs(stage1_model, loader, device)
-    stage1_groups = [infer_group(stage1_classes[p]) for p in stage1_preds]
-
-    malade_indices = [i for i, g in enumerate(stage1_groups) if g == "malade"]
-    stage2_preds_by_idx, stage2_probs_by_idx = {}, {}
-    if malade_indices:
-        sub_loader = DataLoader(Subset(eval_ds, malade_indices), batch_size=batch_size,
-                                 shuffle=False, num_workers=num_workers)
-        sub_preds, sub_probs = predict_probs(stage2_model, sub_loader, device)
-        for local_i, global_i in enumerate(malade_indices):
-            stage2_preds_by_idx[global_i] = sub_preds[local_i]
-            stage2_probs_by_idx[global_i] = sub_probs[local_i]
-
-    final_preds, final_probs = [], []
-    for i in range(len(eval_ds)):
-        if stage1_groups[i] == "saine":
-            final_preds.append(saine_idx)
-            # Le stage 2 n'a jamais tourné sur cette image : on ne peut pas
-            # reconstituer une vraie distribution sur les 7 classes, mais
-            # write_misclassified_csv/plot_confidence_histogram ne lisent que
-            # probs[pred_idx] ou max(probs) — on y place donc la confiance
-            # réelle du stage 1 sur "saine", 0 ailleurs.
-            probs_vec = [0.0] * len(classes)
-            probs_vec[saine_idx] = stage1_probs[i][stage1_saine_idx]
-            final_probs.append(probs_vec)
-        else:
-            s2_pred_local = stage2_preds_by_idx[i]
-            s2_probs_local = stage2_probs_by_idx[i]
-            s2_pred_local = apply_uncertainty(s2_pred_local, s2_probs_local, uncertain_idx, confidence_threshold)
-            pred_name = stage2_classes[s2_pred_local]
-            final_preds.append(stage2_name_to_report_idx[pred_name])
-            # Replace chaque probabilité du stage 2 (indexée localement dans
-            # stage2_classes) à sa position dans l'espace de classes du jeu
-            # de test, potentiellement plus grand (ex. stage 2 à 4 classes,
-            # jeu de test à 7). max(probs_vec) == max(s2_probs_local), donc
-            # la confiance rapportée reste correcte.
-            probs_vec = [0.0] * len(classes)
-            for local_idx, name in enumerate(stage2_classes):
-                probs_vec[stage2_name_to_report_idx[name]] = s2_probs_local[local_idx]
-            final_probs.append(probs_vec)
-
-    accuracy_cascade = sum(1 for t, p in zip(true_labels, final_preds) if t == p) / len(true_labels)
-    true_groups = [infer_group(classes[t]) for t in true_labels]
-    accuracy_stage1 = sum(1 for tg, sg in zip(true_groups, stage1_groups) if tg == sg) / len(true_groups)
-    n_shortcut = len(eval_ds) - len(malade_indices)
-    n_stage2 = len(malade_indices)
-
-    print(f"[info] Accuracy stage 1 (binaire malade/saine) : {accuracy_stage1:.4f}")
-    print(f"[info] Images court-circuitées à l'étage 1 (saine) : {n_shortcut} | envoyées à l'étage 2 : {n_stage2}")
-    print(f"[info] Accuracy cascade complète ({len(classes)} classes) : {accuracy_cascade:.4f}")
-
-    write_misclassified_csv(output_dir / "images_mal_classees.csv", sample_paths, true_labels, final_preds, final_probs, classes)
-
-    metrics = {
-        "accuracy_cascade": accuracy_cascade,
-        "accuracy_stage1_binaire": accuracy_stage1,
-        "n_samples": len(eval_ds),
-        "n_shortcut_saine": n_shortcut,
-        "n_envoyees_stage2": n_stage2,
-        "classes": classes,
-        "classification_report": None,
-    }
-
-    if HAS_PLOT and not no_plots:
-        report_labels = list(range(len(classes)))
-        report_txt = classification_report(true_labels, final_preds, labels=report_labels, target_names=classes, digits=3)
-        print("\n[rapport de classification - cascade]\n" + report_txt)
-        with open(output_dir / "rapport_classification.txt", "w", encoding="utf-8") as f:
-            f.write(report_txt)
-        metrics["classification_report"] = classification_report(
-            true_labels, final_preds, labels=report_labels, target_names=classes, digits=3, output_dict=True
-        )
-        plot_confusion_matrix(true_labels, final_preds, classes, output_dir / "matrice_confusion.png")
-        plot_confidence_histogram(true_labels, final_preds, final_probs, output_dir / "histogramme_confiance.png")
-    else:
-        if no_plots:
-            print("[info] --no_plots activé : seuls metrics.json et images_mal_classees.csv sont écrits.")
-        else:
-            print("[warn] matplotlib/scikit-learn absents : rapport et matrice de confusion non générés.")
-
-    with open(output_dir / "metrics.json", "w", encoding="utf-8") as f:
-        json.dump(metrics, f, indent=2)
-
-    print(f"[info] Terminé. Résultats écrits dans {output_dir}.")
+    s3_idx, s3_probs = classify_one(stage3_model, img, device)
+    s3_pred_name = stage3_classes[s3_idx]
+    s3_conf = s3_probs[s3_idx]
+    final_stage3 = resolve_stage3_label(s3_pred_name, s3_conf, uncertain_label, confidence_threshold)
+    row["stage3_pred"], row["stage3_conf"] = final_stage3, f"{s3_conf:.4f}"
+    row["verdict_final"] = final_stage3
+    return row
 
 
-def run_prediction_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
-                         stage2_model, stage2_classes, batch_size, num_workers, device, output_dir,
-                         confidence_threshold, uncertain_idx):
-    paths = sorted(p for p in data_dir.iterdir() if p.is_file() and p.suffix.lower() in IMG_EXTENSIONS)
-    if not paths:
-        sys.exit(f"[erreur] Aucune image trouvée directement dans {data_dir}.")
-    print(f"[info] Mode prédiction : {len(paths)} images sans étiquette dans {data_dir}")
-
-    loader = DataLoader(FlatImageDataset(paths, tf), batch_size=batch_size, shuffle=False, num_workers=num_workers)
-    stage1_preds, stage1_probs = predict_probs(stage1_model, loader, device)
-    stage1_groups = [infer_group(stage1_classes[p]) for p in stage1_preds]
-
-    malade_indices = [i for i, g in enumerate(stage1_groups) if g == "malade"]
-    stage2_preds_by_idx, stage2_probs_by_idx = {}, {}
-    if malade_indices:
-        sub_paths = [paths[i] for i in malade_indices]
-        sub_loader = DataLoader(FlatImageDataset(sub_paths, tf), batch_size=batch_size,
-                                 shuffle=False, num_workers=num_workers)
-        sub_preds, sub_probs = predict_probs(stage2_model, sub_loader, device)
-        for local_i, global_i in enumerate(malade_indices):
-            stage2_preds_by_idx[global_i] = sub_preds[local_i]
-            stage2_probs_by_idx[global_i] = sub_probs[local_i]
-
-    csv_rows, final_pred_names = [], []
-    for i, path in enumerate(paths):
-        stage1_pred_name = stage1_classes[stage1_preds[i]]
-        stage1_conf = stage1_probs[i][stage1_preds[i]]
-        if stage1_groups[i] == "saine":
-            stage2_pred_name, stage2_conf_str = "", ""
-            final_pred_name = "saine"
-            final_conf = stage1_probs[i][stage1_saine_idx]
-        else:
-            s2_probs = stage2_probs_by_idx[i]
-            s2_pred = apply_uncertainty(stage2_preds_by_idx[i], s2_probs, uncertain_idx, confidence_threshold)
-            stage2_pred_name = stage2_classes[s2_pred]
-            stage2_conf = s2_probs[s2_pred]
-            stage2_conf_str = f"{stage2_conf:.4f}"
-            final_pred_name = stage2_pred_name
-            final_conf = stage2_conf
-        final_pred_names.append(final_pred_name)
-        csv_rows.append([str(path), stage1_pred_name, f"{stage1_conf:.4f}", stage2_pred_name, stage2_conf_str, final_pred_name, f"{final_conf:.4f}"])
-
-    csv_path = output_dir / "tri_images.csv"
-    with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["chemin", "stage1_pred", "stage1_confiance", "stage2_pred", "stage2_confiance", "prediction_finale", "confiance_finale"])
-        writer.writerows(csv_rows)
-    print(f"[info] Tri écrit -> {csv_path} ({len(paths)} images, {len(malade_indices)} envoyées à l'étage 2)")
-
-    tri_dir = output_dir / "tri"
-    for path, final_pred_name in zip(paths, final_pred_names):
-        cls_dir = tri_dir / final_pred_name
-        cls_dir.mkdir(parents=True, exist_ok=True)
-        (cls_dir / path.name).hardlink_to(path.resolve())
-    print(f"[info] Images organisées par classe prédite (hardlinks, originaux intacts) -> {tri_dir}")
-    print(f"[info] Terminé. Résultats écrits dans {output_dir}.")
+CSV_FIELDS = ["image", "rel_key", "crop_path", "segment_quality",
+              "stage1_pred", "stage1_conf",
+              "stage2_pred", "stage2_conf",
+              "stage3_pred", "stage3_conf",
+              "verdict_final"]
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Classification à deux étages (stage 1 binaire -> stage 2 multiclasse) à partir de deux checkpoints déjà entraînés. N'entraîne rien."
-    )
-    parser.add_argument("--stage1_model_path", type=str, required=True, help="Checkpoint .pt binaire (saine/malade), utilisé comme filtre.")
-    parser.add_argument("--stage2_model_path", type=str, required=True, help="Checkpoint .pt multiclasse, utilisé uniquement sur les images jugées malades par le stage 1. Peut couvrir un sous-ensemble des maladies (ex. --exclude_classes à l'entraînement) ; n'a pas besoin de connaître 'saine' lui-même.")
-    parser.add_argument("--data_dir", type=str, required=True, help="Dossier à classer. Sous-dossiers de classe -> mode évaluation ; dossier plat d'images -> mode prédiction.")
-    parser.add_argument("--output_dir", type=str, default=None, help="Dossier de sortie. Par défaut : sous-dossier horodaté cascade_<nom_data_dir>_<date>_<heure> créé à côté du checkpoint stage 2.")
-    parser.add_argument("--img_size", type=int, default=224, help="Doit correspondre à la valeur utilisée à l'entraînement des deux modèles.")
-    parser.add_argument("--batch_size", type=int, default=32)
-    parser.add_argument("--num_workers", type=int, default=2)
-    parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--device", type=str, default="auto", choices=["auto", "cpu", "cuda"])
-    parser.add_argument("--class_map", type=str, default=None, help="Mode évaluation seulement : fait correspondre des noms de sous-dossiers de --data_dir aux classes du stage 2 quand les noms diffèrent.")
-    parser.add_argument("--no_plots", action="store_true", help="Mode évaluation seulement : n'écrit que metrics.json et images_mal_classees.csv.")
+        description="Pipeline complet (segment_tubers -> stage1 validité -> stage2 malade/saine "
+                    "-> stage3 type de maladie) à partir de photos brutes et de 3 checkpoints déjà entraînés.")
+    parser.add_argument("--input", type=str, nargs="+", required=True, help="Photo(s)/dossier(s) bruts à analyser.")
+    parser.add_argument("--output_dir", type=str, required=True, help="Dossier de sortie.")
+    parser.add_argument("--exclude", type=str, nargs="+", default=[], help="Fichier(s)/dossier(s) à exclure de --input.")
+    parser.add_argument("--stage1_model_path", type=str, required=True, help="Checkpoint binaire validité (classes invalide/valide).")
+    parser.add_argument("--stage2_model_path", type=str, required=True, help="Checkpoint binaire malade/saine.")
+    parser.add_argument("--stage3_model_path", type=str, required=True, help="Checkpoint multiclasse type de maladie.")
     parser.add_argument("--confidence_threshold", type=float, default=0.0,
-                        help="Stage 2 (type de maladie) : si la confiance max est sous ce seuil, "
-                             "la prédiction est remplacée par --uncertain_label (0 = désactivé).")
+                        help="Stage 3 : si la confiance max est sous ce seuil, la prédiction est "
+                             "remplacée par --uncertain_label (0 = désactivé).")
     parser.add_argument("--uncertain_label", type=str, default="malade_indeterminee",
-                        help="Nom de la classe stage 2 vers laquelle basculer une prédiction peu "
-                             "confiante — doit être une classe réelle du checkpoint stage 2.")
+                        help="Nom de la classe stage 3 vers laquelle basculer une prédiction peu "
+                             "confiante — doit être une classe réelle du checkpoint stage 3.")
+    parser.add_argument("--img_size", type=int, default=224, help="Doit correspondre à la valeur utilisée à l'entraînement des 3 modèles.")
+    parser.add_argument("--device", type=str, default="auto", choices=["auto", "cpu", "cuda"])
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--debug", action="store_true", help="Passe --debug à segment_tubers.py (overlays de contrôle).")
     args = parser.parse_args()
 
     set_seed(args.seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu") if args.device == "auto" else torch.device(args.device)
     print(f"[info] Device: {device}")
-    print(f"[warn] --img_size={args.img_size} : doit correspondre à la valeur utilisée pour entraîner les deux modèles.")
 
     stage1_path = Path(args.stage1_model_path)
     stage2_path = Path(args.stage2_model_path)
-    data_dir = Path(args.data_dir)
-    for p, name in ((stage1_path, "--stage1_model_path"), (stage2_path, "--stage2_model_path")):
+    stage3_path = Path(args.stage3_model_path)
+    for p, name in ((stage1_path, "--stage1_model_path"), (stage2_path, "--stage2_model_path"), (stage3_path, "--stage3_model_path")):
         if not p.is_file():
             sys.exit(f"[erreur] {name} : {p} n'existe pas.")
-    if not data_dir.is_dir():
-        sys.exit(f"[erreur] --data_dir {data_dir} n'existe pas ou n'est pas un dossier.")
 
-    stage1_model, stage1_classes = load_stage_model(stage1_path, device, "Stage 1")
-    stage2_model, stage2_classes = load_stage_model(stage2_path, device, "Stage 2")
+    stage1_model, stage1_classes = load_stage_model(stage1_path, device, "Stage 1 (validité)")
+    stage2_model, stage2_classes = load_stage_model(stage2_path, device, "Stage 2 (malade/saine)")
+    stage3_model, stage3_classes = load_stage_model(stage3_path, device, "Stage 3 (type de maladie)")
 
-    if len(stage1_classes) != 2:
-        sys.exit(f"[erreur] Le stage 1 doit être un modèle binaire (2 classes), trouvé {len(stage1_classes)} : {stage1_classes}.")
-    stage1_saine_candidates = [i for i, c in enumerate(stage1_classes) if infer_group(c) == "saine"]
-    if len(stage1_saine_candidates) != 1:
-        sys.exit(f"[erreur] Impossible de déterminer la classe saine du stage 1 parmi {stage1_classes}.")
-    stage1_saine_idx = stage1_saine_candidates[0]
+    if len(stage1_classes) != 2 or "valide" not in stage1_classes:
+        sys.exit(f"[erreur] Le stage 1 doit être binaire avec une classe 'valide', trouvé : {stage1_classes}.")
+    stage2_saine_candidates = [i for i, c in enumerate(stage2_classes) if infer_group(c) == "saine"]
+    if len(stage2_classes) != 2 or len(stage2_saine_candidates) != 1:
+        sys.exit(f"[erreur] Le stage 2 doit être binaire avec une classe du groupe 'saine', trouvé : {stage2_classes}.")
 
-    uncertain_idx = None
-    if args.confidence_threshold > 0:
-        if args.uncertain_label not in stage2_classes:
-            sys.exit(f"[erreur] --uncertain_label '{args.uncertain_label}' absent des classes "
-                     f"du stage 2 : {stage2_classes}.")
-        uncertain_idx = stage2_classes.index(args.uncertain_label)
-
-    if args.output_dir:
-        output_dir = Path(args.output_dir)
-    else:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_dir = stage2_path.parent / f"cascade_{data_dir.name}_{timestamp}"
+    output_dir = Path(args.output_dir)
+    seg_out_root = output_dir / "crops_segmentation"
     output_dir.mkdir(parents=True, exist_ok=True)
-    print(f"[info] Résultats écrits dans : {output_dir}")
+
+    seg_argv = ["--input", *args.input, "--output", str(seg_out_root)]
+    if args.debug:
+        seg_argv.append("--debug")
+    seg_args = segment_tubers.parse_args(seg_argv)
+    seg_args.device = device.type
+
+    print(f"[info] Chargement du modèle de segmentation ({seg_args.backend})...")
+    gen, ctx = segment_tubers.build_generator(seg_args, device.type)
+
+    files = collect_images(args.input, args.exclude)
+    if not files:
+        sys.exit(f"[erreur] Aucune image trouvée dans {args.input}.")
+    print(f"[info] {len(files)} photo(s) à analyser.")
 
     tf = build_eval_transform(args.img_size)
-    is_labeled = any(p.is_dir() for p in data_dir.iterdir())
+    tri_dir = output_dir / "tri"
+    verdict_counts = {}
+    csv_path = output_dir / "pipeline_resultats.csv"
 
-    if is_labeled:
-        class_map = parse_class_map(args.class_map) if args.class_map else None
-        run_evaluation_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
-                             stage2_model, stage2_classes, class_map, args.batch_size, args.num_workers,
-                             device, output_dir, args.no_plots, args.confidence_threshold, uncertain_idx)
-    else:
-        run_prediction_mode(data_dir, tf, stage1_model, stage1_classes, stage1_saine_idx,
-                             stage2_model, stage2_classes, args.batch_size, args.num_workers, device, output_dir,
-                             args.confidence_threshold, uncertain_idx)
+    with open(csv_path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=CSV_FIELDS)
+        writer.writeheader()
+
+        for k, (path, rel_key) in enumerate(files, 1):
+            print(f"[{k}/{len(files)}] {rel_key}{path.suffix}")
+            recorder = RowRecorder()
+            segment_tubers.process_image(path, rel_key, gen, ctx, seg_args, recorder, seg_out_root)
+
+            for crop_row in recorder.rows:
+                crop_path = seg_out_root / crop_row["crop_path"]
+
+                row = {"image": path.name, "rel_key": rel_key, "crop_path": str(crop_path),
+                       "segment_quality": crop_row["quality"]}
+                row.update(classify_crop(
+                    crop_path, tf, device,
+                    stage1_model, stage1_classes,
+                    stage2_model, stage2_classes,
+                    stage3_model, stage3_classes,
+                    args.uncertain_label, args.confidence_threshold))
+
+                writer.writerow(row)
+                verdict = row["verdict_final"]
+                verdict_counts[verdict] = verdict_counts.get(verdict, 0) + 1
+
+                cls_dir = tri_dir / verdict
+                cls_dir.mkdir(parents=True, exist_ok=True)
+                link_path = cls_dir / crop_path.name
+                if not link_path.exists():
+                    link_path.hardlink_to(crop_path.resolve())
+
+    print(f"\n[info] Résultats par verdict final :")
+    for verdict, n in sorted(verdict_counts.items()):
+        print(f"  - {verdict}: {n}")
+    print(f"[info] Détail par crop -> {csv_path}")
+    print(f"[info] Crops organisés par verdict (hardlinks) -> {tri_dir}")
 
 
 if __name__ == "__main__":

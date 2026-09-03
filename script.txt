@@ -1,0 +1,3 @@
+python build_dataset_from_manifest.py --manifest .\final_validation_manifest.json --output_dir dataset/dataset_test_pipeline 
+
+python .\evaluate_pipeline.py --data_dir .\dataset\dataset_test_pipeline\ --output_dir eval_pipeline_out --stage1_model_path .\Model_Etage1\etage1_crop_split_epoch30_20260903_235922\etage1.pt --stage2_model_path .\Model_Etage2\etage2_binaire_split_epoch25_frac50_20260903_210402\etage2.pt  --stage3_model_path .\Model_Etage3\etage3_multiclass_split_epoch30_20260903_223633\etage3.pt --confidence_threshold 0.8
